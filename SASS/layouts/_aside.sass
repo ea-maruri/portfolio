@@ -1,0 +1,144 @@
+aside
+    position:               absolute
+    bottom:                 $from-bottom-height
+    //left: 5rem
+
+    position:               fixed
+    z-index:                9999
+
+
+    @media #{"only screen and (max-width : 650px)"} 
+        bottom:             $from-bottom-height-mobile
+
+
+    .social-circle
+        display:            flex
+        align-items:        center
+        justify-content:    center
+
+        width:              $chip-size 
+        height:             $chip-size
+        cursor:             pointer  
+             
+        +mBorderR(50%)
+        +mShadow( 0px 0px 8px 6px rgba(0,0,0,.8)) // Box Shadow
+        +zoomUp(.5s, 1.1)
+
+        border:             3px solid $brand-white
+        background-color:   $brand-red
+        //margin-left:        -2.3rem
+
+        @media #{"only screen and (max-width : 650px)"} 
+            width:              $chip-size-sm 
+            height:             $chip-size-sm
+
+
+        + .social-media-container
+            display:                grid
+            grid-template-columns:  1fr 1fr
+            
+            position:           relative
+            left:               .9rem
+
+            padding:            0
+            background-color:   $brand-white
+            width:              6.7rem
+            height:             11rem
+
+            +mBorderR(10px)
+            +mShadow( 0px 0px 10px 7px rgba(0,0,0,.8)) // Box Shadow
+
+
+            //&:hover .mrow a i
+            .mrow a i
+                color: $brand-red
+
+    
+            header
+                grid-column:    1/3
+                
+                h1
+                    margin:         0
+                    text-align:     center
+                    font-weight:    600
+
+                    a
+                        font-family:        $font-secondary
+                        text-decoration:    none
+                        margin:             0 auto
+                        font-size:          1rem
+
+                        &:hover
+                            color:          $brand-black
+
+
+            footer.msymbol 
+                grid-column:        1/3
+                text-align:         center
+                margin-bottom:      .7rem
+
+                a img
+                    +zoomUp(.4s, 1.3)
+
+
+            .mrow
+                grid-column:        1/3
+                text-align:         center
+                margin-bottom:      .6rem
+
+                display:            flex
+                align-items:        center
+                justify-content:    space-around
+
+
+        p 
+            color:          $brand-white
+            position:       relative
+
+            font-size:      .7rem
+            left:           .2rem
+            top:            .3rem
+
+
+    .arrow-container
+        position:       absolute
+        right:          1rem
+        bottom:         3.7rem
+        position:       fixed
+
+        display:                grid
+        grid-template-columns:  1fr
+
+        cursor:             pointer
+
+        +zoomUp(.3s, 1.3)
+
+
+//* ARROWS *//
+.line
+    width:              0
+    height:             5rem
+    border-right:       4px solid $brand-white
+    margin-left:        .7rem
+    +mShadow(0px 0px 10px 4px $brand-black)
+
+
+.arrow 
+    border:             solid $brand-white
+    border-width:       0 4px 4px 0
+    display:            inline-block
+    padding:            .8rem // Arrow width
+    //+mShadow(0px 0px 4px 2px $brand-black)
+
+
+.right 
+    +mRotate(-45deg)
+
+.left 
+    +mRotate(135deg)
+
+.up 
+    +mRotate(-135deg)
+
+.down 
+    +mRotate(45deg)

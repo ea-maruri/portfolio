@@ -1,0 +1,84 @@
+//***************** NAVIGATION BAR *********************//
+nav
+    position:   fixed
+    bottom:     -21vh
+    width:      100%
+    z-index:    9999
+
+    .nav-cards
+        display:                grid
+        grid-template-columns:  1fr 1fr
+            
+        .card1
+            grid-column:    1/2
+            
+            display:            flex
+            justify-content:    flex-end
+
+            .nav-card
+                +mRotate(-8deg)
+
+                &:hover   
+                    transition: .4s
+                    +mRotate(0deg)
+                    margin-top: -3rem
+            
+        .card2
+            grid-column:    2/3
+            z-index:        9999
+
+            .nav-card
+                +mRotate(9deg)
+
+                &:hover   
+                    transition: .4s
+                    +mRotate(0deg)
+                    margin-top: -3rem
+
+
+
+.nav-card
+    background-color:   $brand-black
+    color:              $brand-white
+    
+    +mBorderR(8px)
+    +mShadow(0px 0px 10px 3px $brand-black)
+
+    text-align:         center
+    width:              11.625rem
+    height:             16.5rem
+
+
+    &:hover .nav-card-content .nav-card-title
+        +mTransition(.3s, ease) 
+        transform:      scale(1.1)
+
+
+    &:hover .nav-card-content .nav-card-title a
+        color:          $brand-white
+
+        &:hover
+            color:      $brand-red
+            font-size:  2rem
+      
+
+    .nav-card-content
+        padding:        .8rem
+
+        .nav-card-title
+            font-size:      1.85rem
+
+            a 
+                color:              $brand-red
+                text-decoration:    none    
+
+        .nav-card-text
+            font-family:    $font-secondary
+            font-weight:    600
+
+            margin-top:    1rem
+            text-transform: uppercase
+        
+        img
+            +zoomUp(.3s, 1.3)
+
