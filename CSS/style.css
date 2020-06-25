@@ -299,10 +299,32 @@ div.sticky {
       .grid-container section .mportfolio main {
         grid-column: 1/5;
         display: grid;
-        grid-template-columns: 1fr 1fr; }
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem; }
         @media only screen and (max-width: 770px) {
           .grid-container section .mportfolio main {
             grid-template-columns: 1fr; } }
+        .grid-container section .mportfolio main .maccordion {
+          margin-top: 2rem; }
+        .grid-container section .mportfolio main .card {
+          -ms-box-shadow: 0px 0px 7px 5px #262626;
+          -webkit-box-shadow: 0px 0px 7px 5px #262626;
+          -moz-box-shadow: 0px 0px 7px 5px #262626;
+          -o-box-shadow: 0px 0px 7px 5px #262626;
+          box-shadow: 0px 0px 7px 5px #262626;
+          margin-top: 2rem;
+          width: 95%; }
+          .grid-container section .mportfolio main .card .card-header {
+            height: 4rem;
+            background-color: #262626; }
+            .grid-container section .mportfolio main .card .card-header h5 {
+              text-align: center;
+              margin-top: 0.4rem; }
+              .grid-container section .mportfolio main .card .card-header h5 a {
+                font-size: 1.4rem;
+                font-family: "Cinzel Decorative", cursive;
+                color: #E81A2E;
+                font-weight: 600; }
   .grid-container .mfooter {
     grid-column: 3/15;
     margin: 11.2rem 0 4rem;
@@ -500,16 +522,6 @@ div.sticky {
     margin-top: 150%; }
   .mcard:hover .mcard-circle {
     margin-top: -160%; }
-
-#topicAccordion {
-  width: 80%; }
-
-.card .card-header {
-  height: 4rem;
-  padding: 0 1.25rem 0.3rem; }
-
-h5.mb-0 a {
-  font-size: 1.4rem; }
 
 a > i {
   transition: transform 0.4s; }

@@ -310,6 +310,7 @@ div.sticky
                         button
                             text-transform: uppercase
 
+
         .mportfolio
             display: grid
             grid-template-columns: 1fr 1fr 1fr 1fr
@@ -319,6 +320,7 @@ div.sticky
             @media #{"only screen and (max-width : 770px)"}
                 margin-top: -2rem
 
+
             header 
                 grid-column: 1/5
 
@@ -326,15 +328,47 @@ div.sticky
                     text-align: center
                     text-shadow: 1px 1px 2px $brand-white
 
+    
             main 
                 grid-column: 1/5
 
                 display: grid
                 grid-template-columns: 1fr 1fr
+                margin-top: 2rem
 
                 @media #{"only screen and (max-width : 770px)"} 
                     //background-color: blue
                     grid-template-columns: 1fr
+
+
+                .maccordion
+                    margin-top: 2rem
+
+
+                .card
+                    +mShadow(0px 0px 7px 5px $brand-black)
+
+                    margin-top: 2rem
+                    width: 95%
+
+                    .card-header
+                        height: 4rem
+                        background-color: $brand-black
+
+                        h5
+                            text-align: center
+                            margin-top: .4rem
+
+                            a 
+                                font-size: 1.4rem
+                                font-family: $font-secondary
+                                color: $brand-red
+                                font-weight: 600
+                                
+
+                
+                    
+
 
     .mfooter
         grid-column: 3/15
@@ -568,19 +602,6 @@ div.sticky
     
 
 // Cards
-#topicAccordion
-    width: 80%
-    
-
-.card 
-    .card-header
-        height: 4rem
-        padding: 0 1.25rem .3rem
-
-
-h5.mb-0
-    a 
-        font-size: 1.4rem
 
 
         

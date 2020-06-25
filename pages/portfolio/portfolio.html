@@ -154,25 +154,25 @@
                 <!-- Info -->
                 <main>
 
-                    <div id="topicAccordion" role="tablist" aria-multiselectable="true">
+                    <!-- Web -->
+                    <div class="first-card" class="maccordion" id="webAccordion" role="tablist" aria-multiselectable="true">
                         <div class="card">
-                            <div class="card-header" role="tab" id="section1HeaderId">
+                            <div class="card-header" role="tab" id="webAccordionHeader">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" data-parent="#topicAccordion" href="#section1ContentId"
-                                        aria-expanded="true" aria-controls="section1ContentId">
-                                        Section 1
+                                    <a data-toggle="collapse" data-parent="#webAccordion" href="#webAccordionContent"
+                                        aria-expanded="true" aria-controls="webAccordionContent">
+                                        Web Development
                                     </a>
                                 </h5>
                             </div>
 
-                            <div id="section1ContentId" class="collapse in" role="tabpanel"
-                                aria-labelledby="section1HeaderId">
+                            <div id="webAccordionContent" class="collapse in" role="tabpanel" aria-labelledby="webAccordionHeader">
                                 <div class="card-body">
                                     <div class="card" style="width: 18rem;">
-                                        <img src="..." class="card-img-top" alt="...">
+                                        <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Project title</h5>
-                                            
+
                                             <p class="card-text">
                                                 Some quick example text to build on the card
                                                 title and make up the bulk of the card's content.
@@ -180,19 +180,199 @@
                                         </div>
 
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Cras justo odio</li>
-                                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item">Language</li>
+                                            <li class="list-group-item">Technology</li>
                                         </ul>
 
                                         <div class="card-body">
-                                            <a href="#" class="card-link">Prev</a>
-                                            <a href="#" class="card-link">Next</a>
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- Programming -->
+                    <div class="second-card" class="maccordion" id="progAccordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="progAccordionHeader">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#progAccordion" href="#progAccordionContent"
+                                        aria-expanded="true" aria-controls="progAccordionContent">
+                                        Programming
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="progAccordionContent" class="collapse in" role="tabpanel" aria-labelledby="progAccordionHeader">
+                                <div class="card-body">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project title</h5>
+
+                                            <p class="card-text">
+                                                Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Language</li>
+                                            <li class="list-group-item">Technology</li>
+                                        </ul>
+
+                                        <div class="card-body">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Databases -->
+                    <div class="third-card" class="maccordion" id="dbAccordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="dbAccordionHeader">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#dbAccordion" href="#dbAccordionContent"
+                                        aria-expanded="true" aria-controls="dbAccordionContent">
+                                        Databases
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="dbAccordionContent" class="collapse in" role="tabpanel" aria-labelledby="dbAccordionHeader">
+                                <div class="card-body">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project title</h5>
+
+                                            <p class="card-text">
+                                                Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Language</li>
+                                            <li class="list-group-item">Technology</li>
+                                        </ul>
+
+                                        <div class="card-body">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Networking -->
+                    <div class="fourth-card" class="maccordion" id="netAccordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="netAccordionHeader">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#netAccordion" href="#netAccordionContent"
+                                        aria-expanded="true" aria-controls="netAccordionContent">
+                                        Networking
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="netAccordionContent" class="collapse in" role="tabpanel" aria-labelledby="netAccordionHeader">
+                                <div class="card-body">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project title</h5>
+
+                                            <p class="card-text">
+                                                Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Language</li>
+                                            <li class="list-group-item">Technology</li>
+                                        </ul>
+
+                                        <div class="card-body">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </main>
 
@@ -273,7 +453,7 @@
 
 
     <!-- JavaScript -->
-    <script src="./scripts/main.js"></script>
+    <script src="./../../scripts/main.js"></script>
 
 
     <!-- Optional JavaScript -->
