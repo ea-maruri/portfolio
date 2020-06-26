@@ -283,6 +283,10 @@ div.sticky {
               transform: scale(1.07); }
             .grid-container section #mlab main .cards-group .mlabcard:hover {
               z-index: 9995; }
+            .grid-container section #mlab main .cards-group .mlabcard h4 a {
+              color: #E81A2E; }
+            .grid-container section #mlab main .cards-group .mlabcard:hover h4 a {
+              color: #f4f4f4; }
           .grid-container section #mlab main .cards-group .left-overlap {
             position: relative;
             left: -78.8px; }
@@ -299,6 +303,7 @@ div.sticky {
             width: 230px;
             height: 326.45px;
             margin-top: 2rem;
+            padding: 0.7rem;
             border: 2px solid #f4f4f4;
             -ms-border-radius: 8px;
             -webkit-border-radius: 8px;
