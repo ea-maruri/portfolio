@@ -316,6 +316,27 @@ div.sticky {
             -o-box-shadow: 0px 0px 6px 4px #262626;
             box-shadow: 0px 0px 6px 4px #262626;
             color: #f4f4f4; }
+    .grid-container section #maboutform {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 8rem; }
+      @media only screen and (max-width: 770px) {
+        .grid-container section #maboutform {
+          margin-top: 5rem; } }
+      .grid-container section #maboutform header {
+        grid-column: 1/5; }
+        .grid-container section #maboutform header h1 {
+          color: #f4f4f4;
+          text-align: center;
+          text-shadow: 3px 3px 3px #262626;
+          margin-bottom: 1.7rem; }
+      .grid-container section #maboutform main {
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: 1fr; }
+        @media only screen and (max-width: 770px) {
+          .grid-container section #maboutform main {
+            grid-template-columns: 1fr; } }
     .grid-container section #mabout, .grid-container section #mcategories, .grid-container section #mportfolio {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -366,8 +387,6 @@ div.sticky {
             transition: transform 0.3s; }
             .grid-container section #mabout main .gallery-card .card-body img:hover, .grid-container section #mcategories main .gallery-card .card-body img:hover, .grid-container section #mportfolio main .gallery-card .card-body img:hover {
               transform: scale(1.1); }
-          .grid-container section #mabout main .gallery-card .card-footer button, .grid-container section #mcategories main .gallery-card .card-footer button, .grid-container section #mportfolio main .gallery-card .card-footer button {
-            text-transform: uppercase; }
     .grid-container section #mportfolio main .maccordion {
       margin-top: 2rem;
       margin: 0 auto; }
@@ -852,11 +871,19 @@ aside {
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  -ms-transition: 0.5s ease-out;
-  -webkit-transition: 0.5s ease-out;
-  -moz-transition: 0.5s ease-out;
-  -o-transition: 0.5s ease-out;
-  transition: 0.5s ease-out; }
+  -ms-transition: 0.6s ease-out;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  -o-transition: 0.6s ease-out;
+  transition: 0.6s ease-out; }
+  .btn-border-primary a {
+    -ms-transition: 0.6s ease-out;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+    text-decoration: none;
+    color: #E81A2E; }
   .btn-border-primary:hover {
     background-color: #E81A2E;
     color: #f4f4f4;
@@ -865,6 +892,8 @@ aside {
     background-image: -moz-linear-gradient(to bottom right, #E81A2E, #D4D4D4);
     background-image: -o-linear-gradient(to bottom right, #E81A2E, #D4D4D4);
     background-image: linear-gradient(to bottom right, #E81A2E, #D4D4D4); }
+  .btn-border-primary:hover a {
+    color: #f4f4f4; }
 
 .btn-border-secondary {
   border: 2px solid #009BDB;
@@ -889,6 +918,52 @@ aside {
   transition: 0.5s ease-out; }
   .btn-border-secondary:hover {
     background-color: #009BDB;
+    color: #f4f4f4; }
+
+.btn-border-black {
+  border: 2px solid #262626;
+  background-clip: border-box;
+  background-image: -ms-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  background-image: -webkit-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  background-image: -moz-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  background-image: -o-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  background-image: linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  color: #262626;
+  -ms-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  height: 2rem;
+  font-family: "Black Ops One", cursive;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.2rem 2rem;
+  display: block;
+  margin: 0 auto;
+  -ms-transition: 0.6s ease-out;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  -o-transition: 0.6s ease-out;
+  transition: 0.6s ease-out; }
+  .btn-border-black a {
+    -ms-transition: 0.6s ease-out;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+    text-decoration: none;
+    color: #E81A2E; }
+  .btn-border-black:hover {
+    background-color: #262626;
+    color: #f4f4f4;
+    background-image: -ms-linear-gradient(to bottom right, #262626, #D4D4D4);
+    background-image: -webkit-linear-gradient(to bottom right, #262626, #D4D4D4);
+    background-image: -moz-linear-gradient(to bottom right, #262626, #D4D4D4);
+    background-image: -o-linear-gradient(to bottom right, #262626, #D4D4D4);
+    background-image: linear-gradient(to bottom right, #262626, #D4D4D4); }
+  .btn-border-black:hover a {
     color: #f4f4f4; }
 
 input#txtFieldSearch {

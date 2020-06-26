@@ -13,13 +13,22 @@
     text-decoration:    none
     text-transform:     uppercase
 
-    +mTransition(.5s, ease-out)
+    +mTransition(.6s, ease-out)
+
+    a 
+        +mTransition(.6s, ease-out)
+        text-decoration: none
+        color: $brand-red
+
     
     &:hover
         background-color:       $brand-red
         color:                  $brand-white
 
         +mLinear-Gradient(to bottom right, $brand-red, $brand-gray)
+
+    &:hover a
+        color: $brand-white
 
 
 .btn-border-secondary
@@ -43,4 +52,40 @@
         background-color:   $brand-blue
         color:              $brand-white 
         
-        
+
+.btn-border-black
+    border:             2px solid $brand-black
+    background-clip:    border-box
+    +mLinear-Gradient(to bottom right, $brand-white, $brand-gray)
+    color:              $brand-black  
+    +mBorderR(10px)
+    
+    //width: 50%
+    height: 2rem
+
+    font-family:        $font-primary
+    font-size:          1rem
+    text-decoration:    none
+    text-transform:     uppercase
+    padding:            .2rem 2rem
+    
+    display: block
+    margin: 0 auto
+
+
+    +mTransition(.6s, ease-out)
+
+    a 
+        +mTransition(.6s, ease-out)
+        text-decoration: none
+        color: $brand-red
+
+    
+    &:hover
+        background-color:       $brand-black
+        color:                  $brand-white
+
+        +mLinear-Gradient(to bottom right, $brand-black, $brand-gray)
+
+    &:hover a
+        color: $brand-white

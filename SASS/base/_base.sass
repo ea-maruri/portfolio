@@ -345,6 +345,35 @@ div.sticky
                         color: $brand-white
 
 
+        #maboutform
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+            margin-top: 8rem
+
+            @media #{"only screen and (max-width : 770px)"}
+                margin-top: 5rem
+
+            header 
+                grid-column: 1/5
+
+                h1 
+                    color: $brand-white
+                    text-align: center
+                    text-shadow: 3px 3px 3px $brand-black
+                    margin-bottom: 1.7rem
+
+            main 
+                grid-column: 1/5
+
+                display: grid
+                grid-template-columns: 1fr
+
+                @media #{"only screen and (max-width : 770px)"} 
+                    //background-color: blue
+                    grid-template-columns: 1fr
+
+
         #mabout, #mcategories, #mportfolio
             display: grid
             grid-template-columns: 1fr 1fr 1fr 1fr
@@ -399,11 +428,9 @@ div.sticky
                             min-height: 220px
                             max-height: 220px
                             width: auto
-                            +zoomUp(.3s, 1.1)
-
-                    .card-footer
-                        button
-                            text-transform: uppercase
+                            +zoomUp(.3s, 1.1)                            
+                            
+                                
 
 
         #mportfolio
