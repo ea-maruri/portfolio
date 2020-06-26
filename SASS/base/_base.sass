@@ -192,6 +192,10 @@ h6
 
 
 //***************** Content Page *********************//
+.bg-black 
+    background-color: $brand-black
+
+
 div.sticky
     position: sticky
     top: $search-bar-element-max-height
@@ -251,7 +255,88 @@ div.sticky
                     text-decoration: none
 
 
-        #mabout, #mcategories
+        #mlab
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+
+            //margin-top: -5rem
+
+            @media #{"only screen and (max-width : 770px)"}
+                margin-top: -2rem
+
+            header 
+                grid-column: 1/5
+
+                h1 
+                    text-align: center
+                    text-shadow: 1px 1px 2px $brand-white
+                    //margin-top: 1.7rem
+
+            main 
+                grid-column: 1/5
+
+                display: grid
+                grid-template-columns: 1fr 1fr
+
+                @media #{"only screen and (max-width : 770px)"} 
+                    //background-color: blue
+                    grid-template-columns: 1fr
+
+                .cards-group 
+                    display: flex
+                    align-items: center
+
+                    color: $brand-white
+                    margin-top: 4rem
+
+                    .mlabcard
+                        display: flex
+                        justify-content: space-between
+                        flex-direction: column
+                        text-align: center
+    
+                        width: 162.72px
+                        height: 231.4px
+                        padding: 1rem
+                        border: 2px solid $brand-white
+
+                        +mBorderR(8px)
+                        +mShadow(0px 0px 6px 4px $brand-black)
+                        +zoomUp(.5s, 1.07)
+
+                        &:hover
+                            z-index: 9995
+                        
+                    .left-overlap 
+                        position: relative
+                        left: -78.8px
+                    
+                    .left-overlap-2
+                        position: relative
+                        left: -157.6px 
+                
+                .center-block
+                    display: block
+                    margin: 0 auto
+
+                    .info-card
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-around
+
+                        width: 230px
+                        height: 326.45px
+                        margin-top: 2rem
+
+                        border: 2px solid $brand-white
+
+                        +mBorderR(8px)
+                        +mShadow(0px 0px 6px 4px $brand-black)
+
+                        color: $brand-white
+
+
+        #mabout, #mcategories, #mportfolio
             display: grid
             grid-template-columns: 1fr 1fr 1fr 1fr
 
@@ -266,6 +351,7 @@ div.sticky
                 h1 
                     text-align: center
                     text-shadow: 1px 1px 2px $brand-white
+                    margin-bottom: 1.3rem
                     //margin-top: 1.7rem
 
             main 
@@ -311,36 +397,8 @@ div.sticky
                             text-transform: uppercase
 
 
-        .mportfolio
-            display: grid
-            grid-template-columns: 1fr 1fr 1fr 1fr
-
-            margin-top: -5rem
-
-            @media #{"only screen and (max-width : 770px)"}
-                margin-top: -2rem
-
-
-            header 
-                grid-column: 1/5
-
-                h1 
-                    text-align: center
-                    text-shadow: 1px 1px 2px $brand-white
-
-    
+        #mportfolio
             main 
-                grid-column: 1/5
-
-                display: grid
-                grid-template-columns: 1fr 1fr
-                margin-top: 2rem
-
-                @media #{"only screen and (max-width : 770px)"} 
-                    //background-color: blue
-                    grid-template-columns: 1fr
-
-
                 .maccordion
                     margin-top: 2rem
                     margin: 0 auto
@@ -373,7 +431,10 @@ div.sticky
     display: flex
     justify-content: center
     align-items: center
-    flex-direction: column    
+    flex-direction: column   
+
+    h2 
+        color: $brand-white 
                     
 
 

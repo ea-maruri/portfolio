@@ -181,6 +181,9 @@ body {
 #searchModal {
   z-index: 9999; }
 
+.bg-black {
+  background-color: #262626; }
+
 div.sticky {
   position: sticky;
   top: 14vh; }
@@ -233,26 +236,102 @@ div.sticky {
         .grid-container section #mpersonal p a {
           color: #f4f4f4;
           text-decoration: none; }
-    .grid-container section #mabout, .grid-container section #mcategories {
+    .grid-container section #mlab {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-top: -5rem; }
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
       @media only screen and (max-width: 770px) {
-        .grid-container section #mabout, .grid-container section #mcategories {
+        .grid-container section #mlab {
           margin-top: -2rem; } }
-      .grid-container section #mabout header, .grid-container section #mcategories header {
+      .grid-container section #mlab header {
         grid-column: 1/5; }
-        .grid-container section #mabout header h1, .grid-container section #mcategories header h1 {
+        .grid-container section #mlab header h1 {
           text-align: center;
           text-shadow: 1px 1px 2px #f4f4f4; }
-      .grid-container section #mabout main, .grid-container section #mcategories main {
+      .grid-container section #mlab main {
         grid-column: 1/5;
         display: grid;
         grid-template-columns: 1fr 1fr; }
         @media only screen and (max-width: 770px) {
-          .grid-container section #mabout main, .grid-container section #mcategories main {
+          .grid-container section #mlab main {
             grid-template-columns: 1fr; } }
-        .grid-container section #mabout main .gallery-card, .grid-container section #mcategories main .gallery-card {
+        .grid-container section #mlab main .cards-group {
+          display: flex;
+          align-items: center;
+          color: #f4f4f4;
+          margin-top: 4rem; }
+          .grid-container section #mlab main .cards-group .mlabcard {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+            width: 162.72px;
+            height: 231.4px;
+            padding: 1rem;
+            border: 2px solid #f4f4f4;
+            -ms-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+            -ms-box-shadow: 0px 0px 6px 4px #262626;
+            -webkit-box-shadow: 0px 0px 6px 4px #262626;
+            -moz-box-shadow: 0px 0px 6px 4px #262626;
+            -o-box-shadow: 0px 0px 6px 4px #262626;
+            box-shadow: 0px 0px 6px 4px #262626;
+            transition: transform 0.5s; }
+            .grid-container section #mlab main .cards-group .mlabcard:hover {
+              transform: scale(1.07); }
+            .grid-container section #mlab main .cards-group .mlabcard:hover {
+              z-index: 9995; }
+          .grid-container section #mlab main .cards-group .left-overlap {
+            position: relative;
+            left: -78.8px; }
+          .grid-container section #mlab main .cards-group .left-overlap-2 {
+            position: relative;
+            left: -157.6px; }
+        .grid-container section #mlab main .center-block, .grid-container section #mlab #mabout main .gallery-card, .grid-container section #mabout #mlab main .gallery-card, .grid-container section #mlab #mcategories main .gallery-card, .grid-container section #mcategories #mlab main .gallery-card, .grid-container section #mlab #mportfolio main .gallery-card, .grid-container section #mportfolio #mlab main .gallery-card {
+          display: block;
+          margin: 0 auto; }
+          .grid-container section #mlab main .center-block .info-card, .grid-container section #mlab #mabout main .gallery-card .info-card, .grid-container section #mabout #mlab main .gallery-card .info-card, .grid-container section #mlab #mcategories main .gallery-card .info-card, .grid-container section #mcategories #mlab main .gallery-card .info-card, .grid-container section #mlab #mportfolio main .gallery-card .info-card, .grid-container section #mportfolio #mlab main .gallery-card .info-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 230px;
+            height: 326.45px;
+            margin-top: 2rem;
+            border: 2px solid #f4f4f4;
+            -ms-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+            -ms-box-shadow: 0px 0px 6px 4px #262626;
+            -webkit-box-shadow: 0px 0px 6px 4px #262626;
+            -moz-box-shadow: 0px 0px 6px 4px #262626;
+            -o-box-shadow: 0px 0px 6px 4px #262626;
+            box-shadow: 0px 0px 6px 4px #262626;
+            color: #f4f4f4; }
+    .grid-container section #mabout, .grid-container section #mcategories, .grid-container section #mportfolio {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: -5rem; }
+      @media only screen and (max-width: 770px) {
+        .grid-container section #mabout, .grid-container section #mcategories, .grid-container section #mportfolio {
+          margin-top: -2rem; } }
+      .grid-container section #mabout header, .grid-container section #mcategories header, .grid-container section #mportfolio header {
+        grid-column: 1/5; }
+        .grid-container section #mabout header h1, .grid-container section #mcategories header h1, .grid-container section #mportfolio header h1 {
+          text-align: center;
+          text-shadow: 1px 1px 2px #f4f4f4;
+          margin-bottom: 1.3rem; }
+      .grid-container section #mabout main, .grid-container section #mcategories main, .grid-container section #mportfolio main {
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr; }
+        @media only screen and (max-width: 770px) {
+          .grid-container section #mabout main, .grid-container section #mcategories main, .grid-container section #mportfolio main {
+            grid-template-columns: 1fr; } }
+        .grid-container section #mabout main .gallery-card, .grid-container section #mcategories main .gallery-card, .grid-container section #mportfolio main .gallery-card {
           margin-top: 1.6rem;
           -ms-box-shadow: 0 0 1rem #D4D4D4;
           -webkit-box-shadow: 0 0 1rem #D4D4D4;
@@ -265,66 +344,46 @@ div.sticky {
           -o-border-radius: 20px;
           border-radius: 20px;
           overflow: hidden; }
-          .grid-container section #mabout main .gallery-card .card-header, .grid-container section #mcategories main .gallery-card .card-header {
+          .grid-container section #mabout main .gallery-card .card-header, .grid-container section #mcategories main .gallery-card .card-header, .grid-container section #mportfolio main .gallery-card .card-header {
             background-color: #262626; }
-            .grid-container section #mabout main .gallery-card .card-header h5, .grid-container section #mcategories main .gallery-card .card-header h5 {
+            .grid-container section #mabout main .gallery-card .card-header h5, .grid-container section #mcategories main .gallery-card .card-header h5, .grid-container section #mportfolio main .gallery-card .card-header h5 {
               text-transform: uppercase;
               color: #E81A2E;
               font-family: "Cinzel Decorative", cursive;
               padding-top: 1.3rem;
               font-weight: 600; }
-          .grid-container section #mabout main .gallery-card .card-body .carousel-control-prev, .grid-container section #mabout main .gallery-card .card-body .carousel-control-next, .grid-container section #mcategories main .gallery-card .card-body .carousel-control-prev, .grid-container section #mcategories main .gallery-card .card-body .carousel-control-next {
+          .grid-container section #mabout main .gallery-card .card-body .carousel-control-prev, .grid-container section #mabout main .gallery-card .card-body .carousel-control-next, .grid-container section #mcategories main .gallery-card .card-body .carousel-control-prev, .grid-container section #mcategories main .gallery-card .card-body .carousel-control-next, .grid-container section #mportfolio main .gallery-card .card-body .carousel-control-prev, .grid-container section #mportfolio main .gallery-card .card-body .carousel-control-next {
             background-color: #262626; }
-          .grid-container section #mabout main .gallery-card .card-body img, .grid-container section #mcategories main .gallery-card .card-body img {
+          .grid-container section #mabout main .gallery-card .card-body img, .grid-container section #mcategories main .gallery-card .card-body img, .grid-container section #mportfolio main .gallery-card .card-body img {
             min-height: 220px;
             max-height: 220px;
             width: auto;
             transition: transform 0.3s; }
-            .grid-container section #mabout main .gallery-card .card-body img:hover, .grid-container section #mcategories main .gallery-card .card-body img:hover {
+            .grid-container section #mabout main .gallery-card .card-body img:hover, .grid-container section #mcategories main .gallery-card .card-body img:hover, .grid-container section #mportfolio main .gallery-card .card-body img:hover {
               transform: scale(1.1); }
-          .grid-container section #mabout main .gallery-card .card-footer button, .grid-container section #mcategories main .gallery-card .card-footer button {
+          .grid-container section #mabout main .gallery-card .card-footer button, .grid-container section #mcategories main .gallery-card .card-footer button, .grid-container section #mportfolio main .gallery-card .card-footer button {
             text-transform: uppercase; }
-    .grid-container section .mportfolio {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-top: -5rem; }
-      @media only screen and (max-width: 770px) {
-        .grid-container section .mportfolio {
-          margin-top: -2rem; } }
-      .grid-container section .mportfolio header {
-        grid-column: 1/5; }
-        .grid-container section .mportfolio header h1 {
+    .grid-container section #mportfolio main .maccordion {
+      margin-top: 2rem;
+      margin: 0 auto; }
+    .grid-container section #mportfolio main .card {
+      -ms-box-shadow: 0px 0px 7px 5px #262626;
+      -webkit-box-shadow: 0px 0px 7px 5px #262626;
+      -moz-box-shadow: 0px 0px 7px 5px #262626;
+      -o-box-shadow: 0px 0px 7px 5px #262626;
+      box-shadow: 0px 0px 7px 5px #262626; }
+      .grid-container section #mportfolio main .card .card-header {
+        height: 4rem;
+        background-color: #262626; }
+        .grid-container section #mportfolio main .card .card-header h5 {
           text-align: center;
-          text-shadow: 1px 1px 2px #f4f4f4; }
-      .grid-container section .mportfolio main {
-        grid-column: 1/5;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 2rem; }
-        @media only screen and (max-width: 770px) {
-          .grid-container section .mportfolio main {
-            grid-template-columns: 1fr; } }
-        .grid-container section .mportfolio main .maccordion {
-          margin-top: 2rem;
-          margin: 0 auto; }
-        .grid-container section .mportfolio main .card {
-          -ms-box-shadow: 0px 0px 7px 5px #262626;
-          -webkit-box-shadow: 0px 0px 7px 5px #262626;
-          -moz-box-shadow: 0px 0px 7px 5px #262626;
-          -o-box-shadow: 0px 0px 7px 5px #262626;
-          box-shadow: 0px 0px 7px 5px #262626; }
-          .grid-container section .mportfolio main .card .card-header {
-            height: 4rem;
-            background-color: #262626; }
-            .grid-container section .mportfolio main .card .card-header h5 {
-              text-align: center;
-              margin-top: 0.4rem; }
-              .grid-container section .mportfolio main .card .card-header h5 a {
-                font-size: 1.4rem;
-                font-family: "Cinzel Decorative", cursive;
-                color: #E81A2E;
-                font-weight: 600;
-                text-transform: uppercase; }
+          margin-top: 0.4rem; }
+          .grid-container section #mportfolio main .card .card-header h5 a {
+            font-size: 1.4rem;
+            font-family: "Cinzel Decorative", cursive;
+            color: #E81A2E;
+            font-weight: 600;
+            text-transform: uppercase; }
 
 .portfolio-cards {
   margin-bottom: 6rem;
@@ -332,6 +391,8 @@ div.sticky {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .portfolio-cards h2 {
+    color: #f4f4f4; }
 
 .grid-cards {
   display: grid;
@@ -866,7 +927,7 @@ table, tr, td, th {
       .mcard-list ul li i {
         margin-left: 2rem; }
 
-.center-block, .grid-container section #mabout main .gallery-card, .grid-container section #mcategories main .gallery-card {
+.center-block, .grid-container section #mabout main .gallery-card, .grid-container section #mcategories main .gallery-card, .grid-container section #mportfolio main .gallery-card {
   display: block;
   margin-left: auto;
   margin-right: auto;
