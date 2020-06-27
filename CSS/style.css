@@ -417,6 +417,8 @@ div.sticky {
   flex-direction: column; }
   .portfolio-cards h2 {
     color: #f4f4f4; }
+  .portfolio-cards .pagination {
+    display: none; }
 
 .grid-cards {
   display: grid;
@@ -475,7 +477,8 @@ div.sticky {
       justify-content: center; }
       .grid-cards .card-shape a h6 {
         display: none;
-        font-size: 0.7rem; }
+        font-size: 0.7rem;
+        text-align: center; }
       .grid-cards .card-shape a div {
         text-align: center; }
         .grid-cards .card-shape a div i {
