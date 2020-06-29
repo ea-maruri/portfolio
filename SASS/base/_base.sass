@@ -662,3 +662,77 @@ div.sticky
 a > i 
     +zoomUp(.4s, 1.6)
 
+
+
+//***************** FOOD *********************//
+#mfood
+    margin-top: $nav-width
+    padding: 0 5rem
+
+    h1 
+        text-align: center
+        color: $brand-white
+    
+    .link-container
+        width: 200px
+        margin-bottom: 5rem
+        
+        details
+            margin-bottom: .7rem
+
+            summary
+                &:hover
+                    cursor: pointer
+                    font-size: 1.2rem
+                    color: $brand-white
+
+
+            li a
+                text-decoration: none
+                color: $brand-pure-black
+                margin-bottom: 7rem
+
+                &:hover
+                    color: $brand-white
+                //font-size: 4rem
+
+
+    .food-content
+        dl 
+            hr 
+                margin: 4rem auto
+                width: 80%
+
+            dt 
+                h2 
+                    color: $brand-white
+        
+            dd 
+                img.m-img
+                    display: block
+                    margin: auto
+
+                    +mBorderR(6px)
+                    +mShadow(2px 2px 5px 3px $brand-black)
+                    +zoomUp(.4s, 1.1)
+
+                p.right-text
+                    display: flex
+                    justify-content: flex-end
+
+                    a
+                        margin-top: 2rem 
+                        padding: .4rem 1rem
+
+                        +mBorderR(10px)
+                        border: 1px solid $brand-white
+                        color: $brand-white
+                        text-decoration: none
+
+                        &:hover
+                            background-color: $brand-black
+                            
+                    
+                        
+                
+            
