@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Black Ops One", cursive;
-  line-height: 1.17;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   background-image: url("./../assets/images/bg/pool_table.png"); }
@@ -606,7 +606,7 @@ a > i {
     text-align: center; }
   #mfood .food-content dl dd img.m-img {
     display: block;
-    margin: auto;
+    margin: 2.5rem auto;
     -ms-border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -636,6 +636,12 @@ a > i {
       text-decoration: none; }
       #mfood .food-content dl dd p.right-text a:hover {
         background-color: #262626; }
+  #mfood .food-content dl dd ul li h4 {
+    color: #f4f4f4;
+    margin: 2rem 0; }
+  #mfood .recipes-button button {
+    display: block;
+    margin: auto; }
 
 nav .nav-cards {
   position: fixed;
