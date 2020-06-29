@@ -143,6 +143,9 @@ body {
       @media only screen and (max-width: 770px) {
         .flex-search-bar .search-bar-logo a img.mlogo {
           height: 9vh; } }
+  .flex-search-bar #food-circle a {
+    text-decoration: none;
+    color: #f4f4f4; }
   .flex-search-bar .search-circle {
     position: relative;
     right: 5rem;
@@ -577,7 +580,6 @@ a > i {
     transform: scale(1.6); }
 
 #mfood {
-  margin-top: 13vw;
   padding: 0 5rem; }
   #mfood h1 {
     text-align: center;
@@ -598,10 +600,10 @@ a > i {
         #mfood .link-container details li a:hover {
           color: #f4f4f4; }
   #mfood .food-content dl hr {
-    margin: 4rem auto;
     width: 80%; }
   #mfood .food-content dl dt h2 {
-    color: #f4f4f4; }
+    color: #f4f4f4;
+    text-align: center; }
   #mfood .food-content dl dd img.m-img {
     display: block;
     margin: auto;
@@ -709,7 +711,8 @@ nav .nav-cards {
   .nav-card .nav-card-content {
     padding: 0.8rem; }
     .nav-card .nav-card-content .nav-card-title {
-      font-size: 1.85rem; }
+      font-size: 1.85rem;
+      margin: 0; }
       .nav-card .nav-card-content .nav-card-title a {
         color: #E81A2E;
         text-decoration: none; }

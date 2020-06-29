@@ -21,6 +21,7 @@ body
     margin: 0
     padding: 0
     
+    //background-image: url("./../assets/images/bg/blue_pool_table.jpg")
     background-image: url("./../assets/images/bg/pool_table.png")
 
    
@@ -154,6 +155,11 @@ h6
                 height: $search-bar-logo-height-sm
 
 
+    #food-circle 
+        a 
+            text-decoration: none
+            color: $brand-white
+
     .search-circle
         position: relative
         right: $margin-content
@@ -184,6 +190,7 @@ h6
         @media #{"only screen and (max-width : 650px)"} 
             width: $chip-size-sm 
             height: $chip-size-sm
+            
         
 
 
@@ -666,7 +673,6 @@ a > i
 
 //***************** FOOD *********************//
 #mfood
-    margin-top: $nav-width
     padding: 0 5rem
 
     h1 
@@ -700,12 +706,13 @@ a > i
     .food-content
         dl 
             hr 
-                margin: 4rem auto
+                //margin: 4rem auto
                 width: 80%
 
             dt 
                 h2 
                     color: $brand-white
+                    text-align: center
         
             dd 
                 img.m-img
@@ -735,4 +742,3 @@ a > i
                     
                         
                 
-            
