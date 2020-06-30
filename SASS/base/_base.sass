@@ -211,10 +211,8 @@ div.sticky
 .grid-container
     display: grid
     grid-template-columns: repeat(2, $margin-content) repeat($columns-num, auto) repeat(2, $margin-content)
-    //grid-template-rows:     repeat(12, minmax(calc(100vh / 12), auto))  // min 100%/12 (12 equal rows) or auto
     
-    //border: 1px yellow solid
-    margin: 10rem 0 0 0
+    margin: 6.5rem 0 0 0
 
     @media #{"only screen and (max-width : 770px)"}
         grid-template-columns: repeat(2, .2rem) repeat($columns-num, auto) repeat(2, .2rem)  
@@ -222,7 +220,23 @@ div.sticky
 
     section 
         grid-column: 3/15
-        //margin: 2rem $margin-content
+        margin: 2rem
+
+        #super-title
+            +mShadow(1px 1px 6px 3px rgba(0,0,0,.4))
+
+            h1.msuper-title
+                font-family: $font-secondary
+                color: $brand-white
+                font-weight: 600
+                text-align: center
+                font-size: 4rem
+                line-height: 6rem
+                letter-spacing: .8rem
+                text-shadow: 1px 1px 4px black
+
+                padding: 2rem 1rem
+
 
         #mpersonal
             display: grid
@@ -253,6 +267,7 @@ div.sticky
                 grid-row: 2/5
                 color: $brand-white
                 margin-left: 5rem
+                font-family: $font-fourth
 
                 @media #{"only screen and (max-width : 770px)"}
                     margin-left: .7rem  
@@ -385,7 +400,7 @@ div.sticky
             display: grid
             grid-template-columns: 1fr 1fr 1fr 1fr
 
-            margin-top: -5rem
+            margin-top: 3.8rem
 
             @media #{"only screen and (max-width : 770px)"}
                 margin-top: -2rem
@@ -396,7 +411,7 @@ div.sticky
                 h1 
                     text-align: center
                     text-shadow: 1px 1px 2px $brand-white
-                    margin-bottom: 1.3rem
+                    margin-bottom: 1.5rem
                     //margin-top: 1.7rem
 
             main 
@@ -410,7 +425,7 @@ div.sticky
                     grid-template-columns: 1fr
 
                 .gallery-card
-                    margin-top: 1.6rem
+                    margin: 2.6rem 0
                     +mShadow(0 0 1rem $brand-gray)
                     +mBorderR(20px)
                     @extend .center-block
@@ -424,7 +439,7 @@ div.sticky
                             text-transform: uppercase
                             color: $brand-red
                             font-family: $font-secondary
-                            padding-top: 1.3rem
+                            padding-top: .8rem
                             font-weight: 600
 
                     .card-body
@@ -438,8 +453,6 @@ div.sticky
                             +zoomUp(.3s, 1.1)                            
                             
                                 
-
-
         #mportfolio
             main 
                 .maccordion
@@ -580,7 +593,7 @@ div.sticky
 .mcard 
     background-color: $brand-white
 
-    margin: 1.8rem auto 0
+    margin: 2.6rem  auto
     overflow: hidden // Hide circle
 
     +mShadow(0px 0px 6px 3px $brand-black) // Box Shadow
@@ -615,11 +628,16 @@ div.sticky
         width: 100%
         
     .mcard-content 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
         display: none
         position: absolute
 
         text-align: center
-        font-family: $font-primary
+        font-family: $font-fourth
         font-size: .73rem
         color: $brand-white
 
@@ -627,6 +645,13 @@ div.sticky
 
         p 
             padding: .4rem
+
+            a 
+                color: $brand-blue
+                text-decoration: none
+
+                &:hover
+                    color: $brand-white
 
     .mcard-btn-container 
         display: none
