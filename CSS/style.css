@@ -149,7 +149,7 @@ body {
   .flex-search-bar .search-circle {
     position: relative;
     right: 5rem;
-    top: -5.5vh;
+    top: -6.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,11 +202,11 @@ div.sticky {
     grid-column: 3/15;
     margin: 2rem; }
     .grid-container section #super-title {
-      -ms-box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.4);
-      -webkit-box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.4);
-      -o-box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.4);
-      box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.4); }
+      -ms-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+      -o-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+      box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4); }
       .grid-container section #super-title h1.msuper-title {
         font-family: "Cinzel Decorative", cursive;
         color: #f4f4f4;
@@ -214,8 +214,8 @@ div.sticky {
         text-align: center;
         font-size: 4rem;
         line-height: 6rem;
-        letter-spacing: 0.8rem;
-        text-shadow: 1px 1px 4px black;
+        letter-spacing: 0.5rem;
+        text-shadow: 2px 2px 10px black;
         padding: 2rem 1rem; }
     .grid-container section #mpersonal {
       display: grid;
@@ -425,7 +425,7 @@ div.sticky {
           margin-top: 0.4rem; }
           .grid-container section #mportfolio main .card .card-header h5 a {
             font-size: 1.4rem;
-            font-family: "Cinzel Decorative", cursive;
+            font-family: "Roboto Mono", monospace;
             color: #E81A2E;
             font-weight: 600;
             text-transform: uppercase; }
@@ -672,7 +672,7 @@ a > i {
 
 nav .nav-cards {
   position: fixed;
-  bottom: -21vh;
+  bottom: -28vh;
   width: 100%;
   z-index: 9999;
   display: grid;
@@ -1079,7 +1079,8 @@ table, tr, td, th {
 
 #skills-table {
   display: block;
-  width: 100%; }
+  width: 225px;
+  margin: 0 auto; }
   #skills-table tr td, #skills-table tr th {
     padding: 0.2rem 0; }
 
@@ -1092,19 +1093,20 @@ table, tr, td, th {
   color: #000000; }
 
 .mcard-list {
-  display: block;
-  margin: auto; }
+  width: 225px; }
   .mcard-list ul {
-    list-style: none; }
+    list-style: none;
+    padding: 0; }
     .mcard-list ul li {
+      cursor: pointer;
       text-decoration: none;
       margin: 2rem 0; }
       .mcard-list ul li:hover {
-        color: #E81A2E; }
+        font-weight: 900; }
       .mcard-list ul li:hover i {
         transition: transform 0.4s;
         transform: scale(1.5);
-        color: #009BDB; }
+        color: #E81A2E; }
       .mcard-list ul li i {
         margin-left: 2rem; }
 
