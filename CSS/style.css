@@ -898,11 +898,11 @@ aside {
       color: #f4f4f4;
       position: relative;
       font-size: 0.7rem;
-      left: 0.2rem;
+      left: 0.1rem;
       top: 0.3rem; }
   aside .arrow-container {
     position: absolute;
-    right: 1rem;
+    right: 1.2rem;
     bottom: 3.7rem;
     position: fixed;
     display: grid;
@@ -914,18 +914,13 @@ aside {
 
 .line {
   width: 0;
-  height: 5rem;
-  border-right: 4px solid #f4f4f4;
-  margin-left: 0.7rem;
-  -ms-box-shadow: 0px 0px 10px 4px #262626;
-  -webkit-box-shadow: 0px 0px 10px 4px #262626;
-  -moz-box-shadow: 0px 0px 10px 4px #262626;
-  -o-box-shadow: 0px 0px 10px 4px #262626;
-  box-shadow: 0px 0px 10px 4px #262626; }
+  height: 9vh;
+  border-right: 3px dashed #f4f4f4;
+  margin-left: 0.7rem; }
 
 .arrow {
-  border: solid #f4f4f4;
-  border-width: 0 4px 4px 0;
+  border: dashed #f4f4f4;
+  border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 0.8rem; }
 
