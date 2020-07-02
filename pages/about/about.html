@@ -137,7 +137,8 @@
 
             <!-- Symbol -->
             <footer class="msymbol">
-                <a title="Get in touch" href="https://github.com/ea-maruri">
+                <!-- Button trigger modal (Form) -->
+                <a title="Get in touch" type="button" data-toggle="modal" data-target="#modalForm">
                     <img src="./../../assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px" height="auto">
                 </a>
             </footer>
@@ -163,7 +164,7 @@
             <header>
                 <h1>Know me</h1>
             </header>
-            
+
             <div id="mabout">
 
                 <!-- Cards -->
@@ -310,7 +311,7 @@
             <header>
                 <h1>So, What Can I Do For You?</h1>
             </header>
-            
+
             <div id="maboutform">
 
                 <main>
@@ -333,6 +334,7 @@
                         <button type="button" class="btn-border-black">
                             Send
                         </button>
+
                     </form>
                 </main>
 
@@ -377,7 +379,7 @@
 
 
     <!-- Extras -->
-    <!-- Modal -->
+    <!-- Modal (Search) -->
     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -409,6 +411,46 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal (Form) -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">What Can I Do For You?</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form class="about-form">
+                        <div class="row">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for=""></label>
+                            <textarea class="form-control" name="" id="" rows="5"
+                                placeholder="Your Request..."></textarea>
+                        </div>
+
+                        <button type="button" class="btn-border-black">
+                            Send
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- <table id="skills-table">
                                     <tr>
@@ -448,6 +490,7 @@
                                         <td>Intermediate</td>
                                     </tr>
                                 </table>-->
+
 
     <!-- JavaScript -->
     <script src="./../../scripts/main.js"></script>

@@ -114,7 +114,8 @@
             <!-- Facebook - Instagram -->
             <div class="mrow">
 
-                <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790" target="_blank">
+                <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790"
+                    target="_blank">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
 
@@ -128,11 +129,12 @@
             <!-- Github - LinkedIn -->
             <div class="mrow">
 
-                <a id="github-link" title="Github" href="https://github.com/ea-maruri" target="_blank">
+                <a id="github-link" title="Github" href="#" target="_blank">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
 
-                <a id="linkedin-link" title="LinkedIn" href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank">
+                <a id="linkedin-link" title="LinkedIn"
+                    href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
 
@@ -141,7 +143,8 @@
 
             <!-- Symbol -->
             <footer class="msymbol">
-                <a title="Get in touch" href="#">
+                <!-- Button trigger modal (Form) -->
+                <a title="Get in touch" type="button" data-toggle="modal" data-target="#modalForm">
                     <img src="./assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px" height="auto">
                 </a>
             </footer>
@@ -230,11 +233,11 @@
 
         <!-- Personal -->
         <section>
-            <main>
-                <header>
-                    <h1>Alejandro Maruri</h1>
-                </header>
-                
+            <header>
+                <h1>Alejandro Maruri</h1>
+            </header>
+
+            <main>    
                 <div id="mpersonal">
                     <div class="mimg-container">
                         <img src="./assets/images/personal/Foto_CV(2020).jpg" alt="MY-Photo" width="230px" height="auto">
@@ -520,7 +523,7 @@
 
 
     <!-- Extras -->
-    <!-- Modal -->
+    <!-- Modal (Search) -->
     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -546,6 +549,45 @@
                     </div>
                 </div>
 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal (Form) -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">What Can I Do For You?</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form class="about-form">
+                        <div class="row">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for=""></label>
+                            <textarea class="form-control" name="" id="" rows="5"
+                                placeholder="Your Request..."></textarea>
+                        </div>
+
+                        <button type="button" class="btn-border-black">
+                            Send
+                        </button>
+                    </form>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
