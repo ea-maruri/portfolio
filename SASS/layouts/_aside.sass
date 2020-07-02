@@ -33,12 +33,22 @@ aside
             height:             $chip-size-sm
 
 
+        position: relative
+        left: -12px
+
+        &:hover + .social-media-container
+            display:                grid
+            grid-template-columns:  1fr 1fr
+            
+
         + .social-media-container
             display:                grid
             grid-template-columns:  1fr 1fr
             
-            position:           relative
+            position:           absolute
             left:               .9rem
+
+            display: none
 
             padding:            0
             background-color:   $brand-white
@@ -49,7 +59,10 @@ aside
             +mShadow( 0px 0px 10px 7px rgba(0,0,0,.8)) // Box Shadow
 
 
-            //&:hover .mrow a i
+            &:hover
+                display:                grid
+                grid-template-columns:  1fr 1fr
+
             .mrow a i
                 color: $brand-red
 

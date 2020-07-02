@@ -22,18 +22,23 @@
         align-items: center
         justify-content: center
 
+        @media #{"only screen and (max-width : 770px)"}
+            width: 12vh
+            height: 12vh
+
         &:hover a 
             color: $brand-white
 
+
     p
-                //display: none
+        //display: none
         text-align: center
 
-        p.copysymbol
-            @media #{"only screen and (max-width : 770px)"}
-                background-color: blue
-                color: green
-                display: none
+    p.copysymbol
+        @media #{"only screen and (max-width : 770px)"}
+            background-color: blue
+            color: green
+            display: none
                         
 
     a 
@@ -41,9 +46,13 @@
         color: $brand-black
         text-align: center
 
+
     // Ordering
     #mcopy
         order: 1
+
+        position: relative
+        top: 4rem
 
         #mcopy-right
             margin-top: 2rem
