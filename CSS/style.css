@@ -786,11 +786,14 @@ a > i {
 
 nav .nav-cards {
   position: fixed;
-  bottom: -28vh;
+  bottom: -190px;
   width: 100%;
   z-index: 9999;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 770px) {
+    nav .nav-cards {
+      bottom: -145px; } }
   nav .nav-cards .card1 {
     grid-column: 1/2;
     display: flex;
@@ -874,7 +877,9 @@ nav.mpseudo-nav {
       text-transform: uppercase; }
     .nav-card .nav-card-content img {
       margin-top: 1rem;
-      transition: transform 0.3s; }
+      transition: transform 0.3s;
+      width: 40%;
+      height: auto; }
       .nav-card .nav-card-content img:hover {
         transform: scale(1.3); }
 

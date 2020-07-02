@@ -2,12 +2,15 @@
 nav
     .nav-cards
         position:   fixed
-        bottom:     -28vh
+        bottom:     -190px//-28vh
         width:      100%
         z-index:    9999
 
         display:                grid
         grid-template-columns:  1fr 1fr
+
+        @media #{"only screen and (max-width : 770px)"}
+            bottom: -145px
             
         .card1
             grid-column:    1/2
@@ -88,4 +91,7 @@ nav.mpseudo-nav
         img
             margin-top: 1rem
             +zoomUp(.3s, 1.3)
+
+            width: 40%
+            height: auto
 
