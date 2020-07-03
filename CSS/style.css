@@ -1090,13 +1090,19 @@ aside {
       font-size: 0.7rem;
       left: 0.1rem;
       top: 0.3rem; }
+  aside #marrow-container {
+    display: flex;
+    flex-direction: column;
+    -ms-transition: 1s ease-out;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+    transition: 1s ease-out; }
   aside .arrow-container {
     position: absolute;
     right: 1.2rem;
     bottom: 3.7rem;
     position: fixed;
-    display: flex;
-    flex-direction: column;
     cursor: pointer;
     transition: transform 0.3s; }
     aside .arrow-container:hover {

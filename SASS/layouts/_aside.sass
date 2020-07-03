@@ -119,6 +119,12 @@ aside
             top:            .3rem
 
 
+    #marrow-container
+        display: flex
+        flex-direction: column
+
+        +mTransition(1s, ease-out)
+
     .arrow-container
         position:       absolute
         right:          1.2rem
@@ -127,9 +133,6 @@ aside
 
         //display:                grid
         //grid-template-columns:  1fr
-
-        display: flex
-        flex-direction: column
 
         cursor:             pointer
 
