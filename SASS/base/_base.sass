@@ -123,6 +123,25 @@ h6
         font-size: 1.1rem
 
 
+//***************** Modals *********************//
+.modal
+    +mTransition(.7s, ease-out)
+    background-color: $brand-black // Back modal
+    
+    .modal-dialog
+        background-color: $brand-white
+        z-index: 9999
+
+
+//***************** Form *********************//
+input, textarea
+    +mTransition(.7s, ease-out)
+    +mLinear-Gradient(to bottom right, $brand-gray, $brand-white)
+    +mBorderR(10px)
+
+    &:hover
+        border: 2px solid $brand-black
+
 
 //***************** FLEX SEARCH BAR *********************//
 .flex-search-bar
@@ -135,7 +154,7 @@ h6
 
     position: fixed
     width: 100%
-    z-index: 9998
+    //z-index: 9998
     top: 1rem
 
     .search-bar-logo 
@@ -192,11 +211,7 @@ h6
             width: $chip-size-sm 
             height: $chip-size-sm
             
-        
-
-
-#searchModal
-    z-index: 9999
+    
 
 
 //***************** Content Page *********************//
@@ -269,7 +284,7 @@ div.sticky
                     grid-column: 1/3
                     grid-row: 1/2
 
-                    margin-top: 2rem
+                    //margin-top: 2rem
                     //margin-top: -5rem
 
 
@@ -311,6 +326,7 @@ div.sticky
                 @media #{"only screen and (max-width : 770px)"} 
                     grid-column: 1/2
                     margin: 0 auto
+                    margin-left: 18%
 
 
                 .mlabcard
@@ -361,6 +377,7 @@ div.sticky
                 @media #{"only screen and (max-width : 770px)"} 
                     grid-column: 1/2
                     margin-top: 2rem
+                    //margin: 2rem 0 0
 
                 .info-card
                     display: flex
@@ -383,7 +400,6 @@ div.sticky
                         width: 209px
                         height: 296.77px
 
-
           
         #maboutform
             +mShadow(2px 2px 6px 3px rgba(0,0,0,.4))
@@ -391,6 +407,7 @@ div.sticky
 
             display: grid
             grid-template-columns: 1fr 1fr
+            z-index: 9999
 
             //margin-top: 8rem
 
@@ -403,6 +420,7 @@ div.sticky
 
                 display: grid
                 grid-template-columns: 1fr
+
 
 
         #mabout, #mcategories, #mportfolio
@@ -469,6 +487,33 @@ div.sticky
                     margin: 0 auto
 
 
+                .mportfoliocard
+                    background-color: $brand-white
+                    width: 90%
+                    margin: auto
+
+                    .card-body
+                        button
+                            display: block
+                            margin: auto
+    
+                            a
+                                padding: .7rem .7rem
+
+                    ul > li 
+                        text-align: center
+
+                    img 
+                        +zoomUp(.4s, 1.1)
+                        +mBorderR(8px)
+
+                        max-height: 200px
+
+                    p 
+                        font-family: $font-fourth
+                        font-weight: 600
+
+
                 .card
                     +mShadow(0px 0px 7px 5px $brand-black)
 
@@ -494,7 +539,7 @@ div.sticky
 .portfolio-cards
     margin-bottom: 6rem
     display: flex
-    justify-content: center
+    //justify-content: center
     align-items: center
     flex-direction: column   
 
@@ -625,7 +670,7 @@ div.sticky
     
     width: 225px
     height: 265px
-    z-index: 9998
+    //z-index: 9990
 
     &:hover
         height: 387px//24.2rem
@@ -644,7 +689,7 @@ div.sticky
         text-align: center
 
         margin-top: 150px//60%
-        z-index: 9998
+        //z-index: 9998
 
     .mcard-symbol
         position: absolute
@@ -674,7 +719,7 @@ div.sticky
 
         > i 
             width: 225px
-            margin-top: .4rem
+            margin-top: .8rem
 
             &:hover
                 cursor: pointer

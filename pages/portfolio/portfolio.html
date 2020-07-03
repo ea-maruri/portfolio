@@ -25,7 +25,7 @@
                 <div class="nav-card">
                     <div class="nav-card-content">
                         <h4 class="nav-card-title">
-                            <a href="./../about/about.html">About</a>
+                            <a title="About" href="./../about/about.html">About</a>
                         </h4>
 
                         <!-- 
@@ -41,7 +41,7 @@
                 <div class="nav-card">
                     <div class="nav-card-content">
                         <h4 class="nav-card-title">
-                            <a href="./pages/portfolio/portfolio.html">Portfolio</a>
+                            <a title="Portfolio" href="./pages/portfolio/portfolio.html">Portfolio</a>
                         </h4>
 
                         <!-- 
@@ -89,11 +89,12 @@
 
     <!-- Social -->
     <aside>
-        <div title="Click me!" id="social-chip" class="social-circle">
+        <div title="Click me!" id="social-chip" class="social-circle" type="button" data-toggle="modal" data-target="#modalForm">
             <p id="social-chip-title">
                 Get<br>in<br>touch
             </p>
         </div>
+        
 
         <div id="social-card" class="social-media-container">
 
@@ -173,19 +174,21 @@
                     <!-- Web -->
                     <div class="portfolio-cards">
 
+                        <!-- Title -->
                         <div class="first-card">
                             <h2 id="web-portfolio-title">Web Development</h2> <br>
                         </div>
 
-                        <div class="first-card" class="maccordion" id="webAccordion" role="tablist"
-                            aria-multiselectable="true">
+
+                        <!-- AM-GIK Portfolio -->
+                        <div class="first-card" class="maccordion" id="webAccordion" role="tablist" aria-multiselectable="true">
                             <div class="card">
                                 <div class="card-header" role="tab" id="webAccordionHeader">
                                     <h5 class="mb-0">
                                         <a data-toggle="collapse" data-parent="#webAccordion"
                                             href="#webAccordionContent" aria-expanded="true"
                                             aria-controls="webAccordionContent">
-                                            Project 1
+                                            AM-GIK Portfolio
                                         </a>
                                     </h5>
                                 </div>
@@ -193,27 +196,29 @@
                                 <div id="webAccordionContent" class="collapse in" role="tabpanel"
                                     aria-labelledby="webAccordionHeader">
                                     <div class="card-body">
-                                        <div class="card" style="width: 18rem;">
+                                        <div class="card mportfoliocard">
                                             <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
                                                 class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title">Project title</h5>
+                                                <h5 class="card-title">Portfolio</h5>
 
                                                 <p class="card-text">
-                                                    Some quick example text to build on the card
-                                                    title and make up the bulk of the card's content.
+                                                    A brand portfolio for Alejandro Maruri. 
+                                                    <br><br>
+                                                    It is deployed on <strong>github pages</strong>.
+                                                    Many knowledge is used.
                                                 </p>
                                             </div>
 
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Language</li>
-                                                <li class="list-group-item">Technology</li>
+                                                <li class="list-group-item">HTML, SASS, CSS, Bootstrap</li>
                                             </ul>
 
                                             <div class="card-body">
                                                 <button type="button" class="btn-border-primary">
-                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See
-                                                        more</a>
+                                                    <a href="https://github.com/ea-maruri/portfolio" target="_blank">
+                                                        See on Github <i class="fa fa-github" aria-hidden="true"></i>
+                                                    </a>
                                                 </button>
 
                                                 <ul class="pagination justify-content-center">
@@ -240,43 +245,43 @@
                             </div>
                         </div>
 
-                        <div class="first-card" class="maccordion" id="webAccordion1" role="tablist"
-                            aria-multiselectable="true">
+
+                        <!-- Basic Website -->
+                        <div class="first-card" class="maccordion" id="webAccordion1" role="tablist" aria-multiselectable="true">
                             <div class="card">
                                 <div class="card-header" role="tab" id="webAccordion1Header">
                                     <h5 class="mb-0">
                                         <a data-toggle="collapse" data-parent="#webAccordion1"
                                             href="#webAccordion1Content" aria-expanded="true"
                                             aria-controls="webAccordion1Content">
-                                            Project 2
+                                            Basic Website
                                         </a>
                                     </h5>
                                 </div>
 
                                 <div id="webAccordion1Content" class="collapse in" role="tabpanel"
-                                    aria-labelledby="webAccordion1Header">
+                                    aria-labelledby="webAccordio1nHeader">
                                     <div class="card-body">
-                                        <div class="card" style="width: 18rem;">
+                                        <div class="card mportfoliocard">
                                             <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
                                                 class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title">Project title</h5>
+                                                <h5 class="card-title">Basic Website</h5>
 
                                                 <p class="card-text">
-                                                    Some quick example text to build on the card
-                                                    title and make up the bulk of the card's content.
+                                                    A very simple and basic website using Bootstrap, AND SASS.
                                                 </p>
                                             </div>
 
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Language</li>
-                                                <li class="list-group-item">Technology</li>
+                                                <li class="list-group-item">HTML, SASS, CSS, Bootstrap</li>
                                             </ul>
 
                                             <div class="card-body">
                                                 <button type="button" class="btn-border-primary">
-                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See
-                                                        more</a>
+                                                    <a href="https://ea-maruri.github.io/portfolio/" target="_blank">
+                                                        See on Github <i class="fa fa-github" aria-hidden="true"></i>
+                                                    </a>
                                                 </button>
 
                                                 <ul class="pagination justify-content-center">
@@ -308,73 +313,14 @@
 
                     <!-- Programming -->
                     <div class="portfolio-cards">
+
+                        <!-- Title -->
                         <div class="second-card">
                             <h2 id="prog-portfolio-title">Programming</h2> <br>
                         </div>
 
-                        <div class="second-card" class="maccordion" id="progAccordion" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="progAccordionHeader">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#progAccordion"
-                                            href="#progAccordionContent" aria-expanded="true"
-                                            aria-controls="progAccordionContent">
-                                            Multitask Reading
-                                        </a>
-                                    </h5>
-                                </div>
 
-                                <div id="progAccordionContent" class="collapse in" role="tabpanel"
-                                    aria-labelledby="progAccordionHeader">
-                                    <div class="card-body">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Multitask Reading</h5>
-
-                                                <p class="card-text">
-                                                    A Java Program which reads a file using multithreading.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Java</li>
-                                                <li class="list-group-item">Multithread</li>
-                                                <li class="list-group-item">Files</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See
-                                                        more</a>
-                                                </button>
-
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <!-- Airline -->
                         <div class="second-card" class="maccordion" id="progAccordion1" role="tablist"
                             aria-multiselectable="true">
                             <div class="card">
@@ -391,7 +337,7 @@
                                 <div id="progAccordion1Content" class="collapse in" role="tabpanel"
                                     aria-labelledby="progAccordion1Header">
                                     <div class="card-body">
-                                        <div class="card" style="width: 18rem;">
+                                        <div class="card mportfoliocard">
                                             <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
                                                 class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -411,8 +357,9 @@
 
                                             <div class="card-body">
                                                 <button type="button" class="btn-border-primary">
-                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See
-                                                        more</a>
+                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title" target="_blank">
+                                                        See more
+                                                    </a>
                                                 </button>
 
                                                 <ul class="pagination justify-content-center">
@@ -438,23 +385,78 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <!-- 8 Queens -->
+                        <div class="second-card" class="maccordion" id="progAccordion2" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="progAccordion2Header">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#progAccordion2"
+                                            href="#progAccordion2Content" aria-expanded="true"
+                                            aria-controls="progAccordion2Content">
+                                            8 Queens Problem
+                                        </a>
+                                    </h5>
+                                </div>
+
+                                <div id="progAccordion2Content" class="collapse in" role="tabpanel"
+                                    aria-labelledby="progAccordion2Header">
+                                    <div class="card-body">
+                                        <div class="card mportfoliocard">
+                                            <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
+                                                class="card-img-top" alt="...">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">8 Queens (Brute Force)</h5>
+
+                                                <p class="card-text">
+                                                    A C++ program for resolving 8 Queens Problem by brute force.<br> <br>
+                                                    The eight queens puzzle is the problem of 
+                                                    placing eight chess queens on an 8×8 chessboard 
+                                                    so that no two queens threaten each other; thus, 
+                                                    a solution requires that no two queens share the 
+                                                    same row, column, or diagonal.
+                                                </p>
+                                            </div>
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">C++, Arrays, Matrix</li>
+                                            </ul>
+
+                                            <div class="card-body">
+                                                <button type="button" class="btn-border-primary">
+                                                    <a href="https://github.com/ea-maruri/works/tree/master/Programming/C%2B%2B/Basic/Chess" target="_blank">
+                                                        See on Github <i class="fa fa-github" aria-hidden="true"></i>
+                                                    </a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
 
                     <!-- Artificial Intelligence -->
                     <div class="portfolio-cards">
+
+                        <!-- Title -->
                         <div class="third-card">
                             <h2 id="ia-portfolio-title">Artificial Intelligence</h2> <br>
                         </div>
 
-                        <div class="third-card" class="maccordion" id="iaAccordion" role="tablist"
-                            aria-multiselectable="true">
+
+                        <!-- 8 Puzzle -->
+                        <div class="third-card" class="maccordion" id="iaAccordion" role="tablist" aria-multiselectable="true">
                             <div class="card">
                                 <div class="card-header" role="tab" id="iaAccordionHeader">
                                     <h5 class="mb-0">
                                         <a data-toggle="collapse" data-parent="#iaAccordion" href="#iaAccordionContent"
                                             aria-expanded="true" aria-controls="iaAccordionContent">
-                                            Artificial Intelligence
+                                            8 Puzzle
                                         </a>
                                     </h5>
                                 </div>
@@ -462,46 +464,37 @@
                                 <div id="iaAccordionContent" class="collapse in" role="tabpanel"
                                     aria-labelledby="iaAccordionHeader">
                                     <div class="card-body">
-                                        <div class="card" style="width: 18rem;">
+                                        <div class="card mportfoliocard">
                                             <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
                                                 class="card-img-top" alt="...">
+
                                             <div class="card-body">
-                                                <h5 class="card-title">Project title</h5>
+                                                <h5 class="card-title">8 Puzzle Problem</h5>
 
                                                 <p class="card-text">
-                                                    Some quick example text to build on the card
-                                                    title and make up the bulk of the card's content.
+                                                    The 8-puzzle is a square board with 9 positions, 
+                                                    filled by 8 numbered tiles and one gap. At any point, 
+                                                    a tile adjacent to the gap can be moved into the gap, 
+                                                    creating a new gap position. In other words the gap can 
+                                                    be swapped with an adjacent (horizontally and vertically)
+                                                    tile. The objective in the game is to begin with an 
+                                                    arbitrary configuration of tiles, and move them so as to
+                                                    get the numbered tiles arranged in ascending order either 
+                                                    running around the perimeter of the board or ordered from 
+                                                    left to right, with 1 in the top left-hand position.
                                                 </p>
                                             </div>
 
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Language</li>
-                                                <li class="list-group-item">Technology</li>
+                                                <li class="list-group-item">Java, Classes, Objects, IA, A Star Algorithm</li>
                                             </ul>
 
                                             <div class="card-body">
                                                 <button type="button" class="btn-border-primary">
-                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See
-                                                        more</a>
+                                                    <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Puzzle" target="_blank">
+                                                        See on Github <i class="fa fa-github" aria-hidden="true"></i>
+                                                    </a>
                                                 </button>
-
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
                                             </div>
                                         </div>
                                     </div>
@@ -509,15 +502,15 @@
                             </div>
                         </div>
 
-                        <div class="third-card" class="maccordion" id="iaAccordion1" role="tablist"
-                            aria-multiselectable="true">
+
+                        <!-- 8 Queens -->
+                        <div class="third-card" class="maccordion" id="iaAccordion1" role="tablist" aria-multiselectable="true">
                             <div class="card">
                                 <div class="card-header" role="tab" id="iaAccordion1Header">
                                     <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#iaAccordion1"
-                                            href="#iaAccordion1Content" aria-expanded="true"
-                                            aria-controls="iaAccordion1Content">
-                                            IA
+                                        <a data-toggle="collapse" data-parent="#iaAccordion1" href="#iaAccordion1Content"
+                                            aria-expanded="true" aria-controls="iaAccordion1Content">
+                                            8 Queens
                                         </a>
                                     </h5>
                                 </div>
@@ -525,116 +518,181 @@
                                 <div id="iaAccordion1Content" class="collapse in" role="tabpanel"
                                     aria-labelledby="iaAccordion1Header">
                                     <div class="card-body">
-                                        <div class="card" style="width: 18rem;">
+                                        <div class="card mportfoliocard">
                                             <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
                                                 class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title">Project title</h5>
+                                                <h5 class="card-title">8 Queens Problem</h5>
 
                                                 <p class="card-text">
-                                                    Some quick example text to build on the card
-                                                    title and make up the bulk of the card's content.
+                                                    A JAVA program for resolving 8 Queens Problem with <b>genetic algorithm</b>.<br> <br>
+                                                    The eight queens puzzle is the problem of 
+                                                    placing eight chess queens on an 8×8 chessboard 
+                                                    so that no two queens threaten each other; thus, 
+                                                    a solution requires that no two queens share the 
+                                                    same row, column, or diagonal.
                                                 </p>
                                             </div>
 
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Language</li>
-                                                <li class="list-group-item">Technology</li>
+                                                <li class="list-group-item">Java, Classes, Objects, IA, 
+                                                    Genetic Algorithm</li>
                                             </ul>
 
                                             <div class="card-body">
                                                 <button type="button" class="btn-border-primary">
-                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See
-                                                        more</a>
+                                                    <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Queens" target="_blank">
+                                                        See on Github <i class="fa fa-github" aria-hidden="true"></i>
+                                                    </a>
                                                 </button>
-
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+                        <!-- Tic Tac Toe -->
+                        <div class="third-card" class="maccordion" id="iaAccordion2" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="iaAccordion2Header">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#iaAccordion2" href="#iaAccordion2Content"
+                                            aria-expanded="true" aria-controls="iaAccordion2Content">
+                                            Tic Tac Toe
+                                        </a>
+                                    </h5>
+                                </div>
+
+                                <div id="iaAccordion2Content" class="collapse in" role="tabpanel" aria-labelledby="iaAccordion2Header">
+                                    <div class="card-body">
+                                        <div class="card mportfoliocard">
+                                            <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tic Tac Toe</h5>
+
+                                                <p class="card-text">
+                                                    A Java program which uses minimax algorithm to play <strong>tic tac toe</strong><br><br>
+                                                </p>
+                                            </div>
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Java, Classes, Objects, IA, 
+                                                    Minimax Algorithm</li>
+                                            </ul>
+
+                                            <div class="card-body">
+                                                <button type="button" class="btn-border-primary">
+                                                    <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/TicTacToe" target="_blank">
+                                                        See on Github <i class="fa fa-github" aria-hidden="true"></i>
+                                                    </a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Vacuum -->
+                        <div class="third-card" class="maccordion" id="iaAccordion3" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="iaAccordion3Header">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#iaAccordion3" href="#iaAccordion3Content"
+                                            aria-expanded="true" aria-controls="iaAccordion3Content">
+                                            Vacuum Simulation
+                                        </a>
+                                    </h5>
+                                </div>
+
+                                <div id="iaAccordion3Content" class="collapse in" role="tabpanel" aria-labelledby="iaAccordion3Header">
+                                    <div class="card-body">
+                                        <div class="card mportfoliocard">
+                                            <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Vacuum Simulation</h5>
+
+                                                <p class="card-text">
+                                                    A Java program which simulates a vaccum on a 
+                                                    square room with obstacles.
+                                                    <br><br>
+                                                </p>
+                                            </div>
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Java, Classes, Objects, IA, 
+                                                    Algorithm</li>
+                                            </ul>
+
+                                            <div class="card-body">
+                                                <button type="button" class="btn-border-primary">
+                                                    <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/Vacuum_World" target="_blank">
+                                                        See on Github <i class="fa fa-github" aria-hidden="true"></i>
+                                                    </a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
 
                     <!-- Networking -->
                     <div class="portfolio-cards">
+
+                        <!-- Title -->
                         <div class="fourth-card">
                             <h2 id="net-portfolio-title">Networking</h2> <br>
                         </div>
 
-                        <div class="fourth-card" class="maccordion" id="netAccordion" role="tablist"
-                            aria-multiselectable="true">
+
+                        <!-- ARP -->
+                        <div class="fourth-card" class="maccordion" id="netAccordion" role="tablist" aria-multiselectable="true">
                             <div class="card">
                                 <div class="card-header" role="tab" id="netAccordionHeader">
                                     <h5 class="mb-0">
                                         <a data-toggle="collapse" data-parent="#netAccordion"
                                             href="#netAccordionContent" aria-expanded="true"
                                             aria-controls="netAccordionContent">
-                                            Networking
+                                            ARP Protocol
                                         </a>
                                     </h5>
                                 </div>
 
-                                <div id="netAccordionContent" class="collapse in" role="tabpanel"
-                                    aria-labelledby="netAccordionHeader">
+                                <div id="netAccordionContent" class="collapse in" role="tabpanel" aria-labelledby="netAccordionHeader">
                                     <div class="card-body">
-                                        <div class="card" style="width: 18rem;">
+                                        <div class="card mportfoliocard">
                                             <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
                                                 class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title">Project title</h5>
+                                                <h5 class="card-title">ARP Protocol</h5>
 
                                                 <p class="card-text">
-                                                    Some quick example text to build on the card
-                                                    title and make up the bulk of the card's content.
+                                                    A Python program using ARP Protocol to determine NIC 
+                                                    (Network Interface Card) of some devices.
+                                                    <br><br>
+                                                    Also an image is displayed
                                                 </p>
                                             </div>
 
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Language</li>
-                                                <li class="list-group-item">Technology</li>
+                                                <li class="list-group-item">Python, Networking, ARP, Matplotlib</li>
                                             </ul>
 
                                             <div class="card-body">
                                                 <button type="button" class="btn-border-primary">
-                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See
-                                                        more</a>
+                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title" target="_blank">
+                                                        See on Github <i class="fa fa-github" aria-hidden="true"></i>
+                                                    </a>
                                                 </button>
-
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
 
                                             </div>
                                         </div>
@@ -643,68 +701,7 @@
                             </div>
                         </div>
 
-                        <div class="fourth-card" class="maccordion" id="netAccordion1" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="netAccordion1Header">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#netAccordion1"
-                                            href="#netAccordion1Content" aria-expanded="true"
-                                            aria-controls="netAccordion1Content">
-                                            Networking
-                                        </a>
-                                    </h5>
-                                </div>
 
-                                <div id="netAccordion1Content" class="collapse in" role="tabpanel"
-                                    aria-labelledby="netAccordion1Header">
-                                    <div class="card-body">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="./../../assets/images/categories/web_dev/code-web-dev.jpg"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Project title</h5>
-
-                                                <p class="card-text">
-                                                    Some quick example text to build on the card
-                                                    title and make up the bulk of the card's content.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Language</li>
-                                                <li class="list-group-item">Technology</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See
-                                                        more</a>
-                                                </button>
-
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </main>
@@ -724,7 +721,9 @@
                             <a href="#">Title</a>
                         </h4>
 
+                        <!--
                         <img src="./../../assets/images/svg/transparent-fill-logo-24.svg" alt="Image">
+                        -->
 
                         <p>Body</p>
                     </div>
@@ -734,8 +733,6 @@
                             <a href="#">Title</a>
                         </h4>
 
-                        <img src="./../../assets/images/svg/transparent-fill-logo-24.svg" alt="Image">
-
                         <p>Body</p>
                     </div>
 
@@ -743,8 +740,6 @@
                         <h4>
                             <a href="#">Title</a>
                         </h4>
-
-                        <img src="./../../assets/images/svg/transparent-fill-logo-24.svg" alt="Image">
 
                         <p>Body</p>
                     </div>
@@ -761,7 +756,9 @@
                         </p>
 
                         <button class="btn-border-primary">
-                            See more
+                            <a href="#" target="_blank">
+                                See more
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -785,8 +782,10 @@
 
             <!-- Mail -->
             <div id="memail" class="footer-circle">
-                <a title="Send Email" href="mailto:ea.maruri@outlook.com, am-gik@outlook.com" target="_blanck">Send
-                    Email</a>
+                <!--href="mailto:ea.maruri@outlook.com, am-gik@outlook.com"-->
+                <a title="Send Email" href="#"  target="_blanck" type="button" data-toggle="modal" data-target="#modalForm">
+                    Send Email
+                </a>
             </div>
 
 

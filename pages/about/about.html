@@ -26,7 +26,7 @@
                 <div class="nav-card">
                     <div class="nav-card-content">
                         <h4 class="nav-card-title">
-                            <a href="./about.html">About</a>
+                            <a title="About" href="./about.html">About</a>
                         </h4>
 
                         <!-- 
@@ -42,7 +42,7 @@
                 <div class="nav-card">
                     <div class="nav-card-content">
                         <h4 class="nav-card-title">
-                            <a href="./../../pages/portfolio/portfolio.html">Portfolio</a>
+                            <a title="Portfolio" href="./../../pages/portfolio/portfolio.html">Portfolio</a>
                         </h4>
 
                         <!-- 
@@ -89,7 +89,7 @@
 
     <!-- Social -->
     <aside>
-        <div title="Click me!" id="social-chip" class="social-circle">
+        <div title="Click me!" id="social-chip" class="social-circle" type="button" data-toggle="modal" data-target="#modalForm">
             <p id="social-chip-title">
                 Get<br>in<br>touch
             </p>
@@ -364,8 +364,10 @@
 
             <!-- Mail -->
             <div id="memail" class="footer-circle">
-                <a title="Send Email" href="mailto:ea.maruri@outlook.com, am-gik@outlook.com" target="_blanck">Send
-                    Email</a>
+                <!--href="mailto:ea.maruri@outlook.com, am-gik@outlook.com"-->
+                <a title="Send Email" href="#"  target="_blanck" type="button" data-toggle="modal" data-target="#modalForm">
+                    Send Email
+                </a>
             </div>
 
 
@@ -387,8 +389,7 @@
 
     <!-- Extras -->
     <!-- Modal (Search) -->
-    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal"
-        aria-hidden="true">
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">

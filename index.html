@@ -25,6 +25,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+</head>
 
 
 <body>
@@ -36,7 +37,7 @@
                 <div class="nav-card">
                     <div class="nav-card-content">
                         <h4 class="nav-card-title">
-                            <a href="./pages/about/about.html">About</a>
+                            <a title="About" href="./pages/about/about.html">About</a>
                         </h4>
 
                         <!-- 
@@ -52,7 +53,7 @@
                 <div class="nav-card">
                     <div class="nav-card-content">
                         <h4 class="nav-card-title">
-                            <a href="./pages/portfolio/portfolio.html">Portfolio</a>
+                            <a title="Portfolio" href="./pages/portfolio/portfolio.html">Portfolio</a>
                         </h4>
 
                         <!-- 
@@ -97,7 +98,8 @@
 
     <!-- Social -->
     <aside>
-        <div title="Click me!" id="social-chip" class="social-circle">
+        <div title="Click me!" id="social-chip" class="social-circle" type="button" data-toggle="modal"
+            data-target="#modalForm">
             <p id="social-chip-title">
                 Get<br>in<br>touch
             </p>
@@ -507,8 +509,11 @@
 
             <!-- Mail -->
             <div id="memail" class="footer-circle">
-                <a title="Send Email" href="mailto:ea.maruri@outlook.com, am-gik@outlook.com" target="_blanck">Send
-                    Email</a>
+                <!--href="mailto:ea.maruri@outlook.com, am-gik@outlook.com"-->
+                <a title="Send Email" href="#" target="_blanck" type="button" data-toggle="modal"
+                    data-target="#modalForm">
+                    Send Email
+                </a>
             </div>
 
 
@@ -629,6 +634,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
