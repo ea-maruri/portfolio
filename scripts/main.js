@@ -7,6 +7,7 @@ let year = mtoday.getFullYear();
 copyright.innerHTML = "&#169; Copyright " + year;
 
 
+
 // Check Scroll
 let arrowContainer = document.getElementById("marrow-container");
 let arrow = document.getElementById("marrow");
@@ -39,3 +40,32 @@ const counting = setInterval(function() {
     }
 
 }, 500);
+
+
+
+// Top and Bottom with arrow
+let document_top = document.getElementById("page-start");
+let document_bottom = document.getElementById("page-end");
+
+
+arrowContainer.addEventListener("click", document_goto);
+
+function document_goto(event){
+    let scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+
+    if(scrollTop >= height/2){
+        console.log("Go Up");
+        
+        
+    }
+    else{
+        console.log("Go down")
+        
+
+    }
+}
+
+
+
+// Contact Form
+

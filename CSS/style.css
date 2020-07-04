@@ -199,7 +199,8 @@ input, textarea {
     box-shadow: 0px 0px 9px 7px rgba(0, 0, 0, 0.8);
     transition: transform 0.5s;
     border: 3px solid #f4f4f4;
-    background-color: #E81A2E; }
+    background-color: #E81A2E;
+    display: none; }
     .flex-search-bar .search-circle:hover {
       transform: scale(1.1); }
     @media only screen and (max-width: 770px) {
@@ -219,8 +220,7 @@ div.sticky {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 5rem) repeat(12, auto) repeat(2, 5rem);
-  margin: 6.5rem 0 0 0; }
+  grid-template-columns: repeat(2, 5rem) repeat(12, auto) repeat(2, 5rem); }
   @media only screen and (max-width: 770px) {
     .grid-container {
       grid-template-columns: repeat(2, 0.8rem) repeat(12, auto) repeat(2, 0.8rem); } }
@@ -588,6 +588,9 @@ div.sticky {
 .bottom-space {
   height: 24vh; }
 
+.top-space {
+  height: 6.5rem; }
+
 .mcard {
   background-color: #f4f4f4;
   margin: 0 auto 2.5rem;
@@ -882,9 +885,6 @@ nav .nav-cards {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         margin-top: -3rem; }
-
-nav.mpseudo-nav {
-  margin-top: 14vh; }
 
 .nav-card {
   background-color: #262626;

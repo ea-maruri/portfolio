@@ -210,6 +210,8 @@ input, textarea
         @media #{"only screen and (max-width : 650px)"} 
             width: $chip-size-sm 
             height: $chip-size-sm
+
+        display: none
             
     
 
@@ -228,7 +230,7 @@ div.sticky
     display: grid
     grid-template-columns: repeat(2, $margin-content) repeat($columns-num, auto) repeat(2, $margin-content)
     
-    margin: 6.5rem 0 0 0
+    //margin: 6.5rem 0 0 0
 
     @media #{"only screen and (max-width : 770px)"}
         grid-template-columns: repeat(2, .8rem) repeat($columns-num, auto) repeat(2, .8rem)  
@@ -655,6 +657,9 @@ div.sticky
 
 .bottom-space
     height: 24vh
+
+.top-space
+    height: 6.5rem // 14vh
 
 
 
