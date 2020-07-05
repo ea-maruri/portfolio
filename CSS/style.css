@@ -131,6 +131,20 @@ body {
     background-color: #f4f4f4;
     z-index: 9999; }
 
+#mContactForm small {
+  margin-top: 0.5rem;
+  color: #262626;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  margin: 0 auto; }
+
+.about-form small {
+  margin-top: 0.5rem;
+  color: #f4f4f4;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  margin: 0 auto; }
+
 input, textarea {
   -ms-transition: 0.7s ease-out;
   -webkit-transition: 0.7s ease-out;
@@ -607,6 +621,9 @@ div.sticky {
 
 .top-space {
   height: 6.5rem; }
+
+.margin-top-sm {
+  margin-top: 1rem; }
 
 .mcard {
   background-color: #f4f4f4;

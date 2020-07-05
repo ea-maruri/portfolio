@@ -322,30 +322,42 @@
                     <form class="about-form">
                         <div class="row">
                             <div class="col">
-                                <input type="email" class="form-control" placeholder="Your Email">
+                                <input id="about_txt_email" type="email" class="form-control" placeholder="Your Email">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input id="about_txt_name" type="text" class="form-control" placeholder="Your Name">
                             </div>
                         </div>
 
                         <div class="row">
-                            -
+                            <div class="col margin-top-sm">
+                                <div class="form-group">
+                                    <input id="about_txt_topic" type="text" class="form-control" placeholder="Topic">
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Topic">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <textarea id="about_txt_request" class="form-control" name="" id="" rows="5"
+                                        placeholder="Your Request..."></textarea>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <textarea class="form-control" name="" id="" rows="5"
-                                placeholder="Your Request..."></textarea>
-                        </div>
 
-                        <button type="button" class="btn-border-black">
+                        <button id="about_btn_send" type="button" class="btn-border-black">
                             Send
                         </button>
 
+
+                        <div class="row">
+                            <div class="col margin-top-sm">
+                                <small id="success-form-message"></small>
+                            </div>
+                        </div>
+                        
                     </form>
                 </main>
 
@@ -439,41 +451,53 @@
                 </div>
 
                 <div class="modal-body">
-                    <form class="about-form">
+                    <form id="mContactForm" class="about-form">
                         <div class="row">
                             <div class="col">
-                                <input type="email" class="form-control" placeholder="Your Email">
+                                <input id="modal_txt_email" type="email" class="form-control" placeholder="Your Email">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input id="modal_txt_name" type="text" class="form-control" placeholder="Your Name">
                             </div>
                         </div>
 
                         <div class="row">
-                            -
+                            <div class="col margin-top-sm">
+                                <div class="form-group">
+                                    <input id="modal_txt_topic" type="text" class="form-control" placeholder="Topic">
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Topic">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <textarea id="modal_txt_request" class="form-control" name="" id="" rows="5"
+                                        placeholder="Your Request..."></textarea>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <textarea class="form-control" name="" id="" rows="5"
-                                placeholder="Your Request..."></textarea>
-                        </div>
 
-                        <button type="button" class="btn-border-black">
+                        <button id="modal_btn_send" type="button" class="btn-border-black">
                             Send
                         </button>
-
+                  
+                        <div class="row">
+                            <div class="col margin-top-sm">
+                                <small id="success-form-message-modal">What</small>
+                            </div>
+                        </div>
                     </form>
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+    
 
 
     <!-- <table id="skills-table">
