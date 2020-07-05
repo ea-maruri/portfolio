@@ -22,7 +22,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  background-image: url("./../assets/images/bg/pool_table.png"); }
+  background-image: url("./../public/assets/images/bg/pool_table.png"); }
 
 @media only screen and (max-width: 1060px) {
   h1 {
@@ -902,6 +902,9 @@ nav .nav-cards {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         margin-top: -3rem; }
+
+nav.mpseudo-nav {
+  margin-bottom: 10vh; }
 
 .nav-card {
   background-color: #262626;
