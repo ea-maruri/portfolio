@@ -245,7 +245,8 @@ div.sticky {
       -webkit-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
       -moz-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
       -o-box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
-      box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4); }
+      box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+      margin: 3rem 0; }
       .grid-container section #super-title h1.msuper-title {
         font-family: "Cinzel Decorative", cursive;
         color: #f4f4f4;
@@ -259,7 +260,7 @@ div.sticky {
     .grid-container section header h1 {
       text-align: center;
       text-shadow: 1px 1px 2px #f4f4f4;
-      margin: 4rem 0 4.3rem;
+      margin: 3rem 0 4.5rem;
       font-size: 4rem; }
     .grid-container section #mpersonal {
       display: grid;
@@ -922,10 +923,10 @@ nav .nav-cards {
         margin-top: -3rem; }
 
 nav.mpseudo-nav {
-  margin-bottom: 10vh; }
+  margin-bottom: 11vh; }
   @media only screen and (max-width: 770px) {
     nav.mpseudo-nav {
-      font-size: 12vh; } }
+      font-size: 13vh; } }
 
 .nav-card {
   background-color: #262626;
