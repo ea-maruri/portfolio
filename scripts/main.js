@@ -9,6 +9,7 @@ copyright.innerHTML = "&#169; Copyright " + year;
 
 
 // Check Scroll
+let ref_point = 2.5;
 let arrowContainer = document.getElementById("marrow-container");
 let arrow = document.getElementById("marrow");
 
@@ -26,15 +27,18 @@ const counting = setInterval(function() {
 
     console.log("Scroll: "+ scrollTop);
 
-    if(scrollTop >= height/2){
+    if(scrollTop >= height/ref_point){
         console.log("Turn around arrow");
         
         arrowContainer.style.flexDirection = "column-reverse"; 
+        arrowContainer.title = "Go to top";
         arrow.className = "arrow up";
         arrow.style.marginBottom = "-20px";
     }
     else{
         console.log("Return arrow")
+
+        arrowContainer.title = "Go to bottom";
         arrowContainer.style.flexDirection = "column";
         arrow.className = "arrow down";
     }
@@ -52,16 +56,17 @@ arrowContainer.addEventListener("click", document_goto);
 
 function document_goto(event){
     let scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
-
-    if(scrollTop >= height/2){
+    
+    
+    if(scrollTop >= height/ref_point){
         console.log("Go Up");
-        
-        
+        location.href = "#";
+        location.href = "#page-start";    
     }
     else{
         console.log("Go down")
-        
-
+        location.href = "#";
+        location.href = "#page-end";
     }
 }
 
