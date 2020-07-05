@@ -259,7 +259,8 @@ div.sticky {
     .grid-container section header h1 {
       text-align: center;
       text-shadow: 1px 1px 2px #f4f4f4;
-      margin: 6rem 0 4.3rem; }
+      margin: 4rem 0 4.3rem;
+      font-size: 4rem; }
     .grid-container section #mpersonal {
       display: grid;
       grid-template-columns: 1fr 3fr; }
@@ -922,6 +923,9 @@ nav .nav-cards {
 
 nav.mpseudo-nav {
   margin-bottom: 10vh; }
+  @media only screen and (max-width: 770px) {
+    nav.mpseudo-nav {
+      font-size: 12vh; } }
 
 .nav-card {
   background-color: #262626;
