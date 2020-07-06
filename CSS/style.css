@@ -622,7 +622,10 @@ div.sticky {
   height: 24vh; }
 
 .top-space {
-  height: 6.5rem; }
+  height: 7.5rem; }
+  @media only screen and (max-width: 770px) {
+    .top-space {
+      height: 10rem; } }
 
 .margin-top-sm {
   margin-top: 1rem; }
@@ -921,12 +924,6 @@ nav .nav-cards {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         margin-top: -3rem; }
-
-nav.mpseudo-nav {
-  margin-bottom: 11vh; }
-  @media only screen and (max-width: 770px) {
-    nav.mpseudo-nav {
-      margin-bottom: 14vh; } }
 
 .nav-card {
   background-color: #262626;
