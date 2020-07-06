@@ -1092,7 +1092,7 @@ aside {
         grid-template-columns: 1fr 1fr; }
       aside .social-circle + .social-media-container:hover footer.msymbol a img {
         transition: transform 0.5s;
-        transform: scale(1.7); }
+        transform: scale(1.3); }
       aside .social-circle + .social-media-container .mrow a i {
         color: #E81A2E; }
       aside .social-circle + .social-media-container header {
@@ -1112,10 +1112,6 @@ aside {
         grid-column: 1/3;
         text-align: center;
         margin-bottom: 0.7rem; }
-        aside .social-circle + .social-media-container footer.msymbol a img {
-          transition: transform 0.3s; }
-          aside .social-circle + .social-media-container footer.msymbol a img:hover {
-            transform: scale(1.05); }
       aside .social-circle + .social-media-container .mrow {
         grid-column: 1/3;
         text-align: center;
