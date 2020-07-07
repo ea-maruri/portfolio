@@ -877,8 +877,13 @@ a > i {
     margin: auto; }
 
 nav .nav-cards {
+  -ms-transition: 0.7s ease-out;
+  -webkit-transition: 0.7s ease-out;
+  -moz-transition: 0.7s ease-out;
+  -o-transition: 0.7s ease-out;
+  transition: 0.7s ease-out;
   position: fixed;
-  bottom: -250px;
+  bottom: -210px;
   width: 100%;
   z-index: 9999;
   display: grid;
