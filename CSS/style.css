@@ -866,7 +866,7 @@ nav .nav-cards {
   grid-template-columns: 1fr 1fr; }
   @media only screen and (max-width: 770px) {
     nav .nav-cards {
-      bottom: -190px; } }
+      bottom: -160px; } }
   nav .nav-cards .card1 {
     grid-column: 1/2;
     display: flex;
