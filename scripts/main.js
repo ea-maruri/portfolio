@@ -204,7 +204,9 @@ window.addEventListener(
 $(document).ready(function () {
   //-------------------------//
   // Call check hour
-  checkHour();
+  if($("#element-bbq-wings")){
+    checkHour();
+  }
 
   //-------------------------//
   // Show/Hide All recipes (One click)
@@ -250,9 +252,9 @@ function checkHour() {
   // Breakfast time, from 6:00 to 9:59
   if (hour >= 6 && minutes >= 0 && hour <= 9 && minutes <= 59) {
     console.log("Show Tortillas");
-    alert(
-      "Breakfast Time --> " + hour + ":" + minutes + ".\n\nEnjoy your meal!!!"
-    );
+    //alert(
+    //  "Breakfast Time --> " + hour + ":" + minutes + ".\n\nEnjoy your meal!!!"
+    //);
 
     $("#element-bbq-wings").hide();
     $("#content-bbq-wings").hide();
@@ -270,7 +272,7 @@ function checkHour() {
   // Lunch Time, from 12:00 to 14:59
   else if (hour >= 12 && minutes >= 0 && hour <= 14 && minutes <= 59) {
     console.log("Show Yahuarlocro");
-    alert("Lunch Time --> " + hour + ":" + minutes + ".\n\nEnjoy your meal!!!");
+    //alert("Lunch Time --> " + hour + ":" + minutes + ".\n\nEnjoy your meal!!!");
 
     $("#element-tortillas").hide();
     $("#content-tortillas").hide();
@@ -288,9 +290,9 @@ function checkHour() {
   // Dinner Time, from 17:00 to 19:59
   else if (hour >= 17 && minutes >= 0 && hour <= 19 && minutes <= 59) {
     console.log("Show Lassagna");
-    alert(
-      "Dinner Time --> " + hour + ":" + minutes + ".\n\nEnjoy your meal!!!"
-    );
+    //alert(
+    //  "Dinner Time --> " + hour + ":" + minutes + ".\n\nEnjoy your meal!!!"
+    //);
 
     $("#element-tortillas").hide();
     $("#content-tortillas").hide();
@@ -308,13 +310,13 @@ function checkHour() {
   // Any other time
   else {
     console.log("Show BBQ Wings");
-    alert(
-      "It's time for any plate --> " +
-        hour +
-        ":" +
-        minutes +
-        ".\n\nEnjoy your meal!!!"
-    );
+    //alert(
+    //  "It's time for any plate --> " +
+    //    hour +
+    //    ":" +
+    //    minutes +
+    //    ".\n\nEnjoy your meal!!!"
+    //);
 
     $("#element-tortillas").hide();
     $("#content-tortillas").hide();
