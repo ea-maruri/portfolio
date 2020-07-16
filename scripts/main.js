@@ -41,8 +41,8 @@ checkCopyrightYear();
 
 // Check Scroll
 let ref_point = 2.5;
-let arrowContainer = document.getElementById("marrow-container");
-let arrow = document.getElementById("marrow");
+let $arrowContainer = $("#marrow-container");
+let $arrow = $("#marrow");
 
 // Each half second
 const counting = setInterval(function () {
@@ -54,18 +54,16 @@ const counting = setInterval(function () {
   //console.log("Scroll: "+ scrollTop);
 
   if (scrollTop >= height / ref_point) {
-    //console.log("Turn around arrow");
-
-    arrowContainer.style.flexDirection = "column-reverse";
-    arrowContainer.title = "Go to top";
-    arrow.className = "arrow up";
-    arrow.style.marginBottom = "-20px";
+    $arrowContainer.attr("class", "position-absolute position-fixed d-flex flex-column-reverse justify-content-center align-items-center arrow-container");
+    $arrowContainer.attr("title", "Go to top")
+    
+    $arrow.attr("class", "arrow up");
+    $arrow.css("margin-bottom", "-20px")
   } else {
-    //console.log("Return arrow")
-
-    arrowContainer.title = "Go to bottom";
-    arrowContainer.style.flexDirection = "column";
-    arrow.className = "arrow down";
+    $arrowContainer.attr("class", "position-absolute position-fixed d-flex flex-column justify-content-center align-items-center arrow-container");
+    $arrowContainer.attr("title", "Go to bottom")
+    
+    $arrow.attr("class", "arrow down");
   }
 }, 500);
 
@@ -73,7 +71,7 @@ const counting = setInterval(function () {
 let document_top = document.getElementById("page-start");
 let document_bottom = document.getElementById("page-end");
 
-arrowContainer.addEventListener("click", document_goto);
+$arrowContainer.click(document_goto);
 
 function document_goto(event) {
   let scrollTop =
