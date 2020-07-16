@@ -568,16 +568,16 @@ input, textarea {
   -moz-transition: 0.7s ease-out;
   -o-transition: 0.7s ease-out;
   transition: 0.7s ease-out;
-  background-image: -ms-linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
-  background-image: -webkit-linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
-  background-image: -moz-linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
-  background-image: -o-linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
-  background-image: linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
   -ms-border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  background-image: -ms-linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
+  background-image: -webkit-linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
+  background-image: -moz-linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
+  background-image: -o-linear-gradient(to bottom right, #D4D4D4, #f4f4f4);
+  background-image: linear-gradient(to bottom right, #D4D4D4, #f4f4f4); }
   input:hover, textarea:hover {
     border: 2px solid #262626; }
 
@@ -695,30 +695,17 @@ input, textarea {
 .btn-border-black {
   border: 2px solid #262626;
   background-clip: border-box;
-  background-image: -ms-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
-  background-image: -webkit-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
-  background-image: -moz-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
-  background-image: -o-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
-  background-image: linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
   color: #262626;
   -ms-border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  height: 2rem;
-  font-family: "Black Ops One", cursive;
-  font-size: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.2rem 2rem;
-  display: block;
-  margin: 0 auto;
-  -ms-transition: 0.6s ease-out;
-  -webkit-transition: 0.6s ease-out;
-  -moz-transition: 0.6s ease-out;
-  -o-transition: 0.6s ease-out;
-  transition: 0.6s ease-out; }
+  background-image: -ms-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  background-image: -webkit-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  background-image: -moz-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  background-image: -o-linear-gradient(to bottom right, #f4f4f4, #D4D4D4);
+  background-image: linear-gradient(to bottom right, #f4f4f4, #D4D4D4); }
   .btn-border-black a {
     -ms-transition: 0.6s ease-out;
     -webkit-transition: 0.6s ease-out;
@@ -762,70 +749,142 @@ button a {
     background-color: #f4f4f4;
     z-index: 9999; }
 
-#mfood {
-  padding: 0 5rem; }
-  #mfood h1 {
-    text-align: center;
-    color: #f4f4f4; }
-  #mfood .link-container {
-    width: 200px;
-    margin-bottom: 5rem; }
-    #mfood .link-container details {
-      margin-bottom: 0.7rem; }
-      #mfood .link-container details summary:hover {
-        cursor: pointer;
-        font-size: 1.2rem;
-        color: #f4f4f4; }
-      #mfood .link-container details li a {
-        text-decoration: none;
-        color: #000000;
-        margin-bottom: 7rem; }
-        #mfood .link-container details li a:hover {
-          color: #f4f4f4; }
-  #mfood .food-content dl hr {
-    width: 80%; }
-  #mfood .food-content dl dt h2 {
-    color: #f4f4f4;
-    text-align: center; }
-  #mfood .food-content dl dd img.m-img {
-    display: block;
-    margin: 2.5rem auto;
-    -ms-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -o-border-radius: 6px;
-    border-radius: 6px;
-    -ms-box-shadow: 2px 2px 5px 3px #262626;
-    -webkit-box-shadow: 2px 2px 5px 3px #262626;
-    -moz-box-shadow: 2px 2px 5px 3px #262626;
-    -o-box-shadow: 2px 2px 5px 3px #262626;
-    box-shadow: 2px 2px 5px 3px #262626;
-    transition: transform 0.4s; }
-    #mfood .food-content dl dd img.m-img:hover {
-      transform: scale(1.1); }
-  #mfood .food-content dl dd p.right-text {
-    display: flex;
-    justify-content: flex-end; }
-    #mfood .food-content dl dd p.right-text a {
-      margin-top: 2rem;
-      padding: 0.4rem 1rem;
-      -ms-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -o-border-radius: 10px;
-      border-radius: 10px;
-      border: 1px solid #f4f4f4;
-      color: #f4f4f4;
-      text-decoration: none; }
-      #mfood .food-content dl dd p.right-text a:hover {
-        background-color: #262626; }
-  #mfood .food-content dl dd ul li h4 {
-    color: #f4f4f4;
-    margin: 2rem 0; }
-  #mfood .recipes-button button {
-    display: block;
-    margin: auto; }
+details {
+  margin-bottom: 0.7rem; }
+  details summary {
+    color: #000000; }
+    details summary:hover {
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: #f4f4f4; }
+  details li a {
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 7rem; }
+    details li a:hover {
+      text-decoration: none;
+      color: #f4f4f4; }
 
+.goUpButton {
+  -ms-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #f4f4f4;
+  color: #f4f4f4;
+  text-decoration: none;
+  -ms-transition: 0.4s ease-out;
+  -webkit-transition: 0.4s ease-out;
+  -moz-transition: 0.4s ease-out;
+  -o-transition: 0.4s ease-out;
+  transition: 0.4s ease-out; }
+  .goUpButton:hover {
+    background-color: #262626;
+    color: #f4f4f4; }
+
+#mfood .food-content dl hr {
+  width: 80%; }
+#mfood .food-content dl dd img.m-img {
+  -ms-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -ms-box-shadow: 2px 2px 5px 3px #262626;
+  -webkit-box-shadow: 2px 2px 5px 3px #262626;
+  -moz-box-shadow: 2px 2px 5px 3px #262626;
+  -o-box-shadow: 2px 2px 5px 3px #262626;
+  box-shadow: 2px 2px 5px 3px #262626;
+  transition: transform 0.4s; }
+  #mfood .food-content dl dd img.m-img:hover {
+    transform: scale(1.1); }
+#mfood .food-content dl dd p.right-text {
+  display: flex;
+  justify-content: flex-end; }
+  #mfood .food-content dl dd p.right-text a {
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #f4f4f4;
+    color: #f4f4f4;
+    text-decoration: none; }
+    #mfood .food-content dl dd p.right-text a:hover {
+      background-color: #262626; }
+#mfood .food-content dl dd ul li h4 {
+  color: #f4f4f4;
+  margin: 2rem 0; }
+#mfood .recipes-button button {
+  display: block;
+  margin: auto; }
+
+.myModalImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s; }
+  .myModalImg:hover {
+    opacity: 0.7; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px; }
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px; }
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s; }
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%; } }
 nav .nav-cards {
   -ms-transition: 0.7s ease-out;
   -webkit-transition: 0.7s ease-out;

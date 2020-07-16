@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM - GIK Favorite Food</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./../../CSS/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+
+<body class="bg-time">
+    <!-- Navigation -->
+    <nav class="hideContent">
+        <div id="mprincipal-nav" class="nav-cards">
+            <div class="card1">
+                <div class="nav-card">
+                    <div class="nav-card-content">
+                        <h4 class="nav-card-title">
+                            <a title="About" href="./../about/about.html">About</a>
+                        </h4>
+
+                        <!-- 
+                    <p class="nav-card-text">am-gik</p>
+                    -->
+
+                        <img src="./../../public/assets/images/svg/diamond-17.svg" alt="Diamond" width="70px"
+                            height="auto">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="nav-card">
+                    <div class="nav-card-content">
+                        <h4 class="nav-card-title">
+                            <a title="Portfolio" href="./../portfolio/portfolio.html">Portfolio</a>
+                        </h4>
+
+                        <img src="./../../public/assets/images/svg/symbols-spades-light.svg" alt="Spades" width="70px"
+                            height="auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- TOP BAR -->
+    <header class="hideContent container-fluid fixed-top mt-5">
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-between align-itmes-center">
+                <div>
+                    <a href="./../../index.html">
+                        <img title="Home" class="mlogo" src="./../../public/assets/images/logo/am-gik-borders-25.svg"
+                            alt="LOGO">
+                    </a>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" title="Click me!" id="search-chip" class="search-circle d-none"
+                    data-toggle="modal" data-target="#searchModal">
+                    Search
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Social -->
+    <aside class="hideContent position-absolute">
+        <div class="position-absolute position-fixed social-chip ">
+            <button type="button" title="Click me!" id="social-chip"
+                class="d-flex justify-content-center align-items-center button-chip-sm" data-toggle="" data-target="">
+                Get in touch
+            </button>
+        </div>
+
+        <div class="position-relative position-fixed mt-5 social-container">
+            <header class="container-fluid mt-2">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="text-center">Social</h3>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container-fluid">
+                <div class="row mt-2 p-2">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+
+                        <div>
+                            <a id="instagram-link" title="Instagram" href="https://www.instagram.com/ea_maruri/"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2 p-2">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <a id="github-link" title="Github" href="https://github.com/ea-maruri/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a id="linkedin-link" title="Linkedi"
+                                href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col">
+                        <img class="d-block mx-auto" title="Get in touch"
+                            src="./../../public/assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px"
+                            data-toggle="modal" data-target="#modalForm">
+                        </img>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <div id="marrow-container"
+            class="position-absolute position-fixed d-flex flex-column justify-content-center align-items-center arrow-container">
+            <div class="line mr-2"></div>
+
+            <p>
+                <i id="marrow" class="arrow down"></i>
+            </p>
+        </div>
+
+    </aside>
+
+
+
+    <div id="page-start" class="top-"> </div>
+
+
+    <!-- Grid Content -->
+    <div class="top-space grid-container">
+
+        <section>
+            <!-- Recipes -->
+            <div id="mfood">
+                <h1 id="mfood-title" class="text-center">My favorite foods</h1>
+
+                <div class="container mt-5">
+                    <!-- Links -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <!-- Tortillas -->
+                            <details>
+                                <summary title="Click to see more">Shrimp Tortillas</summary>
+                                <p>
+                                <ul>
+                                    <li>
+                                        <a class="go-to-link" title="Go to" href="#element-tortillas">
+                                            Recipe
+                                        </a>
+                                    </li>
+                                    <ul>
+                                        <li>
+                                            <a class="go-to-link" title="Go to" href="#ingredients-tortillas">
+                                                Ingredients
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="go-to-link" title="Go to" href="#preparation-tortillas">
+                                                Preparation
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                </p>
+                            </details>
+
+                            <!-- Wings -->
+                            <details>
+                                <summary title="Click to see more">BBQ Wings</summary>
+                                <p>
+                                <ul>
+                                    <li>
+                                        <a class="go-to-link" title="Go to" href="#element-bbq-wings">
+                                            Recipe
+                                        </a>
+                                    </li>
+                                    <ul>
+                                        <li><a class="go-to-link" title="Go to"
+                                                href="#ingredients-bbq-wings">Ingredients</a>
+                                        </li>
+                                        <li><a class="go-to-link" title="Go to"
+                                                href="#preparation-bbq-wings">Preparation</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                </p>
+                            </details>
+
+                            <!-- Yawarlocro -->
+                            <details>
+                                <summary title="Click to see more">Yahuarlocro</summary>
+                                <p>
+                                <ul>
+                                    <li><a class="go-to-link" title="Go to" href="#element-yahuarlocro">Recipe</a></li>
+                                    <ul>
+                                        <li><a class="go-to-link" title="Go to"
+                                                href="#ingredients-yahuarlocro">Ingredients</a>
+                                        </li>
+                                        <li><a class="go-to-link" title="Go to"
+                                                href="#preparation-yahuarlocro">Preparationn</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                </p>
+                            </details>
+
+                            <!-- Lassagna -->
+                            <details>
+                                <summary title="Click to see more">Lassagna</summary>
+                                <p>
+                                <ul>
+                                    <li><a class="go-to-link" title="Go to" href="#element-lassagna">Rrecipe</a></li>
+                                    <ul>
+                                        <li><a class="go-to-link" title="Go to"
+                                                href="#ingredients-lassagna">Ingredients</a>
+                                        </li>
+                                        <li><a class="go-to-link" title="Go to"
+                                                href="#preparation-lassagna">Preparation</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+
+                    <!-- Recipes -->
+                    <div class="row mt-5">
+                        <div class="col-sm-12 food-content">
+                            <dl>
+                                <dt id="element-tortillas">
+                                    <h2 class="text-center"><strong>Shrimp Tortillas</strong></h2>
+                                </dt>
+                                <dd id="content-tortillas">
+                                    <p class="p-5">
+                                        Tortillitas or shrimp pancakes is one of the star dishes of Cadiz gastronomy,
+                                        it seems that its origin is in San Fernando (Cádiz).
+                                    </p>
+
+                                    <img title="Double Click" id="openImg1" class="d-block mx-auto mb-5 m-img myModalImg"
+                                        src="./../../public/assets/images/food/tortillas.png" alt="Shrimp Tortillas"
+                                        width="300px" height="auto">
+
+
+                                    <h3 class="text-center mb-4">Recipe</h3>
+
+                                    <div title="scrollable" class="scrollable"
+                                        style="border:2px solid white;width:100%;height:300px;overflow:scroll;">
+                                        <ul>
+                                            <li id="ingredients-tortillas">
+                                                <h4><strong>Ingredients</strong></h4>
+                                            </li>
+                                            <ul>
+                                                <li>100g shrimp</li>
+                                                <li>100g wheat flour</li>
+                                                <li>50g chickpea flour</li>
+                                                <li>1 glass and a half with water</li>
+                                                <li>1/2 teaspoon salt</li>
+                                                <li>1 chive</li>
+                                                <li>Perejil fresco</li>
+                                                <li>Fresh parsley</li>
+                                            </ul>
+
+                                            <li id="preparation-tortillas">
+                                                <h4><strong>Preparation</strong></h4>
+                                            </li>
+                                            <ol>
+                                                <li>Mix the wheat flour and the chickpea flour.</li>
+                                                <li>Chop the chives into very small pieces.</li>
+                                                <li>Chop the parsley into small pieces.</li>
+                                                <li>In a bowl mix the flours with the chives and two tablespoons of the
+                                                    parsley chopped.
+                                                </li>
+                                                <li>Add salt, shrimp and water, mix well until you get a dough
+                                                    rather liquid but without any lump.
+                                                </li>
+                                                <li>We take a large frying pan pour olive oil, more or less a finger of
+                                                    height.
+                                                </li>
+                                                <li>We put to heat the pan; once the oil is very hot,
+                                                    add two or three tablespoons of dough to the pan (those that enter
+                                                    us without that the tortillas touch) we let cook on the one hand and
+                                                    when it starts to brown, we turn to the other side to brown it too.
+                                                </li>
+                                                <li>As the shrimp tortillas cook, we leave them on absorbent kitchen
+                                                    paper
+                                                    in this way most of the fat will stay on paper.
+                                                </li>
+                                            </ol>
+                                        </ul>
+
+                                    </div>
+
+
+                                    <p class="text-right my-5">
+                                        <a title="Go up" class="goUpButton py-2 px-3" href="#mfood-title">&#9650; Go up</a>
+                                    </p>
+                                </dd>
+
+
+
+                                <dt id="element-bbq-wings">
+                                    <h2 class="text-center"><strong>BBQ Wings</strong></h2>
+                                </dt>
+                                <dd id="content-bbq-wings">
+                                    <p class="p-5">
+                                        The BBW <strong>wings</strong> is one of the most enjoyable dishes to eat.
+                                        In fact, they are a good option to delight our palates on a special occasion
+                                        at <strong>family</strong> or a celebration with <strong>friends</strong>.
+                                        In U.S.A, they are known as <em>Buffalo wings</em> and the traditional recipe
+                                        consists of two <strong>ingredients:</strong> a hot sauce (based on vinegar and
+                                        cayenne) and margarine or butter.
+                                    </p>
+
+                                    <img title="Double Click" id="openImg2" class="d-block mx-auto mb-5 m-img myModalImg"
+                                        src="./../../public/assets/images/food/bbq_wings.png" alt="BBQ Wings"
+                                        width="300px" height="auto">
+
+
+                                    <h3 class="text-center mb-4">Recipe</h3>
+
+                                    <div title="scrollable" class="scrollable"
+                                        style="border:2px solid white;width:100%;height:300px;overflow:scroll;">
+                                        <ul>
+                                            <li id="ingredients-bbq-wings">
+                                                <h4><strong>Ingredients</strong></h4>
+                                            </li>
+                                            <ul>
+                                                <li>5 cloves of garlic.</li>
+                                                <li>1 kg of chicken wings.</li>
+                                                <li>1 white onion (60 g).</li>
+                                                <li>Salt and pepper.</li>
+                                                <li>1/4 cup of water (60 ml).</li>
+                                                <li>Olive oil.</li>
+                                                <li>60 ml of bee honey.</li>
+                                                <li>2 tablespoons of mustard (20 g).</li>
+                                                <li>1 tablespoon of butter (10 g).</li>
+                                                <li>1/4 cup of tomato sauce (125 g).</li>
+                                                <li>2 tablespoons of brown sugar (10 g).</li>
+                                            </ul>
+
+                                            <li id="preparation-bbq-wings">
+                                                <h4><strong>Preparation</strong></h4>
+                                            </li>
+                                            <ol>
+                                                <li>Chop the onion and garlic cloves very finely.</li>
+                                                <li>In a frying pan, place the butter and a little olive oil, if
+                                                    desired. Pour
+                                                    the
+                                                    chopped
+                                                    onion
+                                                    and garlic and sauté over medium heat.</li>
+                                                <li>Once the onion and garlic are golden brown, add all the other
+                                                    ingredients,
+                                                    except
+                                                    for
+                                                    the
+                                                    wings, salt and pepper. Stir constantly.</li>
+                                                <li>Rectify the flavor by adding salt and pepper until they are in a
+                                                    good point.
+                                                </li>
+                                                <li>Cook this preparation for 20 minutes until the sauce reduces and
+                                                    thickens.
+                                                </li>
+                                                <li>Prepare a baking sheet and organize the chicken wings on it. Add a
+                                                    little
+                                                    salt
+                                                    and
+                                                    pepper on
+                                                    both sides.</li>
+                                                <li>Using a brush, add the BBQ sauce around each wing. Make sure you
+                                                    don't use
+                                                    all
+                                                    the
+                                                    sauce
+                                                    as
+                                                    you will need it later.</li>
+                                                <li>In the oven preheated to 180ºC, place the tray with the wings and
+                                                    bake for
+                                                    approximately
+                                                    20
+                                                    minutes.</li>
+                                                <li>Then, add barbecue sauce on one side and flip the wings to add more
+                                                    sauce
+                                                    and
+                                                    bake
+                                                    for
+                                                    10
+                                                    more minutes.</li>
+                                                <li>Flip it over again and add another layer of BBQ sauce.</li>
+                                                <li>Put it back in the oven for another 5 minutes and ... that's it!
+                                                </li>
+                                            </ol>
+                                        </ul>
+
+                                    </div>
+
+                                    <p class="text-right my-5">
+                                        <a title="Go up" class="goUpButton py-2 px-3" href="#mfood-title">&#9650; Go up</a>
+                                    </p>
+                                </dd>
+
+
+
+                                <dt id="element-yahuarlocro">
+                                    <h2 class="text-center"><strong>YAHUARLOCRO</strong></h2>
+                                </dt>
+                                <dd id="content-yahuarlocro">
+                                    <p class="p-5">
+                                        It is a traditional dish of <strong>Ecuadorian cuisine</strong>.
+                                        It is a light stew prepared with meat and entrails of <em>lamb</em>,
+                                        including intestines, liver, lung, tongue, rumen, etc.
+                                        Usually served with fried lamb blood, avocado and onion rings.
+                                    </p>
+
+                                    <img title="Double Click" id="openImg3" class="d-block mx-auto mb-5 m-img myModalImg"
+                                        src="./../../public/assets/images/food/yahuarlocro.jpg" alt="Yahuarlocro"
+                                        width="300px" height="auto">
+
+
+                                    <h3 class="text-center mb-4">Recipe</h3>
+
+                                    <div title="scrollable" class="scrollable"
+                                        style="border:2px solid white;width:100%;height:300px;overflow:scroll;">
+                                        <ul>
+                                            <li id="ingredients-yahuarlocro">
+                                                <h4><strong>Ingredients</strong></h4>
+                                            </li>
+                                            <ul>
+                                                <li>1/2 liters of milk.</li>
+                                                <li>2 1/2 pounds of potato chola.</li>
+                                                <li>1/4 liter of sheep blood.</li>
+                                                <li>1 medium tomato.</li>
+                                                <li>1/4 sheep belly with its guts.</li>
+                                                <li>4 tablespoons of garlic.</li>
+                                                <li>4 tablespoons oregano.</li>
+                                                <li>1 ounce of colored butter.</li>
+                                                <li>2 stalks of white onion.</li>
+                                                <li>3 paiteña onions.</li>
+                                                <li>1/2 bundle of coriander.</li>
+                                                <li>1 avocado.</li>
+                                            </ul>
+
+                                            <li id="preparation-yahuarlocro">
+                                                <h4><strong>Preparation</strong></h4>
+                                            </li>
+                                            <ol>
+                                                <li>Wash the small (belly and guts).</li>
+                                                <li>Cook the belly and casings in plenty of water with a paiteńa onion,
+                                                    two
+                                                    garlics
+                                                    and
+                                                    a
+                                                    branch
+                                                    of white onion, until it is very soft.</li>
+                                                <li>Reserve the cooking water.</li>
+                                                <li>Chop the guts and belly into small squares and set aside.</li>
+                                                <li>Peel and chop the potatoes.</li>
+                                                <li>Chop the paiteña onion into thin slices, reserve half and the rest
+                                                    chop very
+                                                    fine.
+                                                </li>
+                                                <li>Also, chop the garlic and white onion very finely.</li>
+                                                <li>Make a rehash with the colored butter, one part of the white onion
+                                                    and one
+                                                    part
+                                                    of
+                                                    the
+                                                    garlic. Add the oregano.</li>
+                                                <li>add part of the potatoes, the belly and the casings.</li>
+                                                <li>Add the lamb's cooking water and cook until the potatoes are soft.
+                                                </li>
+                                                <li>Add milk and potatoes until you get a creamy texture.</li>
+                                                <li>To taste, add salt, pepper and very fine coriander.</li>
+                                                <li>With the fine paiteña onion, the white onion, the garlic, the
+                                                    oregano, salt
+                                                    and
+                                                    pepper,
+                                                    make
+                                                    a rehash to prepare the blood</li>
+                                                <li>Serve very hot and serve with a separate plate with the blood, the
+                                                    avocado,
+                                                    the
+                                                    tanned
+                                                    onion
+                                                    and the tomato.</li>
+                                            </ol>
+                                        </ul>
+
+                                    </div>
+
+                                    <p class="text-right my-5">
+                                        <a title="Go up" class="goUpButton py-2 px-3" href="#mfood-title">&#9650; Go up</a>
+                                    </p>
+                                </dd>
+
+
+                                <dt id="element-lassagna">
+                                    <h2 class="text-center"><strong>LASSAGNA</strong></h2>
+                                </dt>
+                                <dd id="content-lassagna">
+                                    <p class="p-5">
+                                        It is a type of <strong>pasta</strong> that is served in <em>sheets</em>.
+                                        It is a dish of <strong>Italian origin</strong>.
+                                    </p>
+
+                                    <img title="Double Click" id="openImg4" class="d-block mx-auto mb-5 m-img myModalImg"
+                                        src="./../../public/assets/images/food/lassagna.jpg" alt="Lassagna"
+                                        width="300px" height="auto">
+
+
+                                    <h3 class="text-center mb-4">Recipe</h3>
+
+                                    <div title="scrollable" class="scrollable"
+                                        style="border:2px solid white;width:100%;height:300px;overflow:scroll;">
+                                        <ul>
+                                            <li id="ingredients-lassagna">
+                                                <h4><strong>Ingredients</strong></h4>
+                                            </li>
+                                            <ul>
+                                                <li>1lb of pasta for lasagna (1/2 kg).</li>
+                                                <li>4 liters of water.</li>
+                                                <li>1 tablespoon of oil.</li>
+                                                <li>1 tablespoon of salt or chicken bouillon powder.</li>
+                                                <li>2 lbs of ground beef (1/2 kg).</li>
+                                                <li>1 medium onion, chopped.</li>
+                                                <li>2 minced garlic cloves.</li>
+                                                <li>1 tablespoon of olive oil.</li>
+                                                <li>2 medium cans of spaghetti sauce.</li>
+                                                <li>1/2 cup of water or white wine.</li>
+                                                <li>15 oz of ricotta or cream cheese.</li>
+                                                <li>1/2 cup of grated Parmesan cheese.</li>
+                                                <li>1 cup of cheese for quesadilllas or mozarella.</li>
+                                                <li>1 tablespoon of dried basil (basil) or oregano.</li>
+                                                <li>Salt and pepper to taste.</li>
+                                            </ul>
+
+                                            <li id="preparation-lassagna">
+                                                <h4><strong>Preparation</strong></h4>
+                                            </li>
+                                            <ol>
+                                                <li>We heat the water (4 liters) with a tablespoon of oil, we can add
+                                                    salt.</li>
+                                                <li>When it starts to boil, add the pasta sheets and mix just a little
+                                                    to
+                                                    separate
+                                                    them.
+                                                    The
+                                                    water should cover the pasta.</li>
+                                                <li>Cook until pasta is smooth.</li>
+                                                <li>While you can chop the vegetables that we are going to use for the
+                                                    filling.
+                                                </li>
+                                                <li>After this time, we drain and separate.</li>
+                                                <li>We preheat the oven to 375F or 190 C.</li>
+                                                <li>We heat a frying pan,add olive oil and fry the onion and garlic,
+                                                    until the
+                                                    onion
+                                                    is
+                                                    transparent.</li>
+                                                <li>Incorporate the ground meat and fry.</li>
+                                                <li>Add the half cup of wine or water, a can of the spaghetti sauce, the
+                                                    basil
+                                                    or
+                                                    oregano,
+                                                    salt,
+                                                    pepper and lower the heat, we boil. We remove from the fire.</li>
+                                                <li>Apart, we grease a rectangular pan, add half a can of spaghetti
+                                                    sauce to
+                                                    cover
+                                                    the
+                                                    bottom of
+                                                    the mold.</li>
+                                                <li>We arrange the lassagna sheets, making layers.</li>
+                                                <li>We place a layer of lassagna, a part of the mixture of meat, ricotta
+                                                    cheese
+                                                    and
+                                                    Parmesan
+                                                    cheese.</li>
+                                                <li>We repeat until we finish with the pasta.</li>
+                                                <li>On top of the last layer, we add spaghetti sauce.</li>
+                                                <li>Cover with aluminum foil and put in the oven for thirty minutes.
+                                                </li>
+                                                <li>We remove from the oven and cover with quesadilla cheese and add any
+                                                    cheese
+                                                    that
+                                                    is
+                                                    left
+                                                    over.</li>
+                                                <li>Bake, uncovered, for five minutes or until the cheese is gratin or
+                                                    melts on
+                                                    top.
+                                                </li>
+                                                <li>We remove from the oven and let stand for five minutes before
+                                                    serving.</li>
+                                            </ol>
+                                        </ul>
+                                    </div>
+
+
+                                    <p class="text-right my-5">
+                                        <a title="Go up" class="goUpButton py-2 px-3" href="#mfood-title">&#9650; Go up</a>
+                                    </p>
+                                </dd>
+
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+        
+
+                <!-- Show all recipes -->
+                <div class="recipes-button my-5">
+                    <button id="show-recipes-button">See all Recipes</button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="container bottom-space">
+            <div class="d-flex justify-content-around">
+                <button type="button" title="Click me!" id=""
+                    class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle="modal"
+                    data-target="#modalForm">
+                    Send Email
+                </button>
+
+                <a href="./../../index.html">
+                    <div class="mt-5">
+                        <button type="button" title="Click me!" id="mcopy-right"
+                            class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle=""
+                            data-target="">
+                            &#169; Copyright 2020 AM-GIK
+                        </button>
+                    </div>
+                </a>
+
+                <a href="https://www.canva.com/design/DAD-z3YWowI/CTzEgEQNURNXEBhda53MEQ/view?utm_content=DAD-z3YWowI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                    target="_blank">
+                    <button type="button" title="Click me!" id=""
+                        class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle=""
+                        data-target="">
+                        My CV
+                    </button>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="page-end"></div>
+
+
+    <!-- Extras -->
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search</h5>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <span id="fakeMessage">Opps, it does not work!</span>
+                                <input type="text" name="txtFieldSearch" id="txtFieldSearch" class="form-control"
+                                    placeholder="Magicword" aria-describedby="txtFieldSearch">
+                            </div>
+
+                            <div class="cols-sm-4">
+                                <button type="button" class="btn-border-primary">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- The Image Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- JavaScript -->
+    <script src="./../../scripts/main.js"></script>
+
+    <!-- Main Jquery -->
+    <script src="./../../scripts/mainjq.js"></script>
+
+</body>
+
+</html>
