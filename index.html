@@ -69,533 +69,279 @@
     </nav>
 
 
-    <!-- SEARCH BAR -->
-    <header>
+    <!-- TOP BAR -->
+    <header class="container-fluid fixed-top mt-5">
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-between align-itmes-center">
+                <div>
+                    <a href="./index.html">
+                        <img title="Home" class="mlogo" src="./public/assets/images/logo/am-gik-borders-25.svg"
+                            alt="LOGO">
+                    </a>
+                </div>
 
-        <div class="flex-search-bar">
-
-            <!-- Logo -->
-            <div class="search-bar-logo">
-                <a href="./index.html">
-                    <!--
-                    <img title="Home" class="mlogo" src="./public/assets/images/svg/transparent-fill-logo-24.svg"
-                        alt="LOGO">
-                        -->
-                    <img title="Home" class="mlogo" src="./public/assets/images/logo/am-gik-borders-25.svg"
-                        alt="LOGO">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" title="Click me!" id="search-chip" class="search-circle d-none"
+                    data-toggle="modal" data-target="#searchModal">
+                    Search
+                </button>
             </div>
-
-
-            <!-- Button trigger modal -->
-            <button type="button" title="Click me!" id="search-chip" class="search-circle" data-toggle="modal"
-                data-target="#searchModal">
-                Search
-            </button>
-
-            <!-- Button to fav food 
-            <button id="food-circle" type="button" title="Click me!" class="search-circle">
-                <a href="./pages/food/food.html">My fav food</a>
-            </button>
-            -->
         </div>
     </header>
 
 
     <!-- Social -->
-    <aside>
-        <div title="Click me!" id="social-chip" class="social-circle" type="button" data-toggle="modal"
-            data-target="#modalForm">
-            <p id="social-chip-title">
-                Get<br>in<br>touch
-            </p>
+    <aside class="position-absolute">
+        <div class="position-absolute position-fixed social-chip ">
+            <button type="button" title="Click me!" id="social-chip"
+                class="d-flex justify-content-center align-items-center button-chip-sm" data-toggle="modal"
+                data-target="#modalForm">
+                Get in touch
+            </button>
         </div>
 
-        <div id="social-card" class="social-media-container">
-
-            <!-- Social Title -->
-            <header>
-                <h1>
-                    <a href="#">Social</a>
-                </h1>
+        <div class="position-relative position-fixed mt-5 social-container">
+            <header class="container-fluid mt-2">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="text-center">Social</h3>
+                    </div>
+                </div>
             </header>
 
+            <div class="container-fluid">
+                <div class="row mt-2 p-2">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
 
-            <!-- Facebook - Instagram -->
-            <div class="mrow">
 
-                <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790"
-                    target="_blank">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
+                        <div>
+                            <a id="instagram-link" title="Instagram" href="https://www.instagram.com/ea_maruri/"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                <a id="instagram-link" title="Instgram" href="https://www.instagram.com/ea_maruri/" target="_blank">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
+                <div class="row mt-2 p-2">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <a id="github-link" title="Github" href="https://github.com/ea-maruri/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
 
+                        <div>
+                            <a id="linkedin-link" title="Linkedi"
+                                href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
-            <!-- Github - LinkedIn -->
-            <div class="mrow">
-
-                <a id="github-link" title="Github" href="https://github.com/ea-maruri/" target="_blank">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-
-                <a id="linkedin-link" title="LinkedIn"
-                    href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-
-            </div>
-
-
-            <!-- Symbol -->
-            <footer class="msymbol">
-                <!-- Button trigger modal (Form) -->
-                <a title="Get in touch" type="button" data-toggle="modal" data-target="#modalForm">
-                    <img src="./public/assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px" height="auto">
-                </a>
+            <footer class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col">
+                        <img class="d-block mx-auto" title="Get in touch"
+                            src="./public/assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px"></img>
+                    </div>
+                </div>
             </footer>
-
         </div>
 
-        <div id="marrow-container" class="arrow-container">
-            <div class="line"></div>
+
+        <div id="marrow-container"
+            class="position-absolute position-fixed d-flex flex-column justify-content-center align-items-center arrow-container">
+            <div class="line mr-2"></div>
 
             <p>
                 <i id="marrow" class="arrow down"></i>
             </p>
         </div>
+
     </aside>
 
 
-    <div id="page-start" class="top-space"> </div>
+    <div id="page-start" class="top-"> </div>
 
-
-    <!-- Cards -->
-    <nav class="mpseudo-nav">
-        <div class="grid-cards">
-
-            <div title="Go to Web" class="card-shape first-card">
-                <a href="#web-card">
-                    <h6>Web</h6>
-                    <div>
-                        <i class="fa fa-code" aria-hidden="true"></i>
-                    </div>
-                </a>
+    <!-- Phrase -->
+    <main class="top-space">
+        <div class="container mt-5">
+            <div class="mt-5 pool-box">
+                <h1 class="msuper-title text-center">
+                    We all HAVE<br>MAGIC<br>WITHIN US
+                </h1>
             </div>
+        </div>
+    </main>
 
-            <div title="Go to Programming" class="card-shape second-card">
-                <a href="#prog-card">
-                    <h6>Programming</h6>
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+    <div class="top-space"> </div>
+
+
+    <!-- Pseudo Nav -->
+    <nav class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 d-flex">
+
+                    <div title="Go to Web"
+                        class="d-flex flex-colum justify-content-around align-items-center card-shape">
+                        <a href="./pages/portfolio/portfolio.html#web-section"
+                            class="d-flex flex-column justify-content-between">
+                            <h4>Web</h4>
+                            <div>
+                                <i class="fas fa-code" aria-hidden="true"></i>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
 
-
-            <div title="Go to AI" class="card-shape third-card">
-                <a href="#ia-card">
-                    <h6>Artificial Intelligence</h6>
-                    <div>
-                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                    <div title="Go to Programming"
+                        class="d-flex flex-colum justify-content-around align-items-center card-shape">
+                        <a href="./pages/portfolio/portfolio.html#prog-section"
+                            class="d-flex flex-column justify-content-between">
+                            <h4>Programming</h4>
+                            <div>
+                                <i class="fas fa-file-code-o" aria-hidden="true"></i>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
 
-
-            <div title="Go to Networking" class="card-shape fourth-card">
-                <a href="#net-card">
-                    <h6>Networking</h6>
-                    <div>
-                        <i class="fa fa-code-fork" aria-hidden="true"></i>
+                    <div title="Go to Artificial Intelligence"
+                        class="d-flex flex-colum justify-content-around align-items-center card-shape">
+                        <a href="./pages/portfolio/portfolio.html#ai-section"
+                            class="d-flex flex-column justify-content-between">
+                            <h4>Artificial Intelligence</h4>
+                            <div>
+                                <i class="fas fa-address-card" aria-hidden="true"></i>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
 
-
-            <div title="Go to Design" class="card-shape fifth-card">
-                <a href="#design-card">
-                    <h6>Design</h6>
-                    <div>
-                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    <div title="Go to Networking"
+                        class="d-flex flex-colum justify-content-around align-items-center card-shape">
+                        <a href="./pages/portfolio/portfolio.html#net-section"
+                            class="d-flex flex-column justify-content-between">
+                            <h4>Networking</h4>
+                            <div>
+                                <i class="fas fa-code-fork" aria-hidden="true"></i>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
 
+                    <div title="Go to Design"
+                        class="d-flex flex-colum justify-content-around align-items-center card-shape">
+                        <a href="./pages/portfolio/portfolio.html#des-section"
+                            class="d-flex flex-column justify-content-between">
+                            <h4>Design</h4>
+                            <div>
+                                <i class="fas fa-desktop" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </nav>
 
 
-    <!-- Grid Content -->
-    <div class="grid-container">
-
-        <!-- Phrase -->
-        <section>
-            <div id="super-title">
-                <h1 class="msuper-title">
-                    We all HAVE<br>MAGIC<br>WITHIN US
-                </h1>
+    <main class="container bottom-space-sm">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center mt-5">Alejandro Maruri</h1>
             </div>
-        </section>
+        </div>
 
-
-        <!-- Personal -->
-        <section>
-            <header>
-                <h1>Alejandro Maruri</h1>
-            </header>
-
-            <main>
-                <div id="mpersonal">
-                    <div class="mimg-container">
-                        <img src="./public/assets/images/personal/Foto_CV(2020).jpg" alt="MY-Photo" width="230px"
-                            height="auto">
-                    </div>
-
-                    <p>
-                        Hey there! I'm Alejandro. <br> <br>
-
-                        I am a <strong>university student</strong> of the the <em>Systems Engineering</em>
-                        degree, at the
-                        <strong><em title="Universidad San Francisco de Quito"><a href="#">USFQ</a></em></strong>.
-                        <br> <br>
-
-                        As an organized, effective, responsible, and highly motivated to learn person,
-                        I am able to <strong>adapt</strong> to circumstances, work as a <strong>team</strong>
-                        and be <strong>autodidact</strong>. <br> <br>
-
-                        I offer different kind of works in <strong>developmente area</strong>.
-
-                        So, let's check my <strong><em><a title="Portfolio"
-                                    href="./pages/portfolio/portfolio.html">portfolio</a></em></strong>,
-                        and, if <em>you need something</em>, do not hesitate to
-                        <strong><em><a type="button" data-toggle="modal" data-target="#modalForm" title="Get in touch"
-                                    href="#">get in touch</a></em></strong>.
-                    </p>
-                </div>
-
-            </main>
-        </section>
-
-
-        <!-- Categories -->
-        <section>
-            <header>
-                <h1>Categories</h1>
-            </header>
-
-            <div id="mcategories">
-                <main>
-
-                    <!-- Web Development -->
-                    <div id="web-card" class="card gallery-card w-75">
-                        <div class="card-header">
-                            <h5 class="card-title"><b>Web Development</b></h5>
-                        </div>
-
-                        <div class="card-body">
-                            <div id="carouselWD" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselWD" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselWD" data-slide-to="1"></li>
-                                    <li data-target="#carouselWD" data-slide-to="2"></li>
-                                </ol>
-
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/web/home.png" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/web/basic_home.png" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/categories/web_dev/web-design.jpg"
-                                            alt="First slide">
-                                    </div>
-                                </div>
-
-                                <a class="carousel-control-prev" href="#carouselWD" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselWD" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-
-                            <p class="card-text"><br>Showing us to the <b><em>World</em></b>.</p>
-                        </div>
-
-                        <div class="card-footer">
-                            <button type="button" class="btn-border-primary">
-                                <a href="./pages/portfolio/portfolio.html#web-portfolio-title">See more</a>
-                            </button>
-                        </div>
-                    </div>
-
-
-                    <!-- Programming -->
-                    <div id="prog-card" class="card gallery-card w-75">
-                        <div class="card-header">
-                            <h5 class="card-title"><b>Programming</b></h5>
-                        </div>
-
-                        <div class="card-body">
-                            <div id="carouselPG" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselPG" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselPG" data-slide-to="1"></li>
-                                    <li data-target="#carouselPG" data-slide-to="2"></li>
-                                </ol>
-
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/programming/8queens/8queens_solved.png"
-                                            alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/categories/programming/developing-code.jpg"
-                                            alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/programming/DoublyLinked.png"
-                                            alt="First slide">
-                                    </div>
-                                </div>
-
-                                <a class="carousel-control-prev" href="#carouselPG" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselPG" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-
-                            <p class="card-text"><br> Creating <b><em>amazing</em></b> things.</p>
-                        </div>
-
-                        <div class="card-footer">
-                            <button type="button" class="btn-border-primary">
-                                <a href="./pages/portfolio/portfolio.html#prog-portfolio-title">See more</a>
-                            </button>
-                        </div>
-                    </div>
-
-
-                    <!-- Artificial Intelligence -->
-                    <div id="ia-card" class="card gallery-card w-75">
-                        <div class="card-header">
-                            <h5 class="card-title">
-                                <b>Artificial <br> Intelligence</b>
-                            </h5>
-                        </div>
-
-                        <div class="card-body">
-                            <div id="carouselDB" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselDB" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselDB" data-slide-to="1"></li>
-                                    <li data-target="#carouselDB" data-slide-to="2"></li>
-                                </ol>
-
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/ai/8puzzle.png" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/ai/8queens.png" alt="Second slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/ai/tictactoe.png" alt="Third slide">
-                                    </div>
-                                </div>
-
-                                <a class="carousel-control-prev" href="#carouselDB" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselDB" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-
-                            <p class="card-text"><br>Searching a way to <b><em>store data</em></b>.</p>
-                        </div>
-
-                        <div class="card-footer">
-                            <button type="button" class="btn-border-primary">
-                                <a href="./pages/portfolio/portfolio.html#ia-portfolio-title">See more</a>
-                            </button>
-                        </div>
-                    </div>
-
-
-                    <!-- Networking -->
-                    <div id="net-card" class="card gallery-card w-75">
-                        <div class="card-header">
-                            <h5 class="card-title">
-                                <b>Networking</b>
-                            </h5>
-                        </div>
-
-                        <div class="card-body">
-                            <div id="carouselNW" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselNW" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselNW" data-slide-to="1"></li>
-                                    <li data-target="#carouselNW" data-slide-to="2"></li>
-                                </ol>
-
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/categories/networking/network.jpg" alt="office">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/networking/arp-protocol.png" alt="woman">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/categories/networking/earth.jpg" alt="earth">
-                                    </div>
-                                </div>
-
-                                <a class="carousel-control-prev" href="#carouselNW" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselNW" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-
-                            <p class="card-text"><br>Connecting for <b><em>improving</em></b>.</p>
-                        </div>
-
-
-                        <div class="card-footer">
-                            <button type="button" class="btn-border-primary">
-                                <a href="./pages/portfolio/portfolio.html#net-portfolio-title">See more</a>
-                            </button>
-                        </div>
-                    </div>
-
-
-                    <!-- Design -->
-                    <div id="design-card" class="card gallery-card w-75">
-                        <div class="card-header">
-                            <h5 class="card-title">
-                                <b>Design</b>
-                            </h5>
-                        </div>
-
-                        <div class="card-body">
-                            <div id="carouselDes" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselDes" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselDes" data-slide-to="1"></li>
-                                    <li data-target="#carouselDes" data-slide-to="2"></li>
-                                </ol>
-
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/categories/web_dev/ux-practice.jpg"
-                                            alt="office">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/works/design/portrait.png" alt="woman">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="card-img-top carousel-img"
-                                            src="./public/assets/images/categories/web_dev/web-design.jpg" alt="earth">
-                                    </div>
-                                </div>
-
-                                <a class="carousel-control-prev" href="#carouselDes" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselDes" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-
-                            <p class="card-text"><br>Relax and be <strong><em>creative</em></strong>.</p>
-                        </div>
-
-
-                        <div class="card-footer">
-                            <button type="button" class="btn-border-primary">
-                                <a href="./pages/portfolio/portfolio.html#design-portfolio-title">See more</a>
-                            </button>
-                        </div>
-                    </div>
-
-                </main>
-
+        <div class="row mt-5">
+            <div class="col-sm-12 col-lg-4">
+                <img class="mimg d-block mx-auto" src="public/assets/images/personal/Foto_CV(2020).jpg" alt="Me"></img>
             </div>
-        </section>
 
-
-        <!-- Footer -->
-        <footer id="mfoot" class="mfooter">
-            <!-- Footer -->
-            <div id="mcopy" class="footer-circle">
-                <p id="mcopy-right" class="copysymbol">
-                    &#169; Copyright 2020
-                </p>
+            <div class="col-sm-12 col-lg-8">
                 <p>
-                    <a title="AM-GIK" href="./index.html">AM-GIK</a>
+                    Hey there! I'm Alejandro. <br> <br>
+                    I am a <strong>university student</strong> of
+                    <em>Systems Engineering</em> degree, at the
+                    <strong>
+                        <em title="Universidad San Francisco de Quito">
+                            <a href="http://www.usfq.edu.ec/Paginas/Inicio.aspx">
+                                USFQ
+                            </a>
+                        </em>
+                    </strong>
+                    .
+                    <br><br>
+                    As an organized, effective, responsible, and highly motivated to
+                    learn person, I am able to <strong>adapt</strong> to
+                    circumstances, work as a <strong>team</strong> and be
+                    <strong>autodidact</strong>.
+                    <br><br>
+                    I offer different
+                    kind of works in <strong>developmente area</strong>. So, let's
+                    check my
+                    <strong>
+                        <em>
+                            <a title="Portfolio" href="./portfolio">
+                                portfolio
+                            </a>
+                        </em>
+                    </strong>
+                    , and, if <em>you need something</em>, do not hesitate to
+                    <strong>
+                        <em>
+                            <a type="button" data-toggle="modal" data-target="#modalForm" title="Get in touch"
+                                href="./about">
+                                get in touch
+                            </a>
+                        </em>
+                    </strong>
+                    .
                 </p>
             </div>
+        </div>
+    </main>
 
 
-            <!-- Mail -->
-            <div id="memail" class="footer-circle">
-                <!--href="mailto:ea.maruri@outlook.com, am-gik@outlook.com"-->
-                <a title="Send Email" href="#" target="_blanck" type="button" data-toggle="modal"
-                    data-target="#modalForm">
-                    Send Email
-                </a>
-            </div>
+    <!-- Footer -->
+    <footer class="container bottom-space">
+        <div class="d-flex justify-content-around">
+            <button type="button" title="Click me!" id=""
+                class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle="modal" data-target="#modalForm">
+                Send Email
+            </button>
 
-
-            <!-- CV -->
-            <div id="mcv" class="footer-circle">
-                <a title="CV"
-                    href="https://www.canva.com/design/DAD-z3YWowI/CTzEgEQNURNXEBhda53MEQ/view?utm_content=DAD-z3YWowI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                    target="_blank">
+            <a href="./index.html">
+                <div class="mt-5">
+                    <button type="button" title="Click me!" id=""
+                        class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle=""
+                        data-target="">
+                        &#169; Copyright 2020 AM-GIK
+                    </button>
+                </div>    
+            </a>
+            
+            <a
+                href="https://www.canva.com/design/DAD-z3YWowI/CTzEgEQNURNXEBhda53MEQ/view?utm_content=DAD-z3YWowI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                target="_blank">
+                <button type="button" title="Click me!" id=""
+                    class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle=""
+                    data-target="">
                     My CV
-                </a>
-            </div>
-        </footer>
+                </button>
+            </a>
+        </div>
+    </footer>
 
-    </div>
-
-
-    <div id="page-end" class="bottom-space"> </div>
 
 
 

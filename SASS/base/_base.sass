@@ -1,4 +1,150 @@
 //***************** DEFAULT *********************//
+
+//***************** FLEX SEARCH BAR *********************//
+img.mlogo
+    height: $search-bar-logo-height
+    width: auto
+
+    +zoomUp(.6s, 1.2)
+    +mBorderR(9px)
+    +mShadow(0px 0px 7px 2px $brand-black)
+    
+
+    @media #{"only screen and (max-width : 770px)"}
+        height: $search-bar-logo-height-sm
+        
+    
+
+//***************** Content Page *********************//
+.bg-black 
+    background-color: $brand-black
+
+
+div.sticky
+    position: sticky
+    top: $search-bar-element-max-height
+    
+
+                          
+
+#designAccordion
+    width: 50%
+
+    @media #{"only screen and (max-width : 770px)"}
+        width: auto
+
+    
+
+
+.portfolio-cards
+    margin-bottom: 6rem
+    display: flex
+    //justify-content: center
+    align-items: center
+    flex-direction: column   
+
+    h2 
+        color: $brand-white 
+
+    .pagination
+        display: none
+
+
+
+.margin-top-sm
+    margin-top: 1rem
+
+
+
+//***************** FONT AWESOME *********************//    
+a > i 
+    +zoomUp(.4s, 1.6)
+
+
+
+//***************** FOOD *********************//
+#mfood
+    padding: 0 5rem
+
+    h1 
+        text-align: center
+        color: $brand-white
+    
+
+    .link-container
+        width: 200px
+        margin-bottom: 5rem
+        
+        details
+            margin-bottom: .7rem
+
+            summary
+                &:hover
+                    cursor: pointer
+                    font-size: 1.2rem
+                    color: $brand-white
+
+
+            li a
+                text-decoration: none
+                color: $brand-pure-black
+                margin-bottom: 7rem
+
+                &:hover
+                    color: $brand-white
+                //font-size: 4rem
+
+
+    .food-content
+        dl 
+            hr 
+                //margin: 4rem auto
+                width: 80%
+
+            dt 
+                h2 
+                    color: $brand-white
+                    text-align: center
+        
+            dd 
+                img.m-img
+                    display: block
+                    margin: 2.5rem auto
+
+                    +mBorderR(6px)
+                    +mShadow(2px 2px 5px 3px $brand-black)
+                    +zoomUp(.4s, 1.1)
+
+                p.right-text
+                    display: flex
+                    justify-content: flex-end
+
+                    a
+                        margin-top: 2rem 
+                        padding: .4rem 1rem
+
+                        +mBorderR(10px)
+                        border: 1px solid $brand-white
+                        color: $brand-white
+                        text-decoration: none
+
+                        &:hover
+                            background-color: $brand-black
+                            
+                ul li h4 
+                    color: $brand-white
+                    margin: 2rem 0
+
+
+    .recipes-button
+        button
+            display: block
+            margin: auto
+
+
+
+/* ------------------------------------------------------ */
+/* General */
 html 
     font-size: $font-base-size
                 
@@ -13,19 +159,30 @@ html
     
     @media #{$information-phone} 
         font-size: 11px
-    
-    
+
+
 body 
-    font-family: $font-primary
+    font-family: $font-primary, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
     line-height: $line-height
     margin: 0
     padding: 0
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
     
     //background-image: url("./../assets/images/bg/blue_pool_table.jpg")
     background-image: url("./../public/assets/images/bg/pool_table.png")
 
-   
+
+code 
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+
+/* Text */
 //Headings
+h1, h2, h3, h4, h5, h6 
+    color: $brand-white
+
+
 h1 
     @media #{"only screen and (max-width : 1060px)"} 
         font-size: 2.4rem
@@ -122,18 +279,364 @@ h6
     @media #{$information-phone} 
         font-size: 1.1rem
 
+        
+p
+    color: $brand-white
+    font-family: $font-fourth
 
-//***************** Modals *********************//
-.modal
-    +mTransition(.7s, ease-out)
-    background-color: $brand-black // Back modal
+    @media #{"only screen and (max-width : 770px)"} 
+        margin-top: 2rem
+
+    a 
+        color: $brand-blue
+
+        &:hover
+            color: $brand-pure-black
+            text-decoration: none
+
+
+/* Index */
+.mtitle
+    font-size: 3.2rem
+
+
+p
+    color: $brand-white
+    font-family: $font-fourth
+
+    @media #{"only screen and (max-width : 770px)"} 
+        margin-top: 2rem
+
+    a 
+        color: $brand-blue
+
+        &:hover
+            color: $brand-pure-black
+            text-decoration: none
+
+
+/* Images */
+img.mimg 
+    width: 15vw
+    height: auto
+    min-width: 150px
+
+    +mBorderR(9px)
+    +mShadow(0px 0px 7px 5px $brand-black)
+    +zoomUp(.6s, 1.2)
     
-    .modal-dialog
-        background-color: $brand-white
+
+
+/* Spaces */
+.bottom-space 
+    margin-bottom: 24vh
+
+
+.bottom-space-sm 
+    margin-bottom: 9rem
+
+ 
+.top-space 
+    margin-top: 10rem // 14vh
+
+    @media #{"only screen and (max-width : 770px)"} 
+        margin-top: 11rem
+  
+
+
+/* Social Chip */                
+.button-chip-sm
+    +mChipButton($chip-size, $chip-size-sm)
+
+    font-size: 1rem
+            
+
+.button-chip-lg
+    +mChipButton($chip-size-lg, $chip-size-lg-sm)
+    
+    font-size: 1.4rem
+
+
+/* Social Container */
+.social-chip 
+    &:hover + .social-container
+        display: block
+
+        
+
+.social-container
+    left: 1rem
+    display: none
+
+    background-color: $brand-white
+    width: 8rem//6.7rem
+    height: 12.5rem//11rem
+
+    +mBorderR(10px)
+    +mShadow( 0px 0px 10px 7px rgba(0,0,0,.8)) // Box Shadow
+
+
+    header h3
+        font-family: $font-fourth
+        font-size: 1.5rem
+        color: $brand-red
+
+   
+    img 
+        transition: transform .5s
+        cursor: pointer
+
+   
+    &:hover
+        display: block
+
+        img
+            transform: scale(1.3)
+   
+
+a > i
+    color: $brand-red 
+    +zoomUp(.4s, 1.6)
+
+
+aside
+    z-index: 9999
+    bottom: $from-bottom-height
+ 
+
+/* Social Icon */
+.social-icon
+    font-size: 1.3rem
+
+/* Arrow */
+.arrow-container
+    cursor: pointer
+    right: 1.8rem
+    bottom: 4rem
+    
+    +mTransition(1s, ease-out)
+    +zoomUp(.3s, 1.3)
+
+    
+//* ARROW *//
+.line
+    width: 0
+    height: 9vh
+    border-right: 4px dashed $brand-white
+    
+
+.arrow 
+    border: dashed $brand-white
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: .8rem // Arrow width
+
+
+.right 
+    +mRotate(-45deg)
+
+.left 
+    +mRotate(135deg)
+
+.up 
+    +mRotate(-135deg)
+
+.down 
+    +mRotate(45deg)
+
+
+
+/*Home*/
+.pool-box
+    background-image: url("./../public/assets/images/bg/pool_table.png")
+    +mShadow(2px 3px 4px 2px $brand-black)
+
+
+.msuper-title
+    font-family: $font-secondary
+    color: $brand-white
+    font-weight: 600
+    font-size: 3.5rem
+    letter-spacing: .5rem
+    line-height: 5rem
+    text-shadow: 2px 2px 10px black
+    padding: 2rem 1rem
+
+
+/* Card Shapes */
+.card-shape
+    border: 3px dashed $brand-white
+    width: $card-width
+    height: $card-height
+    margin: 0 auto
+    //cursor: pointer
+                
+    +mTransition(.4, ease)
+    +zoomUp(.4s, 1.05)
+    +mBorderR(8px)
+
+
+    a 
+        text-decoration: none
+        color: $brand-red
+            
+        h4
+            display: none
+            font-size: .9rem
+            text-align: center
+            color: $brand-black
+        
+        div
+            text-align: center
+            i 
+                text-decoration: none
+
+
+    &:hover
+        background-color: $brand-white 
+        border: 3px dashed $brand-black
+                    
+        +mLinear-Gradient(to bottom right, $brand-gray, $brand-white)
+
+
+        &:hover a h4
+            display: block
+        
+
+        &:hover i
+            transition: transform .6s
+            transform: scale(1.9) 
+        
+
+    @media #{"only screen and (max-width : 650px)"} 
+        width: $card-width-sm
+        height: $card-height-sm
+
+
+/* About */
+.mcard 
+    background-color: $brand-white
+
+    margin: 0  auto 2.5rem //0 auto 40px
+    overflow: hidden // Hide circle
+
+    +mShadow(0px 0px 6px 3px $brand-black) // Box Shadow
+    +mTransition(.5s, ease-out)
+    
+    width: 250px//235px
+    height: 265px
+    //z-index: 9990
+
+    &:hover
+        height: 387px//24.2rem
         z-index: 9999
 
+    .mcard-header 
+        position: absolute
+        width: 100%
 
-//***************** Form *********************//
+        background-color: $brand-gray
+        +mShadow( 0px 0px 10px 2px rgba(0,0,0,0.3)) // Box Shadow
+
+        color: $brand-red
+        font-family: $font-secondary
+        font-weight: 600
+        text-align: center
+
+        margin-top: 150px//60%
+        //z-index: 9998
+
+
+    .mcard-symbol
+        position: absolute
+        margin-top: 18px//9%
+        width: 100%
+        
+
+    .mcard-content 
+        display: none
+        position: absolute
+
+        text-align: center
+        font-family: $font-fourth
+        font-size: 13px //.73rem
+        color: $brand-white
+
+        z-index: 9998
+
+        p 
+            padding: .4rem
+
+            a 
+                color: $brand-blue
+                text-decoration: none
+
+                &:hover
+                    color: $brand-white
+
+        > i 
+            width: 235px
+            margin-top: .8rem
+
+            i.fa 
+                color: $brand-red
+                transition: transform .4s
+                transform: scale(2.1)
+        
+        i.fa 
+            margin-left: 2rem
+
+
+    .mcard-btn-container 
+        display: none
+        position: absolute
+        text-align: center
+        z-index: 9998
+        width: 100%
+        
+
+    .mcard-circle
+        background-color: $brand-black
+        border-radius: 50%
+        height: 600px
+        width: 650px
+        margin-left: -82% // Move to left
+        margin-top: -480px//-30rem // Move to up
+
+
+    &:hover .mcard-header
+        margin-top: 269px//116%
+
+    &:hover .mcard-symbol
+        display: none
+        
+    &:hover .mcard-content
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &:hover .mcard-btn-container 
+        display: block
+        margin-top: 285px//150%
+
+    &:hover .mcard-circle 
+        margin-top: -360px//-160%
+    
+/*Contact Form*/
+.maboutform
+    +mShadow(2px 2px 6px 3px rgba(0,0,0,.4))
+    padding: 2rem
+
+    z-index: 9999
+
+    //margin-top: 8rem
+
+    @media #{"only screen and (max-width : 770px)"}
+        margin-top: 5rem
+
+
+
+
 #mContactForm
     small
         margin-top: .5rem
@@ -161,836 +664,174 @@ input, textarea
         border: 2px solid $brand-black
 
 
-//***************** FLEX SEARCH BAR *********************//
-.flex-search-bar
-    height: $search-bar-height
-    //background-color:   $brand-black
 
-    display: flex
-    justify-content: space-between
-    align-items: center
-
-    position: fixed
-    width: 100%
-    //z-index: 9998
-    top: 1rem
-
-    .search-bar-logo 
-        margin-left: 2.5rem 
-
-        @media #{"only screen and (max-width : 770px)"} 
-            margin-left: 1rem 
-
-        a img.mlogo
-            //background-color: $brand-black
-            height: $search-bar-logo-height
-            width: auto
-
-            +zoomUp(.4s, 1.27)
-
-            @media #{"only screen and (max-width : 770px)"} 
-                height: $search-bar-logo-height-sm
-
-
-    #food-circle 
-        a 
-            text-decoration: none
-            color: $brand-white
-
-
-    .search-circle
-        position: relative
-        right: $margin-content
-        top: -6.5vh
-
-        display: flex
-        align-items: center
-        justify-content: center
-
-        width: $chip-size 
-        height: $chip-size
-        cursor: pointer 
-        color: $brand-white
-        font-size: 0.7rem
-             
-        +mBorderR(50%)
-        +mShadow( 0px 0px 9px 7px rgba(0,0,0,.8)) // Box Shadow
-        +zoomUp(.5s, 1.1)
-
-        border: 3px solid $brand-white
-        background-color: $brand-red
-        //margin-left:        -2.3rem
-
-        @media #{"only screen and (max-width : 770px)"} 
-            right: 1rem
-
-
-        @media #{"only screen and (max-width : 650px)"} 
-            width: $chip-size-sm 
-            height: $chip-size-sm
-
-        display: none
-            
-    
-
-
-//***************** Content Page *********************//
-.bg-black 
-    background-color: $brand-black
-
-
-div.sticky
-    position: sticky
-    top: $search-bar-element-max-height
-    
-
-.grid-container
-    display: grid
-    grid-template-columns: repeat(2, $margin-content) repeat($columns-num, auto) repeat(2, $margin-content)
-    
-    //margin: 6.5rem 0 0 0
-
-    @media #{"only screen and (max-width : 770px)"}
-        grid-template-columns: repeat(2, .8rem) repeat($columns-num, auto) repeat(2, .8rem)  
-
-
-    section 
-        grid-column: 3/15
-            
-
-        #super-title
-            +mShadow(2px 2px 6px 3px rgba(0,0,0,.4))
-            margin: 3rem 0
-
-            h1.msuper-title
-                font-family: $font-secondary
-                color: $brand-white
-                font-weight: 600
-                text-align: center
-                font-size: 3.5rem
-                line-height: 6rem
-                letter-spacing: .5rem
-                text-shadow: 2px 2px 10px black
-
-                padding: 2rem 1rem
-
-
-        header h1 
-            text-align: center
-            text-shadow: 1px 1px 2px $brand-white
-            margin: 3rem 0 4.5rem
-            font-size: 4rem
-
-
-        #mpersonal
-            display: grid
-            grid-template-columns: 1fr 3fr // 2 cols
-
-            .mimg-container
-                grid-column: 1/2
-                grid-row: 1/5
-
-                margin: auto
-
-                img
-                    width: 15vw
-                    height: auto
-
-                    min-width: 150px
-
-                    +mBorderR(9px)
-                    +mShadow(0px 0px 8px 5px $brand-black)
-                    +zoomUp(.6s, 1.2)
-
-                @media #{"only screen and (max-width : 770px)"}
-                    grid-column: 1/3
-                    grid-row: 1/2
-
-                    //margin-top: 2rem
-                    //margin-top: -5rem
-
-
-            p
-                grid-column: 2/3
-                grid-row: 1/5
-                color: $brand-white
-                margin-left: 5rem
-                font-family: $font-fourth
-
-                @media #{"only screen and (max-width : 770px)"}
-                    margin-left: .7rem  
-                    grid-column: 1/3
-                    grid-row: 2/3
-                    margin-top: 2rem
-                
-
-                a 
-                    color: $brand-white
-                    text-decoration: none
-
-
-        #mlab
-            display: grid
-            grid-template-columns: 1fr 4fr
-
-            @media #{"only screen and (max-width : 770px)"}
-                margin-top: -2rem
-                grid-template-columns: 1fr
-
-        
-            .cards-group
-                grid-column: 1/2
-                display: flex
-                    
-                color: $brand-white
-
-
-                @media #{"only screen and (max-width : 770px)"} 
-                    grid-column: 1/2
-                    margin: 0 auto
-                    margin-left: 18%
-
-
-                .mlabcard
-                    display: flex
-                    justify-content: space-between
-                    flex-direction: column
-                    text-align: center
-    
-                    width: 162.72px
-                    height: 231.4px
-                    padding: 1rem
-                    border: 2px solid $brand-white
-
-                    +mBorderR(8px)
-                    +mShadow(0px 0px 6px 4px $brand-black)
-                    +zoomUp(.5s, 1.07)
-
-                    @media #{"only screen and (max-width : 770px)"}
-                        width: 135px
-                        height: 192.833px
-
-                    &:hover
-                        z-index: 9995
-
-                    h4 
-                        a 
-                            color: $brand-red
-
-                    &:hover h4 a 
-                        color: $brand-white
-                            
-                        
-                .left-overlap 
-                    position: relative
-                    left: -78.8px
-                    
-
-                .left-overlap-2
-                    position: relative
-                    left: -157.6px
-                
-
-            .big-card
-                grid-column: 3/4
-                display: block
-                margin: 0 auto
-
-                @media #{"only screen and (max-width : 770px)"} 
-                    grid-column: 1/2
-                    margin-top: 2rem
-                    //margin: 2rem 0 0
-
-                .info-card
-                    display: flex
-                    flex-direction: column
-                    justify-content: space-around
-
-                    width: 230px
-                    height: 326.45px
-                        //margin-top: 2rem
-                    padding: .7rem
-
-                    border: 2px solid $brand-white
-
-                    +mBorderR(8px)
-                    +mShadow(0px 0px 6px 4px $brand-black)
-
-                    color: $brand-white
-
-                    @media #{"only screen and (max-width : 770px)"} 
-                        width: 209px
-                        height: 296.77px
-
-          
-        #maboutform
-            +mShadow(2px 2px 6px 3px rgba(0,0,0,.4))
-            padding: 2rem
-
-            display: grid
-            grid-template-columns: 1fr 1fr
-            z-index: 9999
-
-            //margin-top: 8rem
-
-            @media #{"only screen and (max-width : 770px)"}
-                margin-top: 5rem
-
-
-            main 
-                grid-column: 1/5
-
-                display: grid
-                grid-template-columns: 1fr
-
-
-
-        #mabout, #mcategories, #mportfolio
-            display: grid
-            grid-template-columns: 1fr 1fr 1fr 1fr
-
-            //margin-top: 3.8rem
-
-            @media #{"only screen and (max-width : 770px)"}
-                margin-top: -2rem
-
-            header 
-                grid-column: 1/5
-
-                h1 
-                    text-align: center
-                    text-shadow: 1px 1px 2px $brand-white
-                    margin-bottom: 1.5rem
-                    //margin-top: 1.7rem
-
-            main 
-                grid-column: 1/5
-
-                display: grid
-                grid-template-columns: 1fr 1fr
-
-                @media #{"only screen and (max-width : 770px)"} 
-                    //background-color: blue
-                    grid-template-columns: 1fr
-
-                .gallery-card
-                    margin-bottom: 2.8rem
-                    +mShadow(0 0 1rem $brand-gray)
-                    +mBorderR(20px)
-                    @extend .center-block
-                    overflow: hidden
-
-                
-                    .card-header
-                        background-color: $brand-black
-                        
-                        h5 
-                            text-transform: uppercase
-                            color: $brand-red
-                            font-family: $font-secondary
-                            padding-top: .8rem
-                            font-weight: 600
-
-                    .card-body
-                        .carousel-control-prev, .carousel-control-next
-                            background-color: $brand-black
-                        
-                        img 
-                            min-height: 220px
-                            max-height: 220px
-                            width: auto
-                            +zoomUp(.3s, 1.1)                            
-                            
-                                
-        #mportfolio
-            main 
-                .maccordion
-                    margin-top: 2rem
-                    margin: 0 auto
-
-
-                .mportfoliocard
-                    background-color: $brand-white
-                    width: 90%
-                    margin: auto
-
-                    .card-body
-                        button
-                            display: block
-                            margin: auto
-    
-                            a
-                                padding: .7rem .7rem
-
-                    ul > li 
-                        text-align: center
-
-                    img 
-                        +zoomUp(.4s, 1.1)
-                        +mBorderR(8px)
-
-                        max-height: 200px
-
-                    p 
-                        font-family: $font-fourth
-                        font-weight: 600
-
-
-                .card
-                    +mShadow(0px 0px 7px 5px $brand-black)
-
-                    //width: 85%
-
-                    .card-header
-                        height: 4rem
-                        background-color: $brand-black
-
-                        h5
-                            text-align: center
-                            margin-top: .4rem
-
-                            a 
-                                font-size: 1.4rem
-                                font-family: $font-fourth
-                                color: $brand-red
-                                font-weight: 600
-                                text-transform: uppercase
-                                
-
-// Margin for cards in portfolio
-.double-column
-    grid-column: 1/3
-
-    @media #{"only screen and (max-width : 770px)"}
-        grid-column: 1/2
-
-
-#designAccordion
-    width: 50%
-
-    @media #{"only screen and (max-width : 770px)"}
-        width: auto
-
-/*#design-card
-    grid-column: 1/3
-
-    @media #{"only screen and (max-width : 770px)"}
-        grid-column: 1/2*/
-    
-
-
-.portfolio-cards
-    margin-bottom: 6rem
-    display: flex
-    //justify-content: center
-    align-items: center
-    flex-direction: column   
-
-    h2 
-        color: $brand-white 
-
-    .pagination
-        display: none
-
-
-    
-           
-// The pseudo-nav cards
-.grid-cards
-    display: grid
-    grid-template-columns: repeat(3, $margin-content) repeat(5, auto) repeat(3, $margin-content) // 9 columns
-    grid-template-rows: auto auto
-    
-    padding: 0
-    margin-bottom: 2rem
-
-    @media #{"only screen and (max-width : 650px)"}
-        grid-template-columns: repeat(5, auto)  // 5 columns
-
-
-    .card-shape
-        border: 3px dashed $brand-white
-        width: $card-width
-        height: $card-height
-        margin: 0 auto
-        //cursor: pointer
-                
-        +mTransition(.4, ease)
-        +zoomUp(.4s, 1.05)
-        +mBorderR(8px)
-
-        display: flex 
-        justify-content: center 
-        align-items: center
-
-        &:hover
-            border: 3px dashed $brand-black
-                    
-            background-color: $brand-white //$body-gradient
-            +mLinear-Gradient(to bottom right, $brand-gray, $brand-white)
-
-
-        @media #{"only screen and (max-width : 650px)"} 
-            width: $card-width-sm
-            height: $card-height-sm
-
-            display: flex
-            align-items: center
-            justify-content: center
-
-        &:hover a h6
-            display: block
-        
-        &:hover i
-            transition: transform .4s
-            transform: scale(1.8) 
-        
-        a 
-            //text-decoration: none
-            color: $brand-red
-            display: flex
-            flex-direction: column
-            justify-content: center
-            
-            h6 
-                display: none
-                font-size: .7rem
-                text-align: center
-        
-            div
-                text-align: center
-                i 
-                    text-decoration: none
-
-            
-    // Cards order
-    .first-card
-        grid-column: 4/5
-
-        @media #{"only screen and (max-width : 650px)"}
-            grid-column: 1/2
-            
-    .second-card
-        grid-column: 5/6
-
-        @media #{"only screen and (max-width : 650px)"}
-            grid-column: 2/3
-
-    .third-card
-        grid-column: 6/7
-
-        @media #{"only screen and (max-width : 650px)"}
-            grid-column: 3/4
-            
-    .fourth-card
-        grid-column: 7/8
-
-        @media #{"only screen and (max-width : 650px)"}
-            grid-column: 4/5
-
-    .fifth-card
-        grid-column: 8/9
-
-        @media #{"only screen and (max-width : 650px)"}
-            grid-column: 5/6
-
-
-
-.bottom-space
-    height: 24vh
-
-.top-space
-    height: 8rem // 14vh
-
-    @media #{"only screen and (max-width : 770px)"} 
-        height: 11rem
-
-.margin-top-sm
-    margin-top: 1rem
-
-
-
-// My Presentation (About me) cards
-.mcard 
+/*Portfolio*/
+.mportfoliocard
     background-color: $brand-white
+    margin: auto
 
-    margin: 0  auto 2.5rem //0 auto 40px
-    overflow: hidden // Hide circle
-
-    +mShadow(0px 0px 6px 3px $brand-black) // Box Shadow
-    +mTransition(.5s, ease-out)
-    
-    width: 225px
-    height: 265px
-    //z-index: 9990
-
-    &:hover
-        height: 387px//24.2rem
-        z-index: 9999
-
-    .mcard-header 
-        position: absolute
-        width: 100%
-
-        background-color: $brand-gray
-        +mShadow( 0px 0px 10px 2px rgba(0,0,0,0.3)) // Box Shadow
-
-        color: $brand-red
-        font-family: $font-secondary
-        font-weight: 600
-        text-align: center
-
-        margin-top: 150px//60%
-        //z-index: 9998
-
-    .mcard-symbol
-        position: absolute
-        margin-top: 18px//9%
-        width: 100%
-        
-    .mcard-content 
-        display: none
-        position: absolute
-
-        text-align: center
-        font-family: $font-fourth
-        font-size: 13px //.73rem
-        color: $brand-white
-
-        z-index: 9998
-
-        p 
-            padding: .4rem
-
-            a 
-                color: $brand-blue
-                text-decoration: none
-
-                &:hover
-                    color: $brand-white
-
-        > i 
-            width: 225px
-            margin-top: .8rem
-
-            &:hover
-                cursor: pointer
-                font-weight: 900
-
-                i.fa 
-                    color: $brand-red
-                    transition: transform .4s
-                    transform: scale(2.1)
-        
-        i.fa 
-            margin-left: 2rem
-
-    .mcard-btn-container 
-        display: none
-        position: absolute
-        text-align: center
-        z-index: 9998
-        width: 100%
-        
-    .mcard-circle
-        background-color: $brand-black
-        border-radius: 50%
-        height: 600px
-        width: 650px
-        margin-left: -95% // Move to left
-        margin-top: -480px//-30rem // Move to up
-
-
-    &:hover .mcard-header
-        margin-top: 269px//116%
-
-    &:hover .mcard-symbol
-        display: none
-        
-    &:hover .mcard-content
-        display: flex
-        flex-direction: column
-        align-items: center
-
-    &:hover .mcard-btn-container 
-        display: block
-        margin-top: 285px//150%
-
-    &:hover .mcard-circle 
-        margin-top: -360px//-160%
-    
-
-
-/*Testing about card*/
-.mabout-card
-    margin-top: 235px
-    width: 225px
-    height: 150px
-    z-index: 9998
-
-    padding-top: 100px
-
-    background-color: $brand-white
-    +mBorderR(7px)
-    +mShadow(0px 0px 6px 3px $brand-black) // Box Shadow
-    +mTransition(.5s, ease-out)
-
-    overflow: hidden
-
-    
-    .mtitle-card
-        background-color: $brand-gray
-        +mShadow( 0px 0px 10px 2px rgba(0,0,0,0.3)) // Box Shadow
-        z-index: 9998
-        
-        h2 
-            color: $brand-red
-            font-family: $font-secondary
-            font-weight: 600
-            text-align: center
-
-
-    .mcircle-card
-        width: 400px
-        height: 400px
-        +mBorderR(50%)
-        background-color: $brand-black
-
-        position: relative
-        top: -480px
-        right: 87px
-
-        img 
-            width: 87px
-            height: auto
-
-            position: relative
-            top: 310px
-            left: 155px
-
-            +zoomUp(.4s, 1.1)
-
-
-    .mrect-card
-        display: none
-        height: 270px
-        background-color: $brand-black
-
-        border: 2px solid $brand-white
-        +mBorderR(7px)
-
-        position: relative
-        top: -380px
-
-        font-size: .8rem
-        font-family: $font-fourth
-        color: $brand-white
-        padding: 0 .3rem
-        text-align: center
-
-        a 
-            color: $brand-blue
-            
-
-
-    &:hover
-        overflow: visible
-
-    &:hover .mcircle-card
-        display: none  
-
-    &:hover .mrect-card
-        display: flex
-        flex-direction: column
-        z-index: 9999
-
-     
-        
-
-
-
-//***************** FONT AWESOME *********************//    
-a > i 
-    +zoomUp(.4s, 1.6)
-
-
-
-//***************** FOOD *********************//
-#mfood
-    padding: 0 5rem
-
-    h1 
-        text-align: center
-        color: $brand-white
-    
-
-    .link-container
-        width: 200px
-        margin-bottom: 5rem
-        
-        details
-            margin-bottom: .7rem
-
-            summary
-                &:hover
-                    cursor: pointer
-                    font-size: 1.2rem
-                    color: $brand-white
-
-
-            li a
-                text-decoration: none
-                color: $brand-pure-black
-                margin-bottom: 7rem
-
-                &:hover
-                    color: $brand-white
-                //font-size: 4rem
-
-
-    .food-content
-        dl 
-            hr 
-                //margin: 4rem auto
-                width: 80%
-
-            dt 
-                h2 
-                    color: $brand-white
-                    text-align: center
-        
-            dd 
-                img.m-img
-                    display: block
-                    margin: 2.5rem auto
-
-                    +mBorderR(6px)
-                    +mShadow(2px 2px 5px 3px $brand-black)
-                    +zoomUp(.4s, 1.1)
-
-                p.right-text
-                    display: flex
-                    justify-content: flex-end
-
-                    a
-                        margin-top: 2rem 
-                        padding: .4rem 1rem
-
-                        +mBorderR(10px)
-                        border: 1px solid $brand-white
-                        color: $brand-white
-                        text-decoration: none
-
-                        &:hover
-                            background-color: $brand-black
-                            
-                ul li h4 
-                    color: $brand-white
-                    margin: 2rem 0
-
-
-    .recipes-button
+    .card-body
         button
             display: block
             margin: auto
-                
+    
+            a
+                padding: .7rem .7rem
+
+    ul > li 
+        text-align: center
+
+    img
+        +zoomUp(.4s, 1.1)
+        +mBorderR(8px)
+
+        max-height: 200px
+
+    p
+        font-family: $font-fourth
+        font-weight: 600
+        color: $brand-black
+
+
+.card
+    +mShadow(0px 0px 7px 5px $brand-black)
+    //width: 85%
+
+    h5.card-header
+        height: 4rem
+        background-color: $brand-black
+        color: $brand-red
+        text-align: center
+        
+        a
+            font-size: 1.4rem
+            font-family: $font-fourth
+            color: $brand-red
+            font-weight: 600
+            text-transform: uppercase
+
+
+.card-title
+    color: $brand-red
+
+
+.btn-border-primary
+    border:             1px solid $brand-red
+    background-clip:    border-box
+    background:         none
+    color:              $brand-red  
+    +mBorderR(10px)
+    
+    //width: 50%
+    height: 2rem
+
+    font-family:        $font-primary
+    font-size:          1rem
+    text-decoration:    none
+    text-transform:     uppercase
+
+    +mTransition(.6s, ease-out)
+
+    a 
+        +mTransition(.6s, ease-out)
+        text-decoration: none
+        color: $brand-red
+
+    
+    &:hover
+        background-color:       $brand-red
+        color:                  $brand-white
+
+        +mLinear-Gradient(to bottom right, $brand-red, $brand-gray)
+
+    &:hover a
+        color: $brand-white
+
+
+.btn-border-secondary
+    border:             2px solid $brand-blue
+    background-clip:    border-box
+    background:         none
+    color: $brand-blue  
+    +mBorderR(40px)
+    
+    width: 75%
+    height: 2.5rem
+
+    font-family:        $font-third
+    font-size:          1rem
+    text-decoration:    none
+    text-transform:     uppercase
+
+    +mTransition(.5s, ease-out)
+
+    &:hover
+        background-color:   $brand-blue
+        color:              $brand-white 
+        
+
+.btn-border-black
+    border:             2px solid $brand-black
+    background-clip:    border-box
+    +mLinear-Gradient(to bottom right, $brand-white, $brand-gray)
+    color:              $brand-black  
+    +mBorderR(10px)
+    
+    //width: 50%
+    height: 2rem
+
+    font-family:        $font-primary
+    font-size:          1rem
+    text-decoration:    none
+    text-transform:     uppercase
+    padding:            .2rem 2rem
+    
+    display: block
+    margin: 0 auto
+
+
+    +mTransition(.6s, ease-out)
+
+    a 
+        +mTransition(.6s, ease-out)
+        text-decoration: none
+        color: $brand-red
+
+    
+    &:hover
+        background-color:       $brand-black
+        color:                  $brand-white
+
+        +mLinear-Gradient(to bottom right, $brand-black, $brand-gray)
+
+    &:hover a
+        color: $brand-white
+
+
+// Extra
+i 
+    &:hover
+        cursor: pointer
+        font-weight: 900
+
+        > i 
+            color: $brand-red
+
+button a 
+    color: $brand-white
+    text-decoration: none
+
+    &:hover
+        color: $brand-black
+        text-decoration: none
+
+        
+
+//***************** Modals *********************//
+.modal
+    +mTransition(.7s, ease-out)
+    background-color: $brand-black // Back modal
+    
+    .modal-dialog
+        background-color: $brand-white
+        z-index: 9999

@@ -53,12 +53,8 @@
                 <div class="nav-card">
                     <div class="nav-card-content">
                         <h4 class="nav-card-title">
-                            <a title="Portfolio" href="./../../pages/portfolio/portfolio.html">Portfolio</a>
+                            <a title="Portfolio" href="./../portfolio/portfolio.html">Portfolio</a>
                         </h4>
-
-                        <!-- 
-                        <p class="nav-card-text">am-gik</p>
-                        -->
 
                         <img src="./../../public/assets/images/svg/symbols-spades-light.svg" alt="Spades" width="70px"
                             height="auto">
@@ -69,346 +65,367 @@
     </nav>
 
 
-    <!-- SEARCH BAR -->
-    <header>
+    <!-- TOP BAR -->
+    <header class="container-fluid fixed-top mt-5">
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-between align-itmes-center">
+                <div>
+                    <a href="./../../index.html">
+                        <img title="Home" class="mlogo" src="./../../public/assets/images/logo/am-gik-borders-25.svg"
+                            alt="LOGO">
+                    </a>
+                </div>
 
-        <div class="flex-search-bar">
-
-            <!-- Logo -->
-            <div class="search-bar-logo">
-                <a href="./../../index.html">
-                    <img title="Home" class="mlogo" src="./../../public/assets/images/logo/am-gik-borders-25.svg"
-                        alt="LOGO">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" title="Click me!" id="search-chip" class="search-circle d-none"
+                    data-toggle="modal" data-target="#searchModal">
+                    Search
+                </button>
             </div>
-
-
-            <!-- Button trigger modal -->
-            <button type="button" title="Click me!" id="search-chip" class="search-circle" data-toggle="modal"
-                data-target="#searchModal">
-                Search
-            </button>
-
-            <!-- Button to fav food
-            <button id="food-circle" type="button" title="Click me!" class="search-circle">
-                <a href="./../../pages/food/food.html">My fav food</a>
-            </button> 
-            -->
         </div>
     </header>
 
 
     <!-- Social -->
-    <aside>
-        <div title="Click me!" id="social-chip" class="social-circle" type="button" data-toggle="modal"
-            data-target="#modalForm">
-            <p id="social-chip-title">
-                Get<br>in<br>touch
-            </p>
+    <aside class="position-absolute">
+        <div class="position-absolute position-fixed social-chip ">
+            <button type="button" title="Click me!" id="social-chip"
+                class="d-flex justify-content-center align-items-center button-chip-sm" data-toggle="modal"
+                data-target="#modalForm">
+                Get in touch
+            </button>
         </div>
 
-        <div id="social-card" class="social-media-container">
-
-            <!-- Social Title -->
-            <header>
-                <h1>
-                    <a href="#">Social</a>
-                </h1>
+        <div class="position-relative position-fixed mt-5 social-container">
+            <header class="container-fluid mt-2">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="text-center">Social</h3>
+                    </div>
+                </div>
             </header>
 
+            <div class="container-fluid">
+                <div class="row mt-2 p-2">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
 
-            <!-- Facebook - Instagram -->
-            <div class="mrow">
 
-                <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790"
-                    target="_blank">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
+                        <div>
+                            <a id="instagram-link" title="Instagram" href="https://www.instagram.com/ea_maruri/"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                <a id="instagram-link" title="Instgram" href="https://www.instagram.com/ea_maruri/" target="_blank">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
+                <div class="row mt-2 p-2">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <a id="github-link" title="Github" href="https://github.com/ea-maruri/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
 
+                        <div>
+                            <a id="linkedin-link" title="Linkedi"
+                                href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
-            <!-- Github - LinkedIn -->
-            <div class="mrow">
-
-                <a id="github-link" title="Github" href="https://github.com/ea-maruri/" target="_blank">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-
-                <a id="linkedin-link" title="LinkedIn"
-                    href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-
-            </div>
-
-
-            <!-- Symbol -->
-            <footer class="msymbol">
-                <!-- Button trigger modal (Form) -->
-                <a title="Get in touch" type="button" data-toggle="modal" data-target="#modalForm">
-                    <img src="./../../public/assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px"
-                        height="auto">
-                </a>
+            <footer class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col">
+                        <img class="d-block mx-auto" title="Get in touch"
+                            src="./../../public/assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px"></img>
+                    </div>
+                </div>
             </footer>
-
         </div>
 
-        <div id="marrow-container" class="arrow-container">
-            <div class="line"></div>
+
+        <div id="marrow-container"
+            class="position-absolute position-fixed d-flex flex-column justify-content-center align-items-center arrow-container">
+            <div class="line mr-2"></div>
 
             <p>
                 <i id="marrow" class="arrow down"></i>
             </p>
         </div>
+
     </aside>
 
 
-    <div id="page-start" class="top-space"> </div>
+    <div class="top-space">
+        <header>
+            <h1 class="text-center mb-5 mtitle">Know me</h1>
+        </header>
 
+        <main class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card mcard">
+                        <h3 class="mcard-header">What do I do?</h3>
 
-    <!-- Grid Content -->
-    <div class="grid-container">
+                        <img class="mcard-symbol" src="./../../public/assets/images/svg/diamond-17.svg" alt="Diamond"
+                            height="100px" width="auto"></img>
 
-        <!-- Cards Container -->
-        <section>
-            <!-- Header -->
-            <header>
-                <h1>Know me</h1>
-            </header>
-
-            <div id="mabout">
-
-                <!-- Cards -->
-                <main>
-                    <!-- Cards
-                        class="col-sm-12 col-md-6 col-lg-3" 
-                    -->
-
-
-                    <!-- What I do -->
-                    <div>
-                        <div class="card mcard">
-
-                            <h3 class="mcard-header">What do I do?</h3>
-
-                            <img class="mcard-symbol" src="./../../public/assets/images/svg/diamond-17.svg"
-                                alt="Diamond" height="100px" width="auto">
-
-                            <div class="mcard-content">
+                        <div class="mcard-content mx-auto">
+                            <div>
                                 <p>
                                     I <em><strong>design</strong></em> and <em><strong>develop</strong></em>
                                     websites, apps, simple games, and software.
                                 </p>
 
                                 <p>
-                                    I <em>really</em> like to do it.
-                                    However, always is important to work as a <strong>team</strong>.
+                                    I <em>really</em> like to do it. However, always is important to work
+                                    as a <strong>team</strong>.
                                 </p>
 
                                 <p>
-                                    Let's <strong><em><a href="#">work together</a></em></strong>.
+                                    Let's <strong><em>work together</em></strong>.
                                 </p>
-
                             </div>
-
-                            <!--
-                            <div class="mcard-btn-container">
-                                <button type="button" class="btn-border-secondary">Call to Action</button>
-                            </div>
-                            -->
-
-                            <div class="mcard-circle"></div>
                         </div>
+
+                        <div class="mcard-circle"></div>
                     </div>
+                </div>
 
+                <div class="col-sm-12 col-md-6">
+                    <div class="card mcard">
+                        <h3 class="mcard-header">Hard-Skills</h3>
 
-                    <!-- Hard-skills (table)-->
-                    <div>
-                        <div class="card mcard">
+                        <img class="mcard-symbol" src="./../../public/assets/images/svg/symbols-club-light.svg"
+                            alt="Club" height="100px" width="auto"></img>
 
-                            <h3 class="mcard-header">Hard-Skills</h3>
-
-                            <img class="mcard-symbol" src="./../../public/assets/images/svg/symbols-club-light.svg"
-                                alt="Club" height="70px" width="auto">
-
-                            <div class="mcard-content">
-                                <i>Programming - Intermediate</i>
-                                <i>Web Dev. - Intermediate</i>
-                                <i>Databases - Intermediate</i>
-                                <i>AI - Basic</i>
-                                <i>Networks - Basic</i>
-                                <i>Operating Systems - Basic</i>
-                                <i>Office 365 - Intermediate</i>
-                            </div>
-
-
-                            <!--
-                            <div class="mcard-btn-container">
-                                <button type="button" class="btn-border-secondary">Call to Action</button>
-                            </div>
-                            -->
-
-                            <div class="mcard-circle"></div>
-                        </div>
-                    </div>
-
-
-                    <!-- Soft-Skills -->
-                    <div>
-                        <div class="card mcard">
-
-                            <h3 class="mcard-header">Soft-Skills</h3>
-
-                            <img class="mcard-symbol" src="./../../public/assets/images/svg/symbol-hearts.svg"
-                                alt="Heart" height="70px" width="auto">
-
-                            <div class="mcard-content">
-                                <i>Team-Work <i class="fa fa-users" aria-hidden="true"></i></i></i>
-                                <i>Autodidact <i class="fa fa-leanpub" aria-hidden="true"></i></i>
-                                <i>Reflexive <i class="fa fa-book" aria-hidden="true"></i></i>
-                                <i>Responsible <i class="fa fa-briefcase" aria-hidden="true"></i></i>
-                            </div>
-
-
-                            <!--
-                            <div class="mcard-btn-container">
-                                <button type="button" class="btn-border-secondary">Call to Action</button>
-                            </div>
-                            -->
-
-                            <div class="mcard-circle"></div>
-                        </div>
-                    </div>
-
-
-                    <!-- Languages -->
-                    <div>
-                        <div class="card mcard">
-
-                            <h3 class="mcard-header">Languages</h3>
-
-                            <img class="mcard-symbol" src="./../../public/assets/images/svg/symbols-spades-light.svg"
-                                alt="Spades" height="70px" width="auto">
-
-                            <div class="mcard-content">
-                                <i>HTML-CSS <i class="fa fa-html5" aria-hidden="true"></i></i>
-                                <i>Java <i class="fa fa-code" aria-hidden="true"></i> </i>
-                                <i>Python <i class="fa fa-code-fork" aria-hidden="true"></i></i>
-                                <i>C++ <i class="fa fa-code-fork" aria-hidden="true"></i></i>
-                                <i>C# <i class="fa fa-code-fork" aria-hidden="true"></i></i>
-                                <i>Javascript <i class="fa fa-code" aria-hidden="true"></i> </i>
-                                <i>MySQL <i class="fa fa-database" aria-hidden="true"></i></i>
-                            </div>
-
-
-                            <!--
-                            <div class="mcard-btn-container">
-                                <button type="button" class="btn-border-secondary">Call to Action</button>
-                            </div>
-                            -->
-
-                            <div class="mcard-circle"></div>
-                        </div>
-                    </div>
-
-                </main>
-            </div>
-        </section>
-
-
-        <!-- Contact Form -->
-        <section>
-            <header>
-                <h1>So, What Can I Do For You?</h1>
-            </header>
-
-            <div id="maboutform">
-
-                <main>
-                    <form class="about-form">
-                        <div class="row">
-                            <div class="col">
-                                <input id="about_txt_email" type="email" class="form-control" placeholder="Your Email">
-                            </div>
-                            <div class="col">
-                                <input id="about_txt_name" type="text" class="form-control" placeholder="Your Name">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col margin-top-sm">
-                                <div class="form-group">
-                                    <input id="about_txt_topic" type="text" class="form-control" placeholder="Topic">
+                        <div class="mcard-content mx-auto">
+                            <div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="items-container">
+                                                <i class="d-block text-center mt-2">
+                                                    Programming - Intermediate
+                                                </i>
+                                                <i class="d-block text-center mt-2">
+                                                    Web Dev. - Intermediate
+                                                </i>
+                                                <i class="d-block text-center mt-2">
+                                                    Databases - Intermediate
+                                                </i>
+                                                <i class="d-block text-center mt-2">AI - Basic</i>
+                                                <i class="d-block text-center mt-2">Networks - Basic</i>
+                                                <i class="d-block text-center mt-2">
+                                                    Operating Systems - Basic
+                                                </i>
+                                                <i class="d-block text-center mt-2">
+                                                    Office 365 - Intermediate
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <textarea id="about_txt_request" class="form-control" name="" id="" rows="5"
-                                        placeholder="Your Request..."></textarea>
+                        <div class="mcard-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card mcard">
+                        <h3 class="mcard-header">Soft-Skills</h3>
+
+                        <img class="mcard-symbol" src="./../../public/assets/images/svg/symbol-hearts.svg" alt="Heart"
+                            height="100px" width="auto"></img>
+
+                        <div class="mcard-content mx-auto">
+                            <div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="items-container">
+                                                <i class="d-block text-center mt-4 ml-4">
+                                                    Team-Work <i class="ml-5 fas fa-users" aria-hidden="true"></i>
+                                                </i>
+                                                <i class="d-block text-center mt-4 ml-4">
+                                                    Autodidact
+                                                    <i class="ml-5 fas fa-book-open"></i>
+                                                </i>
+                                                <i class="d-block text-center mt-4 ml-4">
+                                                    Reflexive <i class="ml-5 fas fa-book" aria-hidden="true"></i>
+                                                </i>
+                                                <i class="d-block text-center mt-4 ml-4">
+                                                    Responsible
+                                                    <i class="ml-5 fas fa-briefcase" aria-hidden="true"></i>
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
 
+                        <div class="mcard-circle"></div>
+                    </div>
+                </div>
 
-                        <button id="about_btn_send" type="button" class="btn-border-black">
-                            Send
-                        </button>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card mcard">
+                        <h3 class="mcard-header">Languages</h3>
 
+                        <img class="mcard-symbol" src="./../../public/assets/images/svg/symbols-spades-light.svg"
+                            alt="Spades" height="100px" width="auto"></img>
 
-                        <div class="row">
-                            <div class="col margin-top-sm">
-                                <small id="success-form-message"></small>
+                        <div class="mcard-content mx-auto">
+                            <div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="items-container">
+                                                <i class="d-block text-center mt-2 ml-4">
+                                                    HTML-CSS 
+                                                </i>
+                                                <i class="d-block text-center mt-2 ml-4">
+                                                    Java <i class="ml-5 fas fa-code" aria-hidden="true"></i>
+                                                </i>
+                                                <i class="d-block text-center mt-2 ml-4">
+                                                    Python <i class="ml-5 fas fa-code-fork" aria-hidden="true"></i>
+                                                </i>
+                                                <i class="d-block text-center mt-2 ml-4">
+                                                    C++ <i class="ml-5 fas fa-code-fork" aria-hidden="true"></i>
+                                                </i>
+                                                <i class="d-block text-center mt-2 ml-4">
+                                                    C# <i class="ml-5 fas fa-code-fork" aria-hidden="true"></i>
+                                                </i>
+                                                <i class="d-block text-center mt-2 ml-4">
+                                                    Javascript <i class="ml-5 fas fa-code" aria-hidden="true"></i>
+                                                </i>
+                                                <i class="d-block text-center mt-2 ml-4">
+                                                    MySQL <i class="ml-5 fas fa-database" aria-hidden="true"></i>
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
 
-                    </form>
-                </main>
-
+                        <div class="mcard-circle"></div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </main>
 
+        <header class="my-5">
+            <h2 class="text-center">So, What Can I Do For You?</h2>
+        </header>
+
+        <section class="bottom-space-sm px-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form id="mContactForm" class="about-form maboutform">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="modal_txt_email" type="email" class="form-control w-75"
+                                            placeholder="Your Email"></input>
+                                    </div>
+                                    <div class="col">
+                                        <input id="modal_txt_name" type="text" class="form-control"
+                                            placeholder="Your Name"></input>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input id="modal_txt_topic" type="text" class="form-control w-75"
+                                                placeholder="Topic"></input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <textarea id="modal_txt_request" class="form-control" name="" rows="5"
+                                                placeholder="Your Request..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <button id="modal_btn_send" type="button" class="btn-border-black">
+                                            Send
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col margin-top-sm">
+                                        <small id="success-form-message-modal"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
         <!-- Footer -->
-        <footer id="mfoot" class="mfooter">
-            <!-- Footer -->
-            <div id="mcopy" class="footer-circle">
-                <p id="mcopy-right" class="copysymbol">
-                    &#169; Copyright 2020
-                </p>
-                <p>
-                    <a title="AM-GIK" href="./../../index.html">AM-GIK</a>
-                </p>
-            </div>
-
-
-            <!-- Mail -->
-            <div id="memail" class="footer-circle">
-                <!--href="mailto:ea.maruri@outlook.com, am-gik@outlook.com"-->
-                <a title="Send Email" href="#" target="_blanck" type="button" data-toggle="modal"
+        <footer class="container bottom-space">
+            <div class="d-flex justify-content-around">
+                <button type="button" title="Click me!" id=""
+                    class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle="modal"
                     data-target="#modalForm">
                     Send Email
+                </button>
+
+                <a href="./../../index.html">
+                    <div class="mt-5">
+                        <button type="button" title="Click me!" id=""
+                            class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle=""
+                            data-target="">
+                            &#169; Copyright 2020 AM-GIK
+                        </button>
+                    </div>    
                 </a>
-            </div>
-
-
-            <!-- CV -->
-            <div id="mcv" class="footer-circle">
-                <a title="CV"
+                
+                <a
                     href="https://www.canva.com/design/DAD-z3YWowI/CTzEgEQNURNXEBhda53MEQ/view?utm_content=DAD-z3YWowI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                     target="_blank">
-                    My CV
+                    <button type="button" title="Click me!" id=""
+                        class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle=""
+                        data-target="">
+                        My CV
+                    </button>
                 </a>
             </div>
         </footer>
-
     </div>
 
 

@@ -38,10 +38,6 @@
                             <a title="About" href="./../about/about.html">About</a>
                         </h4>
 
-                        <!-- 
-                        <p class="nav-card-text">am-gik</p>
-                        -->
-
                         <img src="./../../public/assets/images/svg/diamond-17.svg" alt="Diamond" width="70px"
                             height="auto">
                     </div>
@@ -68,762 +64,586 @@
     </nav>
 
 
-    <!-- SEARCH BAR -->
-    <header>
+    <!-- TOP BAR -->
+    <header class="container-fluid fixed-top mt-5">
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-between align-itmes-center">
+                <div>
+                    <a href="./../../index.html">
+                        <img title="Home" class="mlogo" src="./../../public/assets/images/logo/am-gik-borders-25.svg"
+                            alt="LOGO">
+                    </a>
+                </div>
 
-        <div class="flex-search-bar">
-
-            <!-- Logo -->
-            <div class="search-bar-logo">
-                <a href="./../../index.html">
-                    <img title="Home" class="mlogo" src="./../../public/assets/images/logo/am-gik-borders-25.svg"
-                        alt="LOGO">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" title="Click me!" id="search-chip" class="search-circle d-none"
+                    data-toggle="modal" data-target="#searchModal">
+                    Search
+                </button>
             </div>
-
-
-            <!-- Button trigger modal -->
-            <button type="button" title="Click me!" id="search-chip" class="search-circle" data-toggle="modal"
-                data-target="#searchModal">
-                Search
-            </button>
-
-
-            <!-- Button to fav food 
-            <button id="food-circle" type="button" title="Click me!" class="search-circle">
-                <a href="./../../pages/food/food.html">My fav food</a>
-            </button>
-            -->
         </div>
     </header>
 
 
     <!-- Social -->
-    <aside>
-        <div title="Click me!" id="social-chip" class="social-circle" type="button" data-toggle="modal"
-            data-target="#modalForm">
-            <p id="social-chip-title">
-                Get<br>in<br>touch
-            </p>
+    <aside class="position-absolute">
+        <div class="position-absolute position-fixed social-chip ">
+            <button type="button" title="Click me!" id="social-chip"
+                class="d-flex justify-content-center align-items-center button-chip-sm" data-toggle="modal"
+                data-target="#modalForm">
+                Get in touch
+            </button>
         </div>
 
-        <div id="social-card" class="social-media-container">
-
-            <!-- Social Title -->
-            <header>
-                <h1>
-                    <a href="#">Social</a>
-                </h1>
+        <div class="position-relative position-fixed mt-5 social-container">
+            <header class="container-fluid mt-2">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="text-center">Social</h3>
+                    </div>
+                </div>
             </header>
 
+            <div class="container-fluid">
+                <div class="row mt-2 p-2">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
 
-            <!-- Facebook - Instagram -->
-            <div class="mrow">
 
-                <a id="facebook-link" title="Facebook" href="https://www.facebook.com/alejandro.maruri.790"
-                    target="_blank">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
+                        <div>
+                            <a id="instagram-link" title="Instagram" href="https://www.instagram.com/ea_maruri/"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                <a id="instagram-link" title="Instgram" href="https://www.instagram.com/ea_maruri/" target="_blank">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
+                <div class="row mt-2 p-2">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <a id="github-link" title="Github" href="https://github.com/ea-maruri/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
 
+                        <div>
+                            <a id="linkedin-link" title="Linkedi"
+                                href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin social-icon" } aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
-            <!-- Github - LinkedIn -->
-            <div class="mrow">
-
-                <a id="github-link" title="Github" href="https://github.com/ea-maruri/" target="_blank">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-
-                <a id="linkedin-link" title="LinkedIn"
-                    href="https://linkedin.com/in/edwin-alejandro-maruri-tinajero-eamt" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-
-            </div>
-
-
-            <!-- Symbol -->
-            <footer class="msymbol">
-                <!-- Button trigger modal (Form) -->
-                <a title="Get in touch" type="button" data-toggle="modal" data-target="#modalForm">
-                    <img src="./../../public/assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px"
-                        height="auto">
-                </a>
+            <footer class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col">
+                        <img class="d-block mx-auto" title="Get in touch"
+                            src="./../../public/assets/images/svg/symbol-hearts.svg" alt="Heart" height="40px"></img>
+                    </div>
+                </div>
             </footer>
-
         </div>
 
-        <div id="marrow-container" class="arrow-container">
-            <div class="line"></div>
+
+        <div id="marrow-container"
+            class="position-absolute position-fixed d-flex flex-column justify-content-center align-items-center arrow-container">
+            <div class="line mr-2"></div>
 
             <p>
                 <i id="marrow" class="arrow down"></i>
             </p>
         </div>
+
     </aside>
 
 
     <div id="page-start" class="top-space"> </div>
 
 
-    <!-- Grid Content -->
-    <div class="grid-container">
-
-        <section>
-            <!-- Header -->
-            <header>
-                <h1>My Work</h1>
-            </header>
-
-
-            <div id="mportfolio">
-
-                <!-- Info -->
-                <main>
-
-                    <!-- Web -->
-                    <div class="portfolio-cards">
-
-                        <!-- Title -->
-                        <div class="first-card">
-                            <h2 id="web-portfolio-title">Web Development</h2> <br>
-                        </div>
-
-
-                        <!-- AM-GIK Portfolio -->
-                        <div class="first-card" class="maccordion" id="webAccordion" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="webAccordionHeader">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#webAccordion"
-                                            href="#webAccordionContent" aria-expanded="true"
-                                            aria-controls="webAccordionContent">
-                                            AM-GIK Portfolio
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="webAccordionContent" class="collapse in" role="tabpanel"
-                                    aria-labelledby="webAccordionHeader">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/web/home.png"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Portfolio</h5>
-
-                                                <p class="card-text">
-                                                    A brand portfolio for Alejandro Maruri.
-                                                    <br><br>
-                                                    It is deployed on <strong>github pages</strong>.
-                                                    You are using it now.
-                                                    <br><br>
-                                                    Many knowledge in HTML, CSS, SASS, and JS is used.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">HTML, SASS, CSS, Bootstrap, JS</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <!--
-                                                    <a href="https://github.com/ea-maruri/portfolio" target="_blank">
-                                                        <i class="fa fa-home" aria-hidden="true"></i> Go to Home
-                                                    </a>
-                                                    -->
-                                                    <a href="./../../index.html" target="_blank">
-                                                        <i class="fa fa-home" aria-hidden="true"></i> Go to Home
-                                                    </a>
-                                                </button>
-
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Basic Website -->
-                        <div class="first-card" class="maccordion" id="webAccordion1" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="webAccordion1Header">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#webAccordion1"
-                                            href="#webAccordion1Content" aria-expanded="true"
-                                            aria-controls="webAccordion1Content">
-                                            Basic Website
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="webAccordion1Content" class="collapse in" role="tabpanel"
-                                    aria-labelledby="webAccordio1nHeader">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/web/basic_home.png"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Basic Website</h5>
-
-                                                <p class="card-text">
-                                                    A very simple and basic website using Bootstrap, and SASS.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">HTML, SASS, CSS, Bootstrap</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/WebDev/Basic_WebSite"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!-- Programming -->
-                    <div class="portfolio-cards">
-
-                        <!-- Title -->
-                        <div class="second-card">
-                            <h2 id="prog-portfolio-title">Programming</h2> <br>
-                        </div>
-
-
-                        <!-- Doubly Linked List -->
-                        <div class="second-card" class="maccordion" id="progAccordion1" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="progAccordion1Header">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#progAccordion1"
-                                            href="#progAccordion1Content" aria-expanded="true"
-                                            aria-controls="progAccordion1Content">
-                                            Doubly Linked List
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="progAccordion1Content" class="collapse in" role="tabpanel"
-                                    aria-labelledby="progAccordion1Header">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/programming/DoublyLinked.png"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Comparing with Streams</h5>
-
-                                                <p class="card-text">
-                                                    A Java program to show Doubly Linked List data structure.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Java, Objects, Classes, Data Structure</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/Programming/Java/Data_Sctructures/Doubly_Linked_List/src/src"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- 8 Queens -->
-                        <div class="second-card" class="maccordion" id="progAccordion2" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="progAccordion2Header">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#progAccordion2"
-                                            href="#progAccordion2Content" aria-expanded="true"
-                                            aria-controls="progAccordion2Content">
-                                            8 Queens Problem
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="progAccordion2Content" class="collapse in" role="tabpanel"
-                                    aria-labelledby="progAccordion2Header">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/programming/8queens/8queens_solved.png"
-                                                class="card-img-top" alt="...">
-
-                                            <div class="card-body">
-                                                <h5 class="card-title">8 Queens (Brute Force)</h5>
-
-                                                <p class="card-text">
-                                                    A C++ program for resolving 8 Queens Problem by brute force.<br>
-                                                    <br>
-                                                    The eight queens puzzle is the problem of
-                                                    placing eight chess queens on an 8×8 chessboard
-                                                    so that no two queens threaten each other; thus,
-                                                    a solution requires that no two queens share the
-                                                    same row, column, or diagonal.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">C++, Arrays, Matrix</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/Programming/C%2B%2B/Basic/Chess"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!-- Artificial Intelligence -->
-                    <div class="portfolio-cards">
-
-                        <!-- Title -->
-                        <div class="third-card">
-                            <h2 id="ia-portfolio-title">Artificial Intelligence</h2> <br>
-                        </div>
-
-
-                        <!-- 8 Puzzle -->
-                        <div class="third-card" class="maccordion" id="iaAccordion" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="iaAccordionHeader">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#iaAccordion" href="#iaAccordionContent"
-                                            aria-expanded="true" aria-controls="iaAccordionContent">
-                                            8 Puzzle
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="iaAccordionContent" class="collapse in" role="tabpanel"
-                                    aria-labelledby="iaAccordionHeader">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/ai/8puzzle.png"
-                                                class="card-img-top" alt="...">
-
-                                            <div class="card-body">
-                                                <h5 class="card-title">8 Puzzle Problem</h5>
-
-                                                <p class="card-text">
-                                                    The 8-puzzle is a square board with 9 positions,
-                                                    filled by 8 numbered tiles and one gap. At any point,
-                                                    a tile adjacent to the gap can be moved into the gap,
-                                                    creating a new gap position. In other words the gap can
-                                                    be swapped with an adjacent (horizontally and vertically)
-                                                    tile. The objective in the game is to begin with an
-                                                    arbitrary configuration of tiles, and move them so as to
-                                                    get the numbered tiles arranged in ascending order either
-                                                    running around the perimeter of the board or ordered from
-                                                    left to right, with 1 in the top left-hand position.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Java, Classes, Objects, IA, A Star Algorithm
-                                                </li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Puzzle_AStar"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- 8 Queens -->
-                        <div class="third-card" class="maccordion" id="iaAccordion1" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="iaAccordion1Header">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#iaAccordion1"
-                                            href="#iaAccordion1Content" aria-expanded="true"
-                                            aria-controls="iaAccordion1Content">
-                                            8 Queens
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="iaAccordion1Content" class="collapse in" role="tabpanel"
-                                    aria-labelledby="iaAccordion1Header">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/ai/8queens.png"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">8 Queens Problem</h5>
-
-                                                <p class="card-text">
-                                                    A JAVA program for resolving 8 Queens Problem with <b>genetic
-                                                        algorithm</b>.<br> <br>
-                                                    The eight queens puzzle is the problem of
-                                                    placing eight chess queens on an 8×8 chessboard
-                                                    so that no two queens threaten each other; thus,
-                                                    a solution requires that no two queens share the
-                                                    same row, column, or diagonal.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Java, Classes, Objects, IA,
-                                                    Genetic Algorithm</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Queens"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Tic Tac Toe -->
-                        <div class="third-card" class="maccordion" id="iaAccordion2" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="iaAccordion2Header">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#iaAccordion2"
-                                            href="#iaAccordion2Content" aria-expanded="true"
-                                            aria-controls="iaAccordion2Content">
-                                            Tic Tac Toe
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="iaAccordion2Content" class="collapse in" role="tabpanel"
-                                    aria-labelledby="iaAccordion2Header">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/ai/tictactoe.png"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Tic Tac Toe</h5>
-
-                                                <p class="card-text">
-                                                    A Java program which uses minimax algorithm to play <strong>tic tac
-                                                        toe.</strong><br><br>
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Java, Classes, Objects, IA,
-                                                    Minimax Algorithm</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/TicTacToe"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Vacuum -->
-                        <div class="third-card" class="maccordion" id="iaAccordion3" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="iaAccordion3Header">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#iaAccordion3"
-                                            href="#iaAccordion3Content" aria-expanded="true"
-                                            aria-controls="iaAccordion3Content">
-                                            Vacuum Simulation
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="iaAccordion3Content" class="collapse in" role="tabpanel"
-                                    aria-labelledby="iaAccordion3Header">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/ai/vacuumworld.png"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Vacuum Simulation</h5>
-
-                                                <p class="card-text">
-                                                    A Java program which simulates a vaccum on a
-                                                    square room with obstacles.
-                                                    <br><br>
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Java, Classes, Objects, IA,
-                                                    Algorithm</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/Vacuum_World"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!-- Networking -->
-                    <div class="portfolio-cards">
-
-                        <!-- Title -->
-                        <div class="fourth-card">
-                            <h2 id="net-portfolio-title">Networking</h2> <br>
-                        </div>
-
-
-                        <!-- ARP -->
-                        <div class="fourth-card" class="maccordion" id="netAccordion" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="netAccordionHeader">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#netAccordion"
-                                            href="#netAccordionContent" aria-expanded="true"
-                                            aria-controls="netAccordionContent">
-                                            ARP Protocol
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="netAccordionContent" class="collapse in" role="tabpanel"
-                                    aria-labelledby="netAccordionHeader">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/networking/arp-protocol.png"
-                                                class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">ARP Protocol</h5>
-
-                                                <p class="card-text">
-                                                    A Python program using ARP Protocol to determine NIC
-                                                    (Network Interface Card) of some devices.
-                                                    <br><br>
-                                                    Also, a pie image is displayed. Showing vendor percentages.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Python, Networking, ARP, Matplotlib</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/Networking/ARP_Protocol/ARP_Protocol"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <!-- Design -->
-                    <div class="portfolio-cards double-column">
-
-                        <!-- Title -->
-                        <div class="fourth-card">
-                            <h2 id="design-portfolio-title">Design</h2> <br>
-                        </div>
-
-
-                        <!-- Portrait -->
-                        <div class="fifth-card" class="maccordion" id="designAccordion" role="tablist"
-                            aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="designAccordionHeader">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#designAccordion"
-                                            href="#designAccordionContent" aria-expanded="true"
-                                            aria-controls="designAccordionContent">
-                                            Portrait
-                                        </a>
-                                    </h5>
-                                </div>
-
-                                <div id="designAccordionContent" class="collapse in" role="tabpanel"
-                                    aria-labelledby="designAccordionHeader">
-                                    <div class="card-body">
-                                        <div class="card mportfoliocard">
-                                            <img src="./../../public/assets/images/works/design/portrait.png"
-                                                class="card-img-top" alt="portrait">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Portrait</h5>
-
-                                                <p class="card-text">
-                                                    A basic portrait made in Illustrator.
-                                                </p>
-                                            </div>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Illustrator, Design</li>
-                                            </ul>
-
-                                            <div class="card-body">
-                                                <button type="button" class="btn-border-primary">
-                                                    <a href="https://github.com/ea-maruri/works/tree/master/Design/Illustrator/Self_Portrait"
-                                                        target="_blank">
-                                                        <i class="fa fa-github" aria-hidden="true"></i> See on Github
-                                                    </a>
-                                                </button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </main>
-
+    <!-- Content -->
+    <div>
+        <header class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="mtitle text-center">My Work</h1>
+                </div>
             </div>
-        </section>
+        </header>
+
+
+        <main class="container bottom-space mx-auto">
+
+            <!-- Web & Programming -->
+            <div class="row">
+                <div id="web-section" class="col-sm-12 col-md-6">
+                    <header class="text-center my-5">
+                        <h2>Web Development</h2>
+                    </header>
+
+                    <div id="webAccordion" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="webAccordionHeader">
+                            <a data-toggle="collapse" data-parent="#webAccordion" href="#webAccordionContent"
+                                aria-expanded="true" aria-controls="webAccordionContent">
+                                AM-GIK Portfolio
+                            </a>
+                        </h5>
+
+                        <div id="webAccordionContent" class="collapse in" role="tabpanel"
+                            aria-labelledby="webAccordionHeader">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top" src="./../../public/assets/images/works/web/home.png"
+                                        alt="Portfolio"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Portfolio</h5>
+
+                                        <div>A brand portfolio for Alejandro Maruri.
+                                            <br><br>
+                                            It is deployed on <strong>github pages</strong>.
+                                            You are using it now.
+                                            <br><br>
+                                            Many knowledge in HTML, CSS, SASS, and JS is used.</div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">HTML, SASS, CSS, Bootstrap, JS, JQuery</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="./../../index.html" target="_blank">
+                                                <i class="fas fa-home" aria-hidden="true"></i>
+                                                Go to Home
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="webAccordion1" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="webAccordion1Header">
+                            <a data-toggle="collapse" data-parent="#webAccordion1" href="#webAccordion1Content"
+                                aria-expanded="true" aria-controls="webAccordion1Content">
+                                Basic Webpage
+                            </a>
+                        </h5>
+
+                        <div id="webAccordion1Content" class="collapse in" role="tabpanel"
+                            aria-labelledby="webAccordion1Header">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top"
+                                        src="./../../public/assets/images/works/web/basic_home.png"
+                                        alt="Basic Webpage"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Basic Webpage</h5>
+
+                                        <div>A very simple and basic website using Bootstrap, and SASS.</div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">HTML, SASS, CSS, Bootstrap</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="https://github.com/ea-maruri/works/tree/master/WebDev/Basic_WebSite"
+                                                target="_blank">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                                See on Github
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="prog-section" class="col-sm-12 col-md-6">
+                    <header class="text-center my-5">
+                        <h2>Programming</h2>
+                    </header>
+
+
+                    <div id="progAccordion" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="progAccordionHeader">
+                            <a data-toggle="collapse" data-parent="#progAccordion" href="#progAccordionContent"
+                                aria-expanded="true" aria-controls="progAccordionContent">
+                                Doubly Linked List
+                            </a>
+                        </h5>
+
+                        <div id="progAccordionContent" class="collapse in" role="tabpanel"
+                            aria-labelledby="progAccordionHeader">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top"
+                                        src="./../../public/assets/images/works/programming/DoublyLinked.png"
+                                        alt="Doubly Linked List"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Doubly Linked List</h5>
+
+                                        <div>
+                                            A Java program to show Doubly Linked List data structure.
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Java, Objects, Classes, Data Structure</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="https://github.com/ea-maruri/works/tree/master/Programming/Java/Data_Sctructures/Doubly_Linked_List/src/src"
+                                                target="_blank">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                                See on Github
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="progAccordion1" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="progAccordion1Header">
+                            <a data-toggle="collapse" data-parent="#progAccordion1" href="#progAccordion1Content"
+                                aria-expanded="true" aria-controls="progAccordion1Content">
+                                8 Queens Problem
+                            </a>
+                        </h5>
+
+                        <div id="progAccordion1Content" class="collapse in" role="tabpanel"
+                            aria-labelledby="progAccordion1Header">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top"
+                                        src="./../../public/assets/images/works/programming/8queens/8queens_solved.png"
+                                        alt="8 Queens Problem"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">8 Queens (Brute Force)</h5>
+
+                                        <div>
+                                            A C++ program for resolving 8 Queens Problem by brute force.<br>
+                                            <br>
+                                            The eight queens puzzle is the problem of
+                                            placing eight chess queens on an 8×8 chessboard
+                                            so that no two queens threaten each other; thus,
+                                            a solution requires that no two queens share the
+                                            same row, column, or diagonal.
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">C++, Arrays, Matrix</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="https://github.com/ea-maruri/works/tree/master/Programming/C%2B%2B/Basic/Chess"
+                                                target="_blank">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                                See on Github
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- AI & Networking -->
+            <div class="row mt-5">
+                <div id="ai-section" class="col-sm-12 col-md-6">
+                    <header class="text-center my-5">
+                        <h2>Artificial Intelligence</h2>
+                    </header>
+
+
+                    <div id="aiAccordion" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="aiAccordionHeader">
+                            <a data-toggle="collapse" data-parent="#aiAccordion" href="#aiAccordionContent"
+                                aria-expanded="true" aria-controls="aiAccordionContent">
+                                8 Queens Problem
+                            </a>
+                        </h5>
+
+                        <div id="aiAccordionContent" class="collapse in" role="tabpanel"
+                            aria-labelledby="aiAccordionHeader">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top" src="./../../public/assets/images/works/ai/8queens.png"
+                                        alt="8 Queens Problem"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">8 Queens</h5>
+
+                                        <div>
+                                            A JAVA program for resolving 8 Queens Problem with <b>genetic
+                                                algorithm</b>.<br> <br>
+                                            The eight queens puzzle is the problem of
+                                            placing eight chess queens on an 8×8 chessboard
+                                            so that no two queens threaten each other; thus,
+                                            a solution requires that no two queens share the
+                                            same row, column, or diagonal.
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Java, Classes, Objects, IA, Genetic Algorithm</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Puzzle_AStar"
+                                                target="_blank">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                                See on Github
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="aiAccordion1" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="aiAccordion1Header">
+                            <a data-toggle="collapse" data-parent="#aiAccordion1" href="#aiAccordion1Content"
+                                aria-expanded="true" aria-controls="aiAccordion1Content">
+                                8 Puzzle Problem
+                            </a>
+                        </h5>
+
+                        <div id="aiAccordion1Content" class="collapse in" role="tabpanel"
+                            aria-labelledby="aiAccordion1Header">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top" src="./../../public/assets/images/works/ai/8puzzle.png"
+                                        alt="8 Puzzle Problem"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">8 Puzzle</h5>
+
+                                        <div>
+                                            The 8-puzzle is a square board with 9 positions,
+                                            filled by 8 numbered tiles and one gap. At any point,
+                                            a tile adjacent to the gap can be moved into the gap,
+                                            creating a new gap position. In other words the gap can
+                                            be swapped with an adjacent (horizontally and vertically)
+                                            tile. The objective in the game is to begin with an
+                                            arbitrary configuration of tiles, and move them so as to
+                                            get the numbered tiles arranged in ascending order either
+                                            running around the perimeter of the board or ordered from
+                                            left to right, with 1 in the top left-hand position.
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Java, Classes, Objects, IA, A Star Algorithm</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/8Queens"
+                                                target="_blank">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                                See on Github
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="aiAccordion2" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="aiAccordion2Header">
+                            <a data-toggle="collapse" data-parent="#aiAccordion2" href="#aiAccordion2Content"
+                                aria-expanded="true" aria-controls="aiAccordion2Content">
+                                Tic Tac Toe
+                            </a>
+                        </h5>
+
+                        <div id="aiAccordion2Content" class="collapse in" role="tabpanel"
+                            aria-labelledby="aiAccordion2Header">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top" src="./../../public/assets/images/works/ai/tictactoe.png"
+                                        alt="Tic Tac Toe"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Tic Tac Toe Game</h5>
+
+                                        <div>
+                                            A Java program which uses minimax algorithm to play <strong>tic tac
+                                                toe.</strong><br><br>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Java, Classes, Objects, IA,
+                                            Minimax Algorithm</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/TicTacToe"
+                                                target="_blank">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                                See on Github
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="aiAccordion3" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="aiAccordion3Header">
+                            <a data-toggle="collapse" data-parent="#aiAccordion3" href="#aiAccordion3Content"
+                                aria-expanded="true" aria-controls="aiAccordion3Content">
+                                Vacuum World
+                            </a>
+                        </h5>
+
+                        <div id="aiAccordion3Content" class="collapse in" role="tabpanel"
+                            aria-labelledby="aiAccordion3Header">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top"
+                                        src="./../../public/assets/images/works/ai/vacuumworld.png"
+                                        alt="Vacuum Simulation"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Vacuum World Simulation</h5>
+
+                                        <div>
+                                            A Java program which simulates a vaccum on a
+                                            square room with obstacles.
+                                            <br><br>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">ava, Classes, Objects, IA,
+                                            Algorithm</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="https://github.com/ea-maruri/works/tree/master/Artificial_Intelligence/Vacuum_World"
+                                                target="_blank">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                                See on Github
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="net-section" class="col-sm-12 col-md-6">
+                    <header class="text-center my-5">
+                        <h2>Networking</h2>
+                    </header>
+
+                    <div id="netAccordion" role="tablist" aria-multiselectable="true" class="card w-75 mx-auto">
+                        <h5 class="card-header" role="tab" id="netAccordionHeader">
+                            <a data-toggle="collapse" data-parent="#netAccordion" href="#netAccordionContent"
+                                aria-expanded="true" aria-controls="netAccordionContent">
+                                ARP Protocol
+                            </a>
+                        </h5>
+
+                        <div id="netAccordionContent" class="collapse in" role="tabpanel"
+                            aria-labelledby="netAccordionHeader">
+                            <div class="card-body">
+                                <div class="card mportfoliocard">
+                                    <img class="card-img-top"
+                                        src="./../../public/assets/images/works/networking/arp-protocol.png"
+                                        alt="ARP Protocol"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">ARP Protocol</h5>
+
+                                        <div>
+                                            A Python program using ARP Protocol to determine NIC
+                                            (Network Interface Card) of some devices.
+                                            <br><br>
+                                            Also, a pie image is displayed. Showing vendor percentages.
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Python, Networking, ARP, Matplotlib</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <button type="button" class="btn-border-primary">
+                                            <a href="https://github.com/ea-maruri/works/tree/master/Networking/ARP_Protocol/ARP_Protocol"
+                                                target="_blank">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                                See on Github
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
 
 
         <!-- Footer -->
-        <footer id="mfoot" class="mfooter">
-            <!-- Footer -->
-            <div id="mcopy" class="footer-circle">
-                <p id="mcopy-right" class="copysymbol">
-                    &#169; Copyright 2020
-                </p>
-                <p>
-                    <a title="AM-GIK" href="./../../index.html">AM-GIK</a>
-                </p>
-            </div>
-
-
-            <!-- Mail -->
-            <div id="memail" class="footer-circle">
-                <!--href="mailto:ea.maruri@outlook.com, am-gik@outlook.com"-->
-                <a title="Send Email" href="#" target="_blanck" type="button" data-toggle="modal"
+        <footer class="container bottom-space">
+            <div class="d-flex justify-content-around">
+                <button type="button" title="Click me!" id=""
+                    class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle="modal"
                     data-target="#modalForm">
                     Send Email
+                </button>
+
+                <a href="./../../index.html">
+                    <div class="mt-5">
+                        <button type="button" title="Click me!" id=""
+                            class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle=""
+                            data-target="">
+                            &#169; Copyright 2020 AM-GIK
+                        </button>
+                    </div>
                 </a>
-            </div>
 
-
-            <!-- CV -->
-            <div id="mcv" class="footer-circle">
-                <a title="CV"
-                    href="https://www.canva.com/design/DAD-z3YWowI/CTzEgEQNURNXEBhda53MEQ/view?utm_content=DAD-z3YWowI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                <a href="https://www.canva.com/design/DAD-z3YWowI/CTzEgEQNURNXEBhda53MEQ/view?utm_content=DAD-z3YWowI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                     target="_blank">
-                    My CV
+                    <button type="button" title="Click me!" id=""
+                        class="d-flex justify-content-center align-items-center button-chip-lg" data-toggle=""
+                        data-target="">
+                        My CV
+                    </button>
                 </a>
             </div>
         </footer>

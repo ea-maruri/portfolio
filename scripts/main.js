@@ -4,7 +4,7 @@ let copyright = document.getElementById("mcopy-right");
 let mtoday = new Date();
 let year = mtoday.getFullYear();
 
-copyright.innerHTML = "&#169; Copyright " + year;
+//copyright.innerHTML = "&#169; Copyright " + year;
 
 
 
