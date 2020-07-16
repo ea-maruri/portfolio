@@ -42,6 +42,7 @@ checkCopyrightYear();
 // Check Scroll
 let ref_point = 2.5;
 let $arrowContainer = $("#marrow-container");
+$arrowContainer.click(documentGoto);
 let $arrow = $("#marrow");
 
 // Each half second
@@ -68,23 +69,16 @@ const counting = setInterval(function () {
 }, 500);
 
 // Top and Bottom with arrow
-let document_top = document.getElementById("page-start");
-let document_bottom = document.getElementById("page-end");
-
-$arrowContainer.click(document_goto);
-
-function document_goto(event) {
+function documentGoto(event) {
   let scrollTop =
     window.pageYOffset ||
     (document.documentElement || document.body.parentNode || document.body)
       .scrollTop;
 
   if (scrollTop >= height / ref_point) {
-    console.log("Go Up");
     location.href = "#";
     location.href = "#page-start";
   } else {
-    console.log("Go down");
     location.href = "#";
     location.href = "#page-end";
   }
