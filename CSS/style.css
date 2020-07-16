@@ -2,121 +2,6 @@
 /*Gradients */
 /* Breakpoints */
 /* Sizes */
-img.mlogo {
-  height: 12vh;
-  width: auto;
-  transition: transform 0.6s;
-  -ms-border-radius: 9px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  -o-border-radius: 9px;
-  border-radius: 9px;
-  -ms-box-shadow: 0px 0px 7px 2px #262626;
-  -webkit-box-shadow: 0px 0px 7px 2px #262626;
-  -moz-box-shadow: 0px 0px 7px 2px #262626;
-  -o-box-shadow: 0px 0px 7px 2px #262626;
-  box-shadow: 0px 0px 7px 2px #262626; }
-  img.mlogo:hover {
-    transform: scale(1.2); }
-  @media only screen and (max-width: 770px) {
-    img.mlogo {
-      height: 9vh; } }
-
-.bg-black {
-  background-color: #262626; }
-
-div.sticky {
-  position: sticky;
-  top: 14vh; }
-
-#designAccordion {
-  width: 50%; }
-  @media only screen and (max-width: 770px) {
-    #designAccordion {
-      width: auto; } }
-
-.portfolio-cards {
-  margin-bottom: 6rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-  .portfolio-cards h2 {
-    color: #f4f4f4; }
-  .portfolio-cards .pagination {
-    display: none; }
-
-.margin-top-sm {
-  margin-top: 1rem; }
-
-a > i {
-  transition: transform 0.4s; }
-  a > i:hover {
-    transform: scale(1.6); }
-
-#mfood {
-  padding: 0 5rem; }
-  #mfood h1 {
-    text-align: center;
-    color: #f4f4f4; }
-  #mfood .link-container {
-    width: 200px;
-    margin-bottom: 5rem; }
-    #mfood .link-container details {
-      margin-bottom: 0.7rem; }
-      #mfood .link-container details summary:hover {
-        cursor: pointer;
-        font-size: 1.2rem;
-        color: #f4f4f4; }
-      #mfood .link-container details li a {
-        text-decoration: none;
-        color: #000000;
-        margin-bottom: 7rem; }
-        #mfood .link-container details li a:hover {
-          color: #f4f4f4; }
-  #mfood .food-content dl hr {
-    width: 80%; }
-  #mfood .food-content dl dt h2 {
-    color: #f4f4f4;
-    text-align: center; }
-  #mfood .food-content dl dd img.m-img {
-    display: block;
-    margin: 2.5rem auto;
-    -ms-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -o-border-radius: 6px;
-    border-radius: 6px;
-    -ms-box-shadow: 2px 2px 5px 3px #262626;
-    -webkit-box-shadow: 2px 2px 5px 3px #262626;
-    -moz-box-shadow: 2px 2px 5px 3px #262626;
-    -o-box-shadow: 2px 2px 5px 3px #262626;
-    box-shadow: 2px 2px 5px 3px #262626;
-    transition: transform 0.4s; }
-    #mfood .food-content dl dd img.m-img:hover {
-      transform: scale(1.1); }
-  #mfood .food-content dl dd p.right-text {
-    display: flex;
-    justify-content: flex-end; }
-    #mfood .food-content dl dd p.right-text a {
-      margin-top: 2rem;
-      padding: 0.4rem 1rem;
-      -ms-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -o-border-radius: 10px;
-      border-radius: 10px;
-      border: 1px solid #f4f4f4;
-      color: #f4f4f4;
-      text-decoration: none; }
-      #mfood .food-content dl dd p.right-text a:hover {
-        background-color: #262626; }
-  #mfood .food-content dl dd ul li h4 {
-    color: #f4f4f4;
-    margin: 2rem 0; }
-  #mfood .recipes-button button {
-    display: block;
-    margin: auto; }
-
 /* ------------------------------------------------------ */
 /* General */
 html {
@@ -147,6 +32,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 /* Text */
+a > i {
+  transition: transform 0.4s; }
+  a > i:hover {
+    transform: scale(1.6); }
+
 h1, h2, h3, h4, h5, h6 {
   color: #f4f4f4; }
 
@@ -305,6 +195,26 @@ img.mimg {
   @media only screen and (max-width: 770px) {
     .top-space {
       margin-top: 11rem; } }
+
+img.mlogo {
+  height: 12vh;
+  width: auto;
+  transition: transform 0.6s;
+  -ms-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+  -ms-box-shadow: 0px 0px 7px 2px #262626;
+  -webkit-box-shadow: 0px 0px 7px 2px #262626;
+  -moz-box-shadow: 0px 0px 7px 2px #262626;
+  -o-box-shadow: 0px 0px 7px 2px #262626;
+  box-shadow: 0px 0px 7px 2px #262626; }
+  img.mlogo:hover {
+    transform: scale(1.2); }
+  @media only screen and (max-width: 770px) {
+    img.mlogo {
+      height: 9vh; } }
 
 /* Social Chip */
 .button-chip-sm {
@@ -851,6 +761,70 @@ button a {
   .modal .modal-dialog {
     background-color: #f4f4f4;
     z-index: 9999; }
+
+#mfood {
+  padding: 0 5rem; }
+  #mfood h1 {
+    text-align: center;
+    color: #f4f4f4; }
+  #mfood .link-container {
+    width: 200px;
+    margin-bottom: 5rem; }
+    #mfood .link-container details {
+      margin-bottom: 0.7rem; }
+      #mfood .link-container details summary:hover {
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: #f4f4f4; }
+      #mfood .link-container details li a {
+        text-decoration: none;
+        color: #000000;
+        margin-bottom: 7rem; }
+        #mfood .link-container details li a:hover {
+          color: #f4f4f4; }
+  #mfood .food-content dl hr {
+    width: 80%; }
+  #mfood .food-content dl dt h2 {
+    color: #f4f4f4;
+    text-align: center; }
+  #mfood .food-content dl dd img.m-img {
+    display: block;
+    margin: 2.5rem auto;
+    -ms-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    -ms-box-shadow: 2px 2px 5px 3px #262626;
+    -webkit-box-shadow: 2px 2px 5px 3px #262626;
+    -moz-box-shadow: 2px 2px 5px 3px #262626;
+    -o-box-shadow: 2px 2px 5px 3px #262626;
+    box-shadow: 2px 2px 5px 3px #262626;
+    transition: transform 0.4s; }
+    #mfood .food-content dl dd img.m-img:hover {
+      transform: scale(1.1); }
+  #mfood .food-content dl dd p.right-text {
+    display: flex;
+    justify-content: flex-end; }
+    #mfood .food-content dl dd p.right-text a {
+      margin-top: 2rem;
+      padding: 0.4rem 1rem;
+      -ms-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid #f4f4f4;
+      color: #f4f4f4;
+      text-decoration: none; }
+      #mfood .food-content dl dd p.right-text a:hover {
+        background-color: #262626; }
+  #mfood .food-content dl dd ul li h4 {
+    color: #f4f4f4;
+    margin: 2rem 0; }
+  #mfood .recipes-button button {
+    display: block;
+    margin: auto; }
 
 nav .nav-cards {
   -ms-transition: 0.7s ease-out;
